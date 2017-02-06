@@ -1,0 +1,26 @@
+.container{
+	width:100%;
+	margin-top:0
+}
+
+.grid-col-lof3{
+	float:left;
+	width:25%;
+	background-color:rgb(134,175,73);
+}
+
+.grid-col-lof9{
+	float:right;
+	width:75%;
+	background-color: rgb(250,250,250);
+}
+
+.box{
+	float:left;
+	width:90%;
+	border:solid 1px;
+	border-color:rgb(25,25,25);
+	background-color:white;
+	margin-left:5%;
+	margin-top:2rem;
+}
