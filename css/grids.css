@@ -27,7 +27,7 @@ div{
 	float:left;
 	width:80%;
 	margin-left:10%;
-	margin-top:2rem;
+	margin-top:3rem;
 }
 .section::after{
 	content:"";
@@ -37,7 +37,6 @@ div{
 .box{
 	float:left;
 	width:100%;
-	border:solid 0.3px;
-	margin-top:1rem;
+	margin-bottom:3rem;
 }
 
