@@ -6,7 +6,8 @@ div{
 	margin-top:0;
 }
 .header{
-	float:left;
+	position:fixed;
+	top:0;
 	width:100%;
 	height:48px;
 }
@@ -17,15 +18,26 @@ div{
 	top:48px;
 	width:20%;
 }
-
 .grid-col-lof8{
 	float:right;
+	margin-top:48px;
 	width:80%;
 }
-.box{
+.section{
 	float:left;
 	width:90%;
-	border:solid 0.3px;
 	margin-left:5%;
 	margin-top:2rem;
 }
+.section::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.box{
+	float:left;
+	width:100%;
+	border:solid 0.3px;
+	margin-top:1rem;
+}
+
