@@ -1,9 +1,14 @@
 body{
 	margin:0;
+	font-family: 'Quicksand', sans-serif;
 }
-a{
-	color:black;
-	display:block;
+.header p{
+	font-family: 'Permanent Marker', cursive;
+	font-size:1.7rem;
+	margin-top:0.3rem;
+	color:white;
+	text-align:center;
+
 }
 .side-nav{
 	padding-left:2rem;
@@ -11,12 +16,13 @@ a{
 }
 .side-nav h1{
 	margin-top:3rem;
-	margin-bottom:2rem;
+	margin-bottom:2 rem;
 }
 .main-nav{
 
 }
 .main-nav a{
+	display:block;
 	margin-bottom:1.3rem;
 	margin-left:1rem;
 	text-decoration:none;
