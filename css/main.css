@@ -1,0 +1,24 @@
+body{
+	margin:0;
+}
+
+a{
+	color:white;
+	display:block;
+}
+.header{
+	background-color:rgb(134,175,73);
+}
+.side-nav{
+	background-color:rgb(220,220,220);
+}
+
+.content{
+	background-color:white;
+}
+.content h2{
+	width:100%;
+}
+.box{
+	border-color:rgb(80,80,80);
+}
