@@ -200,7 +200,7 @@ code{
 .main-nav-link-item:hover, .main-nav-link-item:focus{
 	border:solid 1px white;
 }
-.product-list-col3{
+.product-list-col4{
 	display:block;
 	width:100%;
 }
@@ -235,6 +235,22 @@ code{
 	text-align:center;
 	font-size:0.8rem;
 	color:rgb(178,178,178);
+}
+.grid-col-lof4{
+	display:block;
+	width:100%;
+}
+.col{
+	display:inline-block;
+	width:30%;
+	margin-right:2%;
+	height:30px;
+	background-color:rgb(134,175,73);
+}
+.col p{
+	margin:0;
+	text-align:center;
+	color:white;
 }
 
 

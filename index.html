@@ -224,14 +224,26 @@
 				<h3>Product List</h3>
 
 		        <h4>CSS selector:</h4>
-		        <p>.event-category .category-item</p>
+		        <p>.product-list-item, .product-image, .product-info, .date, .product-tag</p>
 
 		        <h4>Sample code:</h4>
 		        <code>
+		          &lt;div class="product-list-item"&gt;<br>
+		          	&lt;div class="product-image"><br>
+		          		&lt;P&gt;Product Image&lt;/P&gt;<br>
+		          	&lt;/div&gt;<br>
+
+		          	&lt;h3 class="product-name">Product Name CAD30&lt;/h3&gt;<br>
+		          	&lt;div class="product-info"&gt;<br>
+		          		&lt;h4 class="date"&gt;FRI, 17 FEB 9AM&lt;/h4&gt;<br>      		
+		          	&lt;/div&gt;<br>
+
+		          	&lt;P class="product-tag"&gt;#event-tag 1  #event-tag 2&lt;/P&gt;<br>
+		          &lt;/div&gt;<br>
 		        </code>
 
 		        <h4>Rendered elements:</h4>
-		        <div class="product-list-col3">
+		        <div class="product-list-col4">
 		          <div class="product-list-item">
 		          	<div class="product-image">
 		          		<P>Product Image</P>
@@ -270,8 +282,43 @@
 
 		          	<P class="product-tag">#event-tag 1  #event-tag 2</P>
 		          </div>
-
 		        </div>
+			</div>
+
+			<div class="box">
+				<h3>Grid System</h3>
+          
+		        <h4>CSS selector:</h4>
+		        <p>.grid-col-lof3</p>
+
+		        <h4>Sample code:</h4>
+		        <code>
+		            &lt;div class="grid-col-lof4"&gt;<br>
+		        	&lt;div class="col"&gt;<br>
+		        		&lt;p&gt;4&lt;/p&gt;<br>
+		        	&lt;/div&gt;<br>
+		        	&lt;div class="col"&gt;<br>
+		        		&lt;p&gt;4&lt;/p&gt;<br>
+		        	&lt;/div&gt;<br>
+		        	&lt;div class="col"&gt;<br>
+		        		&lt;p&gt;4&lt;/p&gt;<br>
+		        	&lt;/div&gt;<br>
+		        &lt;/div&gt;
+		        </code>
+
+		        <h4>Rendered element:</h4>  
+		        <div class="grid-col-lof4">
+		        	<div class="col">
+		        		<p>4</p>
+		        	</div>
+		        	<div class="col">
+		        		<p>4</p>
+		        	</div>
+		        	<div class="col">
+		        		<p>4</p>
+		        	</div>
+		        </div>
+		        				
 			</div>
 		</section>
 
