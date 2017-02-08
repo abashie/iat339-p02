@@ -74,10 +74,15 @@
 
 		        <h4>Sample code:</h4>
 		        <code>
-		          &lt;form class="form" name="form-content"&gt;<br>
-		            &lt;label class="label"&gt;Label&lt;/label&gt; <br>
+		        &lt;form class="form" name="form-content"&gt;<br>
+		            &lt;label class="label"&gt;Username&lt;/label&gt;<br>
 		            &lt;input class="text-input" name="text-input" type="text"&gt;<br>
-		          &lt;/form&gt;
+		            &lt;label class="label">Password&lt;/label&gt;<br>
+		            &lt;input class="text-input" name="text-input" type="Password">&gt;<br>
+		       
+		            &lt;label class="label">Comments&lt;/label&gt;<br>
+		            &lt;textarea class="text-area" placeholder="Please leave you comments here"&gt;&lt;/textarea&gt;
+		        </form>		          
 		        </code>
 
 		        <h4>Rendered element:</h4>
@@ -96,13 +101,64 @@
 		<section id="text-elm" class="section">
 		<h2>Text Elements</h2>
 			<div class="box">
-				
+				<h3>A Paragraph</h3>
+          
+		        <h4>CSS selector:</h4>
+		        <p>.paragraph</p>
+
+		        <h4>Sample code:</h4>
+		        <code>
+		        &lt;p class="paragraph"&gt;This is an example to demonstrate the style of a paragraph element. (0.8rem)&lt;/p&gt;    
+		        </code>
+
+		        <h4>Rendered element:</h4>  
+		        <p class="paragraph">This is an example to demonstrate the style of a paragraph element. (0.8rem)</p>				
 			</div>
 			<div class="box">
-				<p>5</p>
+				<h3>Bulleted List</h3>       
+
+		        <h4>CSS selector:</h4>
+		        <p>.bullet-list</p>
+		        <p>.bullet-list-item</p>
+
+		        <h4>Sample code:</h4>
+		        <code>
+		            &lt;ul class="bullet-list"><br>
+		            &lt;li class="bullet-list-item"&gt;item 1 (0.8rem)&lt;/li&gt;<br>
+		            &lt;li class="bullet-list-item"&gt;item 2 (0.8rem)&lt;/li&gt;<br>
+		            &lt;li class="bullet-list-item"&gt;item 3 (0.8rem)&lt;/li&gt;<br>
+		            &lt;/ul>  
+		        </code>
+
+		        <h4>Rendered element:</h4>  
+		            <ul class="bullet-list">
+		               <li class="bullet-list-item">item 1 (0.8rem)</li>
+		               <li class="bullet-list-item">item 2 (0.8rem)</li>
+		               <li class="bullet-list-item">item 3 (0.8rem)</li>
+		            </ul>
 			</div>
 			<div class="box">
-				<p>6</p>
+				<h3>Number List</h3>       
+
+		        <h4>CSS selector:</h4>
+		        <p>.num-list</p>
+		        <p>.num-list-item</p>
+
+		        <h4>Sample code:</h4>
+		        <code>
+		            &lt;ol class="bullet-list"><br>
+		            &lt;li&gt;item 1 (0.8rem)&lt;/li&gt;<br>
+		            &lt;li&gt;item 2 (0.8rem)&lt;/li&gt;<br>
+		            &lt;li&gt;item 3 (0.8rem)&lt;/li&gt;<br>
+		            &lt;/ol>  
+		        </code>
+
+		        <h4>Rendered element:</h4>  
+		            <ol class="num-list">
+		               <li class="num-list-item">item 1 (0.8rem)</li>
+		               <li class="num-list-item">item 2 (0.8rem)</li>
+		               <li class="num-list-item">item 3 (0.8rem)</li>
+		            </ol>
 			</div>
 		</section>
 
