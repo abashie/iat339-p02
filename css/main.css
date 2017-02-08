@@ -29,8 +29,8 @@ h4{
 code{
 	display:block;
 	width:100%;
-	background-color:rgb(230,230,230);
-	padding:0.5rem 2rem;
+	background-color:rgb(240,240,240);
+	padding:0.6rem 1.8rem;
 }
 /*green header*/
 .header{
@@ -114,6 +114,7 @@ code{
 .label{
 	display:block;
 	color:rgb(120,120,120);
+	margin-top:1rem;
 }
 .text-input{
 	display:block;
@@ -139,4 +140,30 @@ code{
 	font-family: 'Hind Vadodara', sans-serif;
 	color:rgb(120,120,120);
 }
-
+.colour p{
+	display:inline-block;
+	width:10%;
+	height:80px;
+	color:white;
+	font-size:0.7rem;
+	margin-left:1rem;
+	text-align: center;
+}
+#scarlet-lbis{
+	background-color:rgb(234,85,68);
+}
+#orange{
+	background-color:rgb(239,120,42);
+}
+#grenny{
+	background-color:rgb(134,175,73);
+}
+#dark-gray{
+	background-color:rgb(60,60,60);
+}
+#gray{
+	background-color:rgb(111,111,111);
+}
+#light-gray{
+	background-color:rgb(178,178,178);
+}
