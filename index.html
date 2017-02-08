@@ -17,12 +17,12 @@
 
 	<div class="grid-col-lof2 side-nav">	
 		<h1>Style Guide</h1>
-		<nav class="main-nav">
+		<nav class="side-bar">
 			<a href="#interative-elm"># Interative Elements</a>
 			<a href="#text-elm"># Text Elements</a>
 			<a href="#combined-elm"># Combined Elements</a>
 			<a href="#userflow"># Userflow Wireframe</a>
-			<a href="citation.html"># Citation</a>
+			<a href="#citation"># Citation</a>
 		</nav>
 	</div>
 
@@ -168,7 +168,8 @@
 				<h3>colour swatches</h3>
 
 		        <h4>CSS selector:</h4>
-		        <p>.colour #dark-purple #light-purple #grape #peach</p>
+		        <p>.colour</p>
+		        <p>#scarlet-lbi, #orange, #grenny, #dark-gray, #gray, #light-gray</p>
 
 		        <h4>Sample code:</h4>
 		        <code>
@@ -193,7 +194,31 @@
          </div>
 			</div>
 			<div class="box">
-				<p>8</p>
+				<h3>Main Navigation</h3>
+
+		        <h4>CSS selector:</h4>
+		        <p>.main-nav, .main-nav-link</p>
+		        <P>#logo</P>
+
+		        <h4>Sample code:</h4>
+		        <code> 
+		        &lt;nav class="main-nav"&gt;
+		        	&lt;p&gt;class="logo"Event Market&lt;/p&gt;
+		            &lt;a href="#" class="main-nav-link"&gt;ABOUT&lt;/a&gt;
+		            &lt;a href="#" class="main-nav-link"&gt;SIGN IN&lt;/a&gt;
+		            &lt;a href="#" class="main-nav-link"&gt;SIGN UP&lt;/a&gt;
+		        &lt;/nav>            
+		        </code>
+
+		        <h4>Rendered element:</h4>
+		          <nav class="main-nav">
+		          	<p id="logo">Event Market</p>
+		          	<div class="main-nav-links">
+			            <a href="#" class="main-nav-link-item">ABOUT</a>
+			            <a href="#" class="main-nav-link-item">SIGN IN</a>
+			            <a href="#" class="main-nav-link-item">SIGN UP</a>
+			        </div>
+		          </nav>
 			</div>
 			<div class="box">
 				<p>9</p>
@@ -204,6 +229,13 @@
 		<h2>Userflow Wireframe</h2>
 			<div class="box">
 				<p>10</p>
+			</div>
+		</section>
+
+		<section id="citation" class="section">
+		<h2>citation</h2>
+			<div class="box">
+				<p>Clink <a href="citation.html" class="in-text-nav">this link</a> to open citation page</p>
 			</div>
 		</section>
 	</div>

@@ -16,10 +16,6 @@ h3{
 	margin:0;
 	text-decoration: underline;
 }
-p{
-	font-family: 'Quicksand', sans-serif;
-	margin:0;
-}
 h4{
 	font-family: 'Quicksand', sans-serif;
 	color:rgb(134,175,73);
@@ -35,20 +31,23 @@ code{
 /*green header*/
 .header{
 	background-color:rgb(134,175,73);
+	width:100%;
+	height:56px;
 }
 .header p{
 	font-family: 'Permanent Marker', cursive;
 	font-size:2rem;
 	color:black;
 	text-align:center;
+	margin:0;
 
 }
 /*side bar erea and main navigation*/
 .side-nav{
 	padding-left:2rem;
-	background-color:rgb(220,220,220);
+	background-color:rgb(230,230,230);
 }
-.main-nav a{
+.side-bar a{
 	font-family: 'Hind Vadodara', sans-serif;
 	display:block;
 	margin-bottom:1.5rem;
@@ -57,7 +56,7 @@ code{
 	color:rgb(80,80,80);
 	transition:color 0.4s;
 }
-.main-nav a:hover, .main-nav a:focus{
+.side-bar a:hover, .side-bar a:focus{
 	color:white;
 }
 /*main content*/
@@ -166,4 +165,39 @@ code{
 }
 #light-gray{
 	background-color:rgb(178,178,178);
+}
+.main-nav{
+	display:block;
+	width:100%;
+	height:50px;
+	background-color:rgb(134,175,73);
+}
+#logo{
+	font-family: 'Permanent Marker', cursive;
+	font-size:1.5rem;
+	color:black;
+	margin:0;
+	padding-left:2rem;
+	padding-top:0.3rem;
+	width:30%;
+	float:left;
+}
+.main-nav-links{
+	display:inline-block;
+	float:right;
+	margin-top:0.9rem;
+	margin-right:1rem;
+	
+}
+.main-nav-link-item{
+	color:white;
+	padding:0.4rem 1.2rem;
+	margin-right:0.5rem;
+	font-size:0.9rem;
+	text-decoration: none;
+	border:solid 1px rgb(134,175,73);
+	transition:border ease-out 0.3s;
+}
+.main-nav-link-item:hover, .main-nav-link-item:focus{
+	border:solid 1px white;
 }
