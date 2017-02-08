@@ -49,16 +49,47 @@
 				<h3>Navigation Button</h3>
 
 		        <h4>CSS selector:</h4>
-		        <p>.button-nav</p>
+		        <p>.ticket-btn</p>
+		        <p>.submit-btn</p>
+		        <p>.back-btn</p>
 
 		        <h4>Sample code:</h4>
-		        <code>&lt;a href="#" class="button"&gt;Button&lt;/a&gt;</code>
+		        <code>
+		        &lt;a class="submit-btn"&gt;Submit&lt;/a&gt;<br>
+		        &lt;a class="ticket-btn" href="#"&gt;Ticket&lt;/a&gt;<br>
+		        &lt;a class="back-btn"&gt;Back&lt;/a&gt;
+		        </code>
 
 		        <h4>Rendered element:</h4>
-		        <a class="button-nav" href="#">Button</a>
+		        <a class="submit-btn">Submit</a>
+		        <a class="ticket-btn" href="#">Ticket</a>
+		        <a class="back-btn">Back</a>
+
 			</div>
 			<div class="box">
-				<p>3</p>
+				<h3>Input Field and Form</h3>
+
+		        <h4>CSS selector:</h4>
+		        <p>.label .text-input</p>
+
+		        <h4>Sample code:</h4>
+		        <code>
+		          &lt;form class="form" name="form-content"&gt;<br>
+		            &lt;label class="label"&gt;Label&lt;/label&gt; <br>
+		            &lt;input class="text-input" name="text-input" type="text"&gt;<br>
+		          &lt;/form&gt;
+		        </code>
+
+		        <h4>Rendered element:</h4>
+		        <form class="form" name="form-content">
+		            <label class="label">Username</label>
+		            <input class="text-input" name="text-input" type="text"> 
+		            <label class="label">Password</label>
+		            <input class="text-input" name="text-input" type="Password"> 
+		       
+		            <label class="label">Comments</label>
+		            <textarea class="text-erea" placeholder="Please leave you comment here"></textarea>
+		        </form>
 			</div>
 		</section>
 
