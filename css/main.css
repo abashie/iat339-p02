@@ -171,24 +171,77 @@ code{
 	height:50px;
 	background-color:rgb(134,175,73);
 }
+.main-nav-left{
+	display:block;
+	float:left;
+	width:35%;
+	margin-top:0.7rem;
+	margin-left:1rem;
+}
+.main-nav-left a{
+	font-family: 'Hind Vadodara', sans-serif;
+	color:white;
+	text-decoration: none;
+	font-size:1.1rem;
+	padding: 0.1rem 0.5rem;
+	border:solid 1px rgb(134,175,73);
+	background-color:rgb(134,175,73);
+	transition:border ease-out 0.3s;
+}
+.main-nav-left a:hover, .main-nav-left a:focus{
+	border:solid 1px white;
+}
+.logo{
+	float:left;
+	display:block;
+	width:30%;
+}
+.logo p{
+	font-family: 'Permanent Marker', cursive;
+	font-size:1.5rem;
+	color:black;
+	margin:0;
+	padding-top:0.3rem;
+}
+.main-nav-right{
+	display:block;
+	float:right;
+	width:30%;
+}
+.main-nav-link{
+	display:inline-block;
+	color:white;
+	margin-top:0.5rem;
+	padding:0.3rem 1.3rem;
+	font-size:0.9rem;
+	text-decoration: none;
+	border:solid 1px rgb(134,175,73);
+	transition:border ease-out 0.3s;
+}
+.main-nav-link:hover,.main-nav-link:focus{
+	border:solid 1px white;
+}
+/*
 #logo{
 	font-family: 'Permanent Marker', cursive;
 	font-size:1.5rem;
 	color:black;
 	margin:0;
-	padding-left:2rem;
 	padding-top:0.3rem;
-	width:30%;
+	text-align:center;
+}
+.main-nav-link{
+	display:inline-block;
 	float:left;
 }
-.main-nav-links{
+.main-nav-ohter-links{
 	display:inline-block;
 	float:right;
 	margin-top:0.9rem;
 	margin-right:1rem;
 	
 }
-.main-nav-link-item{
+.main-nav-ohter-links{
 	color:white;
 	padding:0.4rem 1.2rem;
 	margin-right:0.5rem;
@@ -197,9 +250,10 @@ code{
 	border:solid 1px rgb(134,175,73);
 	transition:border ease-out 0.3s;
 }
-.main-nav-link-item:hover, .main-nav-link-item:focus{
+.main-nav-ohter-links:hover, .main-nav-ohter-links:focus{
 	border:solid 1px white;
 }
+*/
 .product-list-col4{
 	display:block;
 	width:100%;
