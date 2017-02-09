@@ -21,6 +21,13 @@ div{
 	margin-top:56px;
 	width:80%;
 }
+
+.grid-col-8of8{
+	float:right;
+	margin-top:56px;
+	width:100%;
+}
+
 .section{
 	float:left;
 	width:80%;
