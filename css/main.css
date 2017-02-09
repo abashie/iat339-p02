@@ -9,7 +9,8 @@ h1{
 }
 h2{
 	font-family: 'Hind Vadodara', sans-serif;
-	margin:0;
+	text-align: center;
+	margin: 2em 1rem;
 }
 h3{
 	font-family: 'Quicksand', sans-serif;
@@ -41,6 +42,8 @@ code{
 	margin:0;
 
 }
+
+
 /*side bar erea and main navigation*/
 .side-nav{
 	padding-left:2rem;
@@ -221,6 +224,28 @@ code{
 .main-nav-link:hover,.main-nav-link:focus{
 	border:solid 2px white;
 }
+
+.back-image{
+	position: relative;
+
+}
+
+/*targets all h1's with class back-image*/
+.back-image h1{
+	position: relative;
+	text-align: center;
+	color: blue;
+	margin: 0;
+	bottom: 200px;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+}
+
 footer{
 	display:block;
 	float:left;
@@ -265,7 +290,7 @@ footer{
 }
 .product-list-item{
 	display:inline-block;
-	width:30%;
+	width:25%;
 	margin-right:2%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
