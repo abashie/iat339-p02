@@ -19,12 +19,12 @@
 
 	<div class="grid-col-lof2 side-nav">	
 		<h1>Style Guide</h1>
-		<nav class="main-nav">
+		<nav class="side-bar">
 			<a href="#interative-elm"># Interative Elements</a>
 			<a href="#text-elm"># Text Elements</a>
 			<a href="#combined-elm"># Combined Elements</a>
 			<a href="#userflow"># Userflow Wireframe</a>
-			<a href="citation.html"># Citation</a>
+			<a href="#citation"># Citation</a>
 		</nav>
 	</div>
 
@@ -117,6 +117,21 @@
 		        <p class="paragraph">This is an example to demonstrate the style of a paragraph element. (0.8rem)</p>				
 			</div>
 			<div class="box">
+				<h3>Three Level Heading</h3>
+
+		        <h4>Sample code:</h4>
+		        <code>
+			        &lt;h2&gt;Level two heading (font: Hind Vadodara)&lt;/h2&gt;<br>
+			        &lt;h3&gt;Level three heading (font: Quicksand)&lt;/h3&gt;<br>
+			        <&lt;h4&gt;Level four heading (font: Quicksand)&lt;/h4&gt; 
+		        </code>
+
+		        <h4>Rendered element:</h4>  
+			        <h2>Level two heading (font: Hind Vadodara)</h2>
+			        <h3>Level three heading (font: Quicksand)</h3>
+			        <h4>Level four heading (font: Quicksand)</h4>
+			</div>
+			<div class="box">
 				<h3>Bulleted List</h3>       
 
 		        <h4>CSS selector:</h4>
@@ -167,10 +182,11 @@
 		<section id="combined-elm" class="section">
 		<h2>Combined Elements</h2>
 			<div class="box">
-				<h3>colour swatches</h3>
+				<h3>Colour Swatches</h3>
 
 		        <h4>CSS selector:</h4>
-		        <p>.colour #dark-purple #light-purple #grape #peach</p>
+		        <p>.colour</p>
+		        <p>#scarlet-lbi, #orange, #grenny, #dark-gray, #gray, #light-gray</p>
 
 		        <h4>Sample code:</h4>
 		        <code>
@@ -192,13 +208,181 @@
 		          <p id="dark-gray">dark gray RGB(60,60,60)</p>
 		          <p id="gray">sharkskin RGB(111,111,111)</p>
 		          <p id="light-gray">light gray RGB(178,178,178)</p>
-         </div>
+         		</div>
 			</div>
 			<div class="box">
-				<p>8</p>
+				<h3>Main Navigation</h3>
+
+		        <h4>CSS selector:</h4>
+		        <p>.main-nav, .main-nav-left, .main-nav-right, .logo, .main-nav-link</p>
+
+		        <h4>Sample code:</h4>
+		        <code> 
+		        &lt;nav class="main-nav"&gt;<br>
+		        	&lt;div class="main-nav-left"&gt;<br>
+		          		&lt;a href="#"&gt;event gallery&lt;/a&gt;<br>
+		          	&lt;/div&gt;<br>
+		          	
+		          	&lt;div class="logo"&gt;<br>
+		          		&lt;p&gt;Event Market&lt;/p&gt;<br>
+		          	&lt;/div&gt;<br>
+		          	
+		          	&lt;div class="main-nav-right"&gt;<br>
+			            &lt;a href="#" class="main-nav-link">about&lt;/a&gt;<br>
+			            &lt;a href="#" class="main-nav-link">account&lt;/a&gt;<br>
+			            &lt;a href="#" class="main-nav-link">cart&lt;/a&gt;<br>
+			        &lt;/div&gt;<br>
+		        &lt;/nav&gt;      
+		        </code>
+
+		        <h4>Rendered element:</h4>
+		          <nav class="main-nav">
+		          	<div class="main-nav-left">
+		          		<a href="#">event gallery</a>
+		          	</div>
+		          	<div class="logo">
+		          		<p>Event Market</p>
+		          	</div>
+		          	
+		          	<div class="main-nav-right">
+			            <a href="#" class="main-nav-link">about</a>
+			            <a href="#" class="main-nav-link">account</a>
+			            <a href="#" class="main-nav-link">cart</a>
+			        </div>
+		          </nav>
 			</div>
 			<div class="box">
-				<p>9</p>
+				<h3>Footer</h3>
+
+		        <h4>CSS selector:</h4>
+		        <p>.footer-contact-info, .footer-other-info, .footer-links</p>
+
+		        <h4>Sample code:</h4>
+		        <code> 
+		        &lt;footer&gt;<br>
+	          		&lt;div class="footer-contact-info"&gt;<br>
+	          			&lt;p href="#"&gt;contact information here (not complete)&lt;/p&gt;<br>
+	          		&lt;/div&gt;<br>
+	          		&lt;div class="footer-other-info"&gt;<br>
+		          		<&lt;a class="footer-links" href="#">help&lt;/a&gt;<br>
+		          		&lt;a class="footer-links" href="#">terms and policy&lt;/a&gt;<br>
+		          		&lt;a class="footer-links" href="#">FAQs&lt;/a&gt;<br>
+	          		&lt;/div&gt;<br>          	
+		          &lt;/footer&gt;       
+		        </code>
+
+		        <h4>Rendered element:</h4>
+		          <footer>
+	          		<div class="footer-contact-info">
+	          			<p href="#">contact information here (not complete)</p>
+	          		</div>
+	          		<div class="footer-other-info">
+		          		<a class="footer-links" href="#">help</a>
+		          		<a class="footer-links" href="#">terms and policy</a>
+		          		<a class="footer-links" href="#">FAQs</a>
+	          		</div>
+		          	
+		          </footer>
+			</div>
+			<div class="box">
+				<h3>Product List</h3>
+
+		        <h4>CSS selector:</h4>
+		        <p>.product-list-item, .product-image, .product-info, .date, .product-tag</p>
+
+		        <h4>Sample code:</h4>
+		        <code>
+		          &lt;div class="product-list-item"&gt;<br>
+		          	&lt;div class="product-image"><br>
+		          		&lt;P&gt;Product Image&lt;/P&gt;<br>
+		          	&lt;/div&gt;<br>
+
+		          	&lt;h3 class="product-name">Product Name CAD30&lt;/h3&gt;<br>
+		          	&lt;div class="product-info"&gt;<br>
+		          		&lt;h4 class="date"&gt;FRI, 17 FEB 9AM&lt;/h4&gt;<br>      		
+		          	&lt;/div&gt;<br>
+
+		          	&lt;P class="product-tag"&gt;#event-tag 1  #event-tag 2&lt;/P&gt;<br>
+		          &lt;/div&gt;<br>
+		        </code>
+
+		        <h4>Rendered elements:</h4>
+		        <div class="product-list-col4">
+		          <div class="product-list-item">
+		          	<div class="product-image">
+		          		<P>Product Image</P>
+		          	</div>
+
+		          	<h3 class="product-name">Product Name CAD30</h3>
+		          	<div class="product-info">
+		          		<h4 class="date">FRI, 17 FEB 9AM</h4>	          		
+		          	</div>
+
+		          	<P class="product-tag">#event-tag 1  #event-tag 2</P>
+		          </div>
+
+		          <div class="product-list-item">
+		          	<div class="product-image">
+		          		<P>Product Image</P>
+		          	</div>
+
+		          	<h3 class="product-name">Product Name CAD30</h3>
+		          	<div class="product-info">
+		          		<h4 class="date">FRI, 17 FEB 9AM</h4>	          		
+		          	</div>
+
+		          	<P class="product-tag">#event-tag 1  #event-tag 2</P>
+		          </div>
+
+		          <div class="product-list-item">
+		          	<div class="product-image">
+		          		<P>Product Image</P>
+		          	</div>
+
+		          	<h3 class="product-name">Product Name CAD30</h3>
+		          	<div class="product-info">
+		          		<h4 class="date">FRI, 17 FEB 9AM</h4>	          		
+		          	</div>
+
+		          	<P class="product-tag">#event-tag 1  #event-tag 2</P>
+		          </div>
+		        </div>
+			</div>
+
+			<div class="box">
+				<h3>Grid System</h3>
+          
+		        <h4>CSS selector:</h4>
+		        <p>.grid-col-lof3</p>
+
+		        <h4>Sample code:</h4>
+		        <code>
+		            &lt;div class="grid-col-lof4"&gt;<br>
+		        	&lt;div class="col"&gt;<br>
+		        		&lt;p&gt;4&lt;/p&gt;<br>
+		        	&lt;/div&gt;<br>
+		        	&lt;div class="col"&gt;<br>
+		        		&lt;p&gt;4&lt;/p&gt;<br>
+		        	&lt;/div&gt;<br>
+		        	&lt;div class="col"&gt;<br>
+		        		&lt;p&gt;4&lt;/p&gt;<br>
+		        	&lt;/div&gt;<br>
+		        &lt;/div&gt;
+		        </code>
+
+		        <h4>Rendered element:</h4>  
+		        <div class="grid-col-lof4">
+		        	<div class="col">
+		        		<p>4</p>
+		        	</div>
+		        	<div class="col">
+		        		<p>4</p>
+		        	</div>
+		        	<div class="col">
+		        		<p>4</p>
+		        	</div>
+		        </div>
+		        				
 			</div>
 		</section>
 
@@ -206,6 +390,13 @@
 		<h2>Userflow Wireframe</h2>
 			<div class="box">
 				<p>10</p>
+			</div>
+		</section>
+
+		<section id="citation" class="section">
+		<h2>citation</h2>
+			<div class="box">
+				<p>Clink <a href="citation.html" class="in-text-nav">this link</a> to open citation page</p>
 			</div>
 		</section>
 	</div>
