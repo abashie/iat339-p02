@@ -9,7 +9,8 @@ h1{
 }
 h2{
 	font-family: 'Hind Vadodara', sans-serif;
-	margin:0;
+	text-align: center;
+	margin: 2em 1rem;
 }
 h3{
 	font-family: 'Quicksand', sans-serif;
@@ -318,13 +319,17 @@ footer{
 
 */
 
+.product-container{
+	margin-left: 15%;
+}
+
 .product-list-col4{
 	display:block;
 	width:100%;
 }
 .product-list-item{
 	display:inline-block;
-	width:30%;
+	width:25%;
 	margin-right:2%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
