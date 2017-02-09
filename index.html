@@ -191,23 +191,31 @@
 		          <p id="dark-gray">dark gray RGB(60,60,60)</p>
 		          <p id="gray">sharkskin RGB(111,111,111)</p>
 		          <p id="light-gray">light gray RGB(178,178,178)</p>
-         </div>
+         		</div>
 			</div>
 			<div class="box">
 				<h3>Main Navigation</h3>
 
 		        <h4>CSS selector:</h4>
-		        <p>.main-nav, .main-nav-link</p>
-		        <P>#logo</P>
+		        <p>.main-nav, .main-nav-left, .main-nav-right, .logo, .main-nav-link</p>
 
 		        <h4>Sample code:</h4>
 		        <code> 
-		        &lt;nav class="main-nav"&gt;
-		        	&lt;p&gt;class="logo"Event Market&lt;/p&gt;
-		            &lt;a href="#" class="main-nav-link"&gt;ABOUT&lt;/a&gt;
-		            &lt;a href="#" class="main-nav-link"&gt;SIGN IN&lt;/a&gt;
-		            &lt;a href="#" class="main-nav-link"&gt;SIGN UP&lt;/a&gt;
-		        &lt;/nav>            
+		        &lt;nav class="main-nav"&gt;<br>
+		        	&lt;div class="main-nav-left"&gt;<br>
+		          		&lt;a href="#"&gt;event gallery&lt;/a&gt;<br>
+		          	&lt;/div&gt;<br>
+		          	
+		          	&lt;div class="logo"&gt;<br>
+		          		&lt;p&gt;Event Market&lt;/p&gt;<br>
+		          	&lt;/div&gt;<br>
+		          	
+		          	&lt;div class="main-nav-right"&gt;<br>
+			            &lt;a href="#" class="main-nav-link">about&lt;/a&gt;<br>
+			            &lt;a href="#" class="main-nav-link">account&lt;/a&gt;<br>
+			            &lt;a href="#" class="main-nav-link">cart&lt;/a&gt;<br>
+			        &lt;/div&gt;<br>
+		        &lt;/nav&gt;      
 		        </code>
 
 		        <h4>Rendered element:</h4>
@@ -216,7 +224,7 @@
 		          		<a href="#">event gallery</a>
 		          	</div>
 		          	<div class="logo">
-		          		<p id="logo">Event Market</p>
+		          		<p>Event Market</p>
 		          	</div>
 		          	
 		          	<div class="main-nav-right">
@@ -225,6 +233,30 @@
 			            <a href="#" class="main-nav-link">cart</a>
 			        </div>
 		          </nav>
+			</div>
+			<div class="box">
+				<h3>Footer</h3>
+
+		        <h4>CSS selector:</h4>
+		        <p>.footer-content</p>
+
+		        <h4>Sample code:</h4>
+		        <code> 
+		        
+		        </code>
+
+		        <h4>Rendered element:</h4>
+		          <footer>
+	          		<div class="footer-contact-info">
+	          			<p href="#">contact information here (not complete)</p>
+	          		</div>
+	          		<div class="footer-other-info">
+		          		<a class="footer-links" href="#">help</a>
+		          		<a class="footer-links" href="#">terms and policy</a>
+		          		<a class="footer-links" href="#">FAQs</a>
+	          		</div>
+		          	
+		          </footer>
 			</div>
 			<div class="box">
 				<h3>Product List</h3>
