@@ -184,12 +184,12 @@ code{
 	text-decoration: none;
 	font-size:1.1rem;
 	padding: 0.1rem 0.8rem;
-	border:solid 1px rgb(134,175,73);
+	border:solid 2px rgb(134,175,73);
 	background-color:rgb(134,175,73);
 	transition:border ease-out 0.3s;
 }
 .main-nav-left a:hover, .main-nav-left a:focus{
-	border:solid 1px white;
+	border:solid 2px white;
 }
 .logo{
 	float:left;
@@ -215,11 +215,11 @@ code{
 	padding:0.3rem 1.3rem;
 	font-size:0.9rem;
 	text-decoration: none;
-	border:solid 1px rgb(134,175,73);
+	border:solid 2px rgb(134,175,73);
 	transition:border ease-out 0.3s;
 }
 .main-nav-link:hover,.main-nav-link:focus{
-	border:solid 1px white;
+	border:solid 2px white;
 }
 footer{
 	display:block;
@@ -259,39 +259,6 @@ footer{
 .footer-links:hover,.footer-links:focus{
 	color:rgb(134,175,73);
 }
-
-#logo{
-	font-family: 'Permanent Marker', cursive;
-	font-size:1.5rem;
-	color:black;
-	margin:0;
-	padding-top:0.3rem;
-	text-align:center;
-}
-.main-nav-link{
-	display:inline-block;
-	float:left;
-}
-.main-nav-ohter-links{
-	display:inline-block;
-	float:right;
-	margin-top:0.9rem;
-	margin-right:1rem;
-	
-}
-.main-nav-ohter-links{
-	color:white;
-	padding:0.4rem 1.2rem;
-	margin-right:0.5rem;
-	font-size:0.9rem;
-	text-decoration: none;
-	border:solid 1px rgb(134,175,73);
-	transition:border ease-out 0.3s;
-}
-.main-nav-ohter-links:hover, .main-nav-ohter-links:focus{
-	border:solid 1px white;
-}
-*/
 .product-list-col4{
 	display:block;
 	width:100%;
