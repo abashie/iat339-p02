@@ -1,10 +1,13 @@
 .gird-col-lof7{
-	display:block;
 	float:left;
 	width:70%;
 }
 .gird-col-lof3{
-	display:block;
 	float:right;
 	width:30%;
+}
+.grid-col-lof3{
+	float:left;
+	width:24%;
+	height:40px;
 }

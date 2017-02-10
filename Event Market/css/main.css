@@ -18,7 +18,7 @@ h3{
 	font-family: 'Quicksand', sans-serif;
 	margin:0;
 }
-h4{
+h4, label{
 	font-family: 'Quicksand', sans-serif;
 	color:rgb(134,175,73);
 	margin-top:1rem;
@@ -226,6 +226,7 @@ img{
 }
 .pdt-image{
 	float:left;
+	width:100%;
 	height:400px;
 	background-color:rgb(200,200,200);
 }
@@ -276,4 +277,92 @@ img{
 /* 
   COMMENTS PAGE --------------------------------------------------------
 */
+.comment-container{
+	width:100%;
+	margin-top:56px;
+
+}
+.pdt-comments-summary{
+	float:left;
+	width:100%;
+	border-bottom:solid 0.3px rgb(220,220,220);
+}
+.nums-item{
+	margin-bottom:2.8rem;
+	text-align:center;
+}
+.nums-item p{
+	margin-top:0.6rem;
+}
+.pdt-title {
+	text-align:center;
+	margin-top:1.5rem;
+	border-right:solid 0.3px rgb(220,220,220);
+}
+
+.pdt-title p{
+	font-size:0.8rem;
+	color:rgb(178,178,178);
+	margin-top:0.3rem;
+}
+.label{
+	display:block;
+	color:rgb(120,120,120);
+	margin-top:1rem;
+}
+.comment-area{
+	float:left;
+	margin-bottom:6rem;
+	margin-left:10%;
+	width:80%;
+}
+.write-comment{
+	float:left;
+	margin-top:3rem;
+	margin-bottom:3rem;
+	margin-left:10%;
+	width:80%;
+}
+.text-area{
+	display:block;
+	clear:both;
+	width:99.3%;
+	height:100px;
+	box-shadow:none;
+	font-size:0.9rem;
+	text-indent: 0.3rem;
+	border:solid 1px rgb(180,180,180);
+}
+.button-erea{
+	width:100%;
+	float:left;
+	margin-top:1rem;
+}
+.submit-btn{
+	float:right;
+	padding:0.2rem 1.8rem;
+	border:solid 2.3px;
+	border-color:rgb(134,175,73);
+	color:rgb(134,175,73);
+	transition:background-color ease-out 0.3s;
+}
+.submit-btn:hover,.submit-btn:focus{
+	background-color:rgb(134,175,73);
+	color:white;
+}
+.text-block{
+	float:left;
+	margin-left:10%;
+	width:80%;
+	height:80px;
+	margin-bottom:6rem;
+}
+.comment-block{
+	float:left;
+	margin-left:10%;
+	width:80%;
+	height:100px;
+	background-color:rgb(200,200,200);
+	margin-bottom:1.5rem;
+}
 
