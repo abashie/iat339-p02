@@ -327,7 +327,7 @@ img{
 	display:block;
 	clear:both;
 	width:99.3%;
-	height:100px;
+	height:80px;
 	box-shadow:none;
 	font-size:0.9rem;
 	text-indent: 0.3rem;
@@ -354,14 +354,12 @@ img{
 	float:left;
 	margin-left:10%;
 	width:80%;
-	height:80px;
-	margin-bottom:6rem;
 }
 .comment-block{
 	float:left;
 	margin-left:10%;
 	width:80%;
-	height:100px;
+	height:120px;
 	background-color:rgb(200,200,200);
 	margin-bottom:1.5rem;
 }
