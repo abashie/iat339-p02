@@ -189,23 +189,6 @@ img{
 	font-size:0.8rem;
 	color:rgb(178,178,178);
 }
-.grid-col-lof4{
-	display:block;
-	width:100%;
-}
-.col{
-	display:inline-block;
-	width:30%;
-	margin-right:2%;
-	height:30px;
-	background-color:rgb(134,175,73);
-}
-.col p{
-	margin:0;
-	text-align:center;
-	color:white;
-}
-
 /* 
   PRODUCT INFO PAGE --------------------------------------------------------
 */
@@ -364,4 +347,53 @@ img{
 	background-color:rgb(200,200,200);
 	margin-bottom:1.5rem;
 }
-
+/* 
+  COMFIRMATION PAGE --------------------------------------------------------
+*/
+.comfirmation-container{
+	float:left;
+	margin-left:10%;
+	width:80%;
+	margin-top:4rem;
+	margin-bottom:5rem;
+}
+.confirmation-info{
+	float:left;
+	width:100%;
+	text-align:center;
+	margin-bottom:3rem;
+}
+.product-img{
+	width:100%;
+	height:300px;
+	background-color:rgb(200,200,200);
+}
+.pdt-info{
+	margin-top:2rem;
+}
+.product-summary{
+	float:left;
+	width:100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.ticket-method{
+	width:100%;
+	display:block;
+	float:left;
+	margin-top:3rem;
+	margin-bottom:5rem;
+}
+.ticket-method img{
+ 	width:100px;
+ 	height:auto;
+ 	margin-left:12rem;
+}
+.ticket-method p{
+	text-align:center;
+	margin-top:0;
+	margin-left:8rem;
+	transition:color ease-out 0.3s;
+}
+.ticket-method p:hover,.ticket-method p:focus{
+	color:rgb(239,120,42);
+}

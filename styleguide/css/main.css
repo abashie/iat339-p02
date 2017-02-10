@@ -222,6 +222,22 @@ code{
 .main-nav-link:hover,.main-nav-link:focus{
 	border:solid 2px white;
 }
+.grid-col-lof4{
+	display:block;
+	width:100%;
+}
+.col{
+	display:inline-block;
+	width:30%;
+	margin-right:2%;
+	height:30px;
+	background-color:rgb(134,175,73);
+}
+.col p{
+	margin:0;
+	text-align:center;
+	color:white;
+}
 
 footer{
 	display:block;

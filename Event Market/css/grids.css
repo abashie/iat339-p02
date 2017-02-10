@@ -1,8 +1,8 @@
-.grid-col-lof7{
+.grid-col-10of7{
 	float:left;
 	width:70%;
 }
-.grid-col-lof3{
+.grid-col-10of3{
 	float:right;
 	width:30%;
 }
@@ -10,4 +10,16 @@
 	float:left;
 	width:24%;
 	height:40px;
+}
+.grid-col-lof4{
+	float:left;
+	width:31%;
+}
+.grid-col-12of4{
+	float:left;
+	width:31%;
+}
+.grid-col-12of8{
+	float:right;
+	width:68%;
 }
