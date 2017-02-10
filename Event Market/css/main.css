@@ -259,6 +259,105 @@ img{
 	color:rgb(178,178,178);
 }
 /* 
+  PAYMENT PAGE --------------------------------------------------------
+*/
+.pay-btn{
+display: block;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+font-size: 1.5rem;
+width: 300px;
+height: 35px;
+margin: 0 35%;
+margin-bottom: 3em;
+}
+
+.back-image{
+	position: relative;
+
+}
+.events-container{
+margin-right: 10%;
+margin-left: 10%;
+}
+
+.pay-container{
+margin: 4rem 10%;
+background-color: rgb(230, 240, 240);
+}
+
+.pay-container h3{
+	display: inline-block;
+padding-top: 30px;
+margin-left: 30px;
+margin-bottom: 30px;
+border-bottom: 2px solid black;
+}
+
+.pay-container h4{
+	text-align: center;
+	color: black;
+}
+
+.pay-title{
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+.back-image h1{
+	position: relative;
+	text-align: center;
+	color: blue;
+	margin: 0;
+	bottom: 200px;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.prod-container{
+margin-left: 5%;
+margin-bottom: 100px;
+} 
+.separate-line{
+border: 1px solid black;
+margin: 3em 0;
+}
+
+
+.filter-bar {
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+.filter-bar h2{
+	display: inline-block;
+}
+
+.text-input-l{
+	width: 300px;
+	height: 40px;
+}
+
+.text-input{
+float: right;
+}
+
+.text-input-m{
+float: left;
+margin-left: 30px;
+}
+
+.pay-container h4{
+	display: inline-block;
+	margin-left: 30px;
+	margin-top: 2.5px;
+}
+
+.text-input-m{
+margin-bottom: 1.5em;
+}
+/*
   COMMENTS PAGE --------------------------------------------------------
 */
 .comment-container{

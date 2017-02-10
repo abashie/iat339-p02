@@ -1,3 +1,51 @@
+.grid-row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+.grid-col-lof2{
+	position:fixed;
+	top:0;
+	bottom:0;
+	top:56px;
+	width:20%;
+}
+
+.grid-col-lof8{
+	float:right;
+	margin-top:56px;
+	width:80%;
+}
+
+.grid-col-1of3{
+	padding: 5px;
+	width: 32%;
+}
+
+
+.grid-col-1of4{
+	padding: 5px;
+	width: 24%;
+}
+
+.grid-col-2of3{
+	padding: 5px;
+	width: 65%;
+
+}
+
+.grid-col-2of4{
+	padding: 5px;
+	width: 49%;
+}
+
+.box{
+	float:left;
+	width:100%;
+	margin-bottom:3rem;
+}
 .grid-col-10of7{
 	float:left;
 	width:70%;
