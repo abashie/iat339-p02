@@ -132,9 +132,20 @@ footer{
 	color:rgb(134,175,73);
 }
 /* 
-  MAIN PAGE --------------------------------------------------------
+  HOME PAGE --------------------------------------------------------
 */
-
+.Homepage-container{
+	width:100%;
+	float:left;
+	margin-top:56px;
+}
+.inner-container{
+	float:left;
+	margin-left:10%;
+	width:80%;
+	margin-top:2rem;
+	margin-bottom:4rem;
+}
 /*targets all h1's with class back-image*/
 .back-image{
 	position: relative;
@@ -156,10 +167,11 @@ img{
 .product-list-col4{
 	display:block;
 	width:100%;
+	margin-bottom:2rem;
 }
 .product-list-item{
 	display:inline-block;
-	width:25%;
+	width:31%;
 	margin-right:2%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -179,6 +191,13 @@ img{
 .product-name{
 	text-align:center;
 	margin-top:1rem;
+}
+.product-name a{
+	color:black;
+	text-decoration: none;
+}
+.product-name a:hover, .product-name a:focus{
+	text-decoration: underline;
 }
 .date{
 	text-align:center;
@@ -316,46 +335,26 @@ img{
 	height: auto;
 }
 .prod-container{
-margin-left: 5%;
-margin-bottom: 100px;
+	margin-left: 5%;
+	margin-bottom: 100px;
 } 
 .separate-line{
-border: 1px solid black;
-margin: 3em 0;
+	border: 1px solid black;
+	margin: 3em 0;
 }
-
 
 .filter-bar {
-	text-align: center;
-	margin-bottom: 3em;
+	width:100%;
+	height:30px;
+	background-color:rgb(178,178,178);
+	margin-bottom:3rem;
 }
 
-.filter-bar h2{
-	display: inline-block;
-}
-
-.text-input-l{
-	width: 300px;
-	height: 40px;
-}
-
-.text-input{
-float: right;
-}
-
-.text-input-m{
-float: left;
-margin-left: 30px;
-}
 
 .pay-container h4{
 	display: inline-block;
 	margin-left: 30px;
 	margin-top: 2.5px;
-}
-
-.text-input-m{
-margin-bottom: 1.5em;
 }
 /*
   COMMENTS PAGE --------------------------------------------------------

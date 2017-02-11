@@ -2,6 +2,7 @@
 	content: "";
 	display: block;
 	clear: both;
+	margin-bottom:1rem;
 }
 
 
@@ -20,23 +21,23 @@
 }
 
 .grid-col-1of3{
-	padding: 5px;
+	float:left;
 	width: 32%;
+	background-color:rgb(178,178,178);
+	height:160px;
+	margin-right: 1%;
 }
 
 
 .grid-col-1of4{
+	float:left;
 	padding: 5px;
 	width: 24%;
 }
 
-.grid-col-2of3{
-	padding: 5px;
-	width: 65%;
-
-}
 
 .grid-col-2of4{
+	float:left;
 	padding: 5px;
 	width: 49%;
 }
