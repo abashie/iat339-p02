@@ -23,8 +23,6 @@
 .grid-col-1of3{
 	float:left;
 	width: 32%;
-	background-color:rgb(178,178,178);
-	height:160px;
 	margin-right: 1%;
 }
 
@@ -55,11 +53,7 @@
 	float:right;
 	width:30%;
 }
-.grid-col-lof3{
-	float:left;
-	width:24%;
-	height:40px;
-}
+
 .grid-col-lof4{
 	float:left;
 	width:31%;
@@ -71,4 +65,14 @@
 .grid-col-12of8{
 	float:right;
 	width:68%;
+}
+
+@media (max-width: 57em){
+
+.grid-col-lof3{
+	float:left;
+	width:50%;
+}
+
+
 }
