@@ -310,6 +310,13 @@ padding: 40px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+.summary-line{
+border-bottom: 1px solid black;
+margin: 1rem 0;
+}
+
+
 .pay-container h3{
 	display: inline-block;
 margin-bottom: 30px;
@@ -318,9 +325,10 @@ margin-bottom: 30px;
 
 .pay-container h4{
 	text-align: center;
-	color: black;
+	color: rgb(134,175,73);
 	display: inline-block;
 	margin-top: 2.5px;
+
 }
 
 .pay-container label{
@@ -333,6 +341,7 @@ margin-bottom: 30px;
 		margin-top:1rem;
 	margin-bottom: 0.5rem;
 }
+
 
 
 .pay-container input.radio{
