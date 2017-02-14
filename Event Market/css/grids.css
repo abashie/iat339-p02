@@ -30,7 +30,7 @@
 .grid-col-1of4{
 	float:left;
 	padding: 5px;
-	width: 24%;
+	width: 23%;
 }
 
 
@@ -54,10 +54,11 @@
 	width:30%;
 }
 
-.grid-col-lof4{
+/*.grid-col-lof4{
 	float:left;
 	width:31%;
-}
+}*/
+
 .grid-col-12of4{
 	float:left;
 	width:31%;
@@ -69,10 +70,8 @@
 
 @media (max-width: 57em){
 
-.grid-col-lof3{
-	float:left;
-	width:50%;
+.grid-col-1of4{
+width: 48%;
 }
-
 
 }
