@@ -40,6 +40,12 @@
 	width: 49%;
 }
 
+.grid-col-3of4{
+	float:left;
+	padding: 5px;
+	width: 73%;
+}
+
 .box{
 	float:left;
 	width:100%;
@@ -68,10 +74,20 @@
 	width:68%;
 }
 
-@media (max-width: 57em){
+@media (max-width: 60em){
 
 .grid-col-1of4{
 width: 48%;
 }
 
 }
+
+
+@media (max-width: 40em){
+
+.grid-col-1of4{
+width: 100%;
+}
+
+}
+
