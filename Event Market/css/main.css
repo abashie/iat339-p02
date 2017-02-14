@@ -330,13 +330,26 @@ border-bottom: 2px solid black;
 }
 
 .pay-container input{
-	width: 60%;
+	width: 98%;
 		margin-top:1rem;
 	margin-bottom: 0.5rem;
 }
 
-.card-type input{
-	display: inline-block;
+input#expire1{
+display: inline-block;
+width: 40%;
+}
+
+input#expire2{
+display: inline-block;
+width: 40%;
+}
+
+
+form.card-type{
+display: inline-block;
+float: left;
+width: 20%;
 }
 
 .pay-title{
@@ -377,23 +390,6 @@ margin: 3em 0;
 }
 
 
-/*.text-input-l{
-	width: 300px;
-	height: 40px;
-}*/
-
-/*
-.text-input{
-float: right;
-margin-top: 1rem;
-}
-
-.text-input-m{
-float: left;
-margin-left: 30px;
-margin-bottom: 1.5em;
-}
-*/
 
 /*
   COMMENTS PAGE --------------------------------------------------------

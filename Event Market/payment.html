@@ -39,38 +39,41 @@
 		<div class="pay-container">
 			<h3>Payment Information</h3>
 			<div class="grid-row">
-				<div class="grid-col-1of4">
-					<form>
-						<label class="label">First Name</label>
-						<input type="text" name="firstname">
-					</form>
-				</div>
 
+<!-- first and last name -->
+	<div class="grid-col-1of4">
+	<label class="label">First Name</label>
+</div>
 
-				<div class="grid-col-1of4">
-					<form>
-						<label class="label">Last Name</label>
-						<input type="text" name="lastname">
-					</form>
-				</div>
+			<div class="grid-col-1of4">
+	<input type="text" name="first name">
+			</div>
 
+	<div class="grid-col-1of4">
+	<label class="label">Last Name</label>
+</div>
 
-				<div class="grid-col-1of4">
-					<form>
-						<label class="label">Address</label>
-						<input type="text" name="address">
-					</form>
-				</div>
+			<div class="grid-col-1of4">
+	<input type="text" name="last name">
+			</div>
+		
 
+<!-- address and city -->
+	<div class="grid-col-1of4">
+	<label class="label">Address</label>
+</div>
 
-				<div class="grid-col-1of4">
-					<form>
-						<label class="label">City</label>
-						<input type="text" name="city">
-					</form>
-				</div>
+			<div class="grid-col-1of4">
+	<input type="text" name="address">
+			</div>
 
+	<div class="grid-col-1of4">
+	<label class="label">City</label>
+</div>
 
+			<div class="grid-col-1of4">
+	<input type="text" name="City">
+			</div>
 
 				<div class="grid-col-1of4">
 					<form>
@@ -118,12 +121,11 @@
 	<label class="label">Card Type</label>
 </div>
 
-
 			<div class="grid-col-3of4">
 <form class="card-type">
-  <input type="radio" name="gender" value="male" checked> Male
-  <input type="radio" name="gender" value="female"> Female
-  <input type="radio" name="gender" value="other"> Other
+  <input class="radio" type="radio" name="gender" value="1" checked> 4
+  <input class="radio" type="radio" name="gender" value="2"> 5
+  <input class="radio" type="radio" name="gender" value="3"> 6
 </form>
 			</div>
 </div><!-- card type -->
@@ -150,6 +152,31 @@
 			</div>
 </div><!-- cardnumber row end -->
 
+<div class="grid-row">
+
+	<div class="grid-col-1of4">
+	<label class="label">Expires</label>
+</div>
+
+			<div class="grid-col-1of4">
+			
+	<input id="expire1" type="expiry" name="expiry date" value="Month">
+<h4> / </h4>
+	
+	<input id="expire2" type="expiry" name="expiry date" value="Year">
+
+			</div>
+
+<div class="grid-col-1of4">
+	<label class="label">CVV</label>
+</div>
+
+			<div class="grid-col-1of4">			
+	<input type="cvv" name="cvv" >
+
+			</div>
+
+		</div><!-- expires row end -->
 
 		</div><!-- pay container end -->
 
