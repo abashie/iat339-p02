@@ -74,7 +74,14 @@
 	width:68%;
 }
 
-@media (max-width: 60em){
+@media (max-width: 47em){
+
+
+/*THIS IS NOT WORKING. WONT FLOAT LEFT.*/
+.pay-container label{
+	float: left;
+}
+
 
 .grid-col-1of4{
 width: 48%;
@@ -83,7 +90,7 @@ width: 48%;
 }
 
 
-@media (max-width: 40em){
+@media (max-width: 30em){
 
 .grid-col-1of4{
 width: 100%;
