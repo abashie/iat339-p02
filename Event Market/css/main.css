@@ -67,7 +67,7 @@ p,a{
 .logo p{
 	font-family: 'Permanent Marker', cursive;
 	font-size:2rem;
-	color:black;
+	color:rgb(60,60,60);
 	margin:0;
 	padding-top:0.2rem;
 }
@@ -549,4 +549,19 @@ margin: 3em 0;
 }
 .ticket-method p:hover,.ticket-method p:focus{
 	color:rgb(239,120,42);
+}
+/*
+	PAYMENT PAGE
+*/
+
+.table-block{
+	width:100%;
+	float:left;
+	background-color:rgb(230,240,240);
+	margin-bottom:3rem;
+	padding-bottom:3rem;
+}
+.row{
+	width:100%;
+	float:left;
 }
