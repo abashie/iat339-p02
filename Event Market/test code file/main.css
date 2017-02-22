@@ -1,0 +1,172 @@
+body{
+	display: block;
+	margin:0;
+}
+a{
+	font-family: 'Quicksand', sans-serif;
+}
+h1{
+	font-family: 'Permanent Marker', cursive;
+}
+/*-----------------------------MAIN NAVIGATION-----------------------*/
+#main-nav{
+	display:flex;
+	position:fixed;
+	top:0;
+	margin:0;
+	width:100%;
+	height:68px;
+	background-color:white;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.main-nav-section{
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.main-nav-left{
+	margin:0 auto 0 0;
+	height:68px;
+	margin-left:20px;
+}
+.main-nav-right{
+	margin: 0 0 0 auto;
+	height:68px;
+	margin-right:20px;
+}
+.main-nav-left-item{
+	font-family: 'Hind Vadodara', sans-serif;
+	color:rgb(134,175,73);
+	text-decoration: none;
+	font-size:1rem;
+	padding: 0.2rem 0.8rem;
+	border:solid 2px rgb(134,175,73);
+	background-color:white;
+	transition:background-color ease-out 0.3s;
+}
+.main-nav-left-item:hover{
+	background-color:rgb(134,175,73);
+	color:white;
+}
+#logo{
+	position: absolute;
+    top: 0;
+    right: 43%;
+    height:70px;
+}
+#logo{
+	text-decoration: none;
+}
+#logo h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size:2rem;
+	font-weight:normal;
+	color:rgb(134,175,73);
+	margin-top:0.5rem;
+	
+}
+.main-nav-right-item{
+	font-family: 'Quicksand', sans-serif;
+	display:inline-block;
+	color:rgb(134,175,73);
+	margin-right:0.5rem;
+	padding:0.3rem 1.3rem;
+	font-size:0.9rem;
+	text-decoration: none;
+	border:solid 2px white;
+	transition:border ease-out 0.3s;
+}
+.main-nav-right-item:hover{
+	border:solid 2px rgb(134,175,73);
+}
+
+/*-----------------------------FOOTER-----------------------------*/
+footer{
+	display:block;
+	float:left;
+	width:100%;
+	height:160px;
+	background-color:rgb(60,60,60);
+}
+.footer-contact-info{
+	display:block;
+	float:right;
+	width:65%;
+	height:160px;
+	background-color:rgba(255,255,255,0.8);
+}
+.footer-contact-info{
+	text-align:center;
+	color:rgb(180,180,180);
+}
+.footer-other-info{
+	display:block;
+	float:left;
+	width:35%;
+	margin-top:1rem;
+}
+.footer-links{
+	display:block;
+	text-decoration:none;
+	font-size:0.9rem;
+	color:white;
+	margin-left:3rem;
+	margin-top:0.8rem;
+	padding:0.1rem 0.5rem;
+	transition:color ease-out 0.3s;
+
+}
+.footer-links:hover,.footer-links:focus{
+	color:rgb(134,175,73);
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------@MEIDA STYLING----------------------------------*/
+@media(max-width:950px){
+	#main-nav{
+		height:50px;
+	}
+	#logo{
+		right:0;
+		left:42%;
+	}
+	#logo h1{
+		margin-top:0.4rem;
+		font-size:1.5rem;
+	}
+	.main-nav-left-item{
+		font-size:0.9rem;
+		border:2px solid;
+		padding:0.1rem 0.8rem 0.2rem 0.8rem;
+		text-align:center;
+	}
+	.hamburger-icon{
+		position:relative;
+		width:20px;
+		cursor:pointer;
+	}
+	.hamburger-icon::after{
+		content: '';
+		display:block;
+	    box-shadow: 0 -6px 0 1px rgb(134,175,73), 
+	   				0 1px 0 1px rgb(134,175,73), 
+	   				0 8px 0 1px rgb(134,175,73);
+	}
+	.main-nav-right-content{
+		position: absolute;
+	    left: 0;
+	    top: 0;
+	    bottom: 0;
+	    width: 250px;
+	    -webkit-transform: translateX(1100px);
+	}
+	.main-nav-right-item{
+		display:block;
+		height:40px;
+		text-align:text;
+		border-bottom: 1px solid rgb(134,175,73);
+	}
+
+}
