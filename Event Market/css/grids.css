@@ -68,15 +68,16 @@
 	float:left;
 	width:31%;
 }*/
-
-.grid-col-12of4{
-	float:left;
-	width:31%;
-}
+/*---------------------------------12 GRID Structure----------------*/
 .grid-col-12of8{
-	float:right;
-	width:68%;
+	float:left;
+	width:66%;
 }
+.grid-col-12of4{
+	float:right;
+	width:34%;
+}
+
 
 @media (max-width: 47em){
 

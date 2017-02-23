@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Product Info Page</title>
-<meta charset="utf-8">
-<link href="css/grids.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+	<title>Product Info Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
+	<link href="css/grids.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<script src="js/javascript.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
 </head>
 <body>
-	<nav class="main-nav">
-      	<div class="main-nav-left">
-      		<a href="events.html">event gallery</a>
-      	</div>
-      	<div class="logo">
-      		<p>Event Market</p>
-      	</div>
-      	
-      	<div class="main-nav-right">
-            <a href="#" class="main-nav-link">cart</a>
-            <a href="#" class="main-nav-link">account</a>
-            <a href="#" class="main-nav-link">about</a>
-        </div>
-      </nav>
+	<nav id="main-nav">
+		<div class="main-nav-section main-nav-left">
+				<a class="main-nav-left-item" href="events.html">event gallery</a>
+		</div>
+		<a id="logo" href="home.html">
+			<h1>Event Market</h1>
+		</a>
+		<div class="main-nav-section main-nav-right">
+			<a href="#" class="hamburger-icon" id="hamburger-icon"></a>
+			<div class="main-nav-right-content">
+				<a href="#" class="main-nav-right-item">about</a>
+				<a href="#" class="main-nav-right-item">account</a>
+				<a href="#" class="main-nav-right-item">cart</a>
+			</div>
+		</div>
+	</nav>
 
 	<div class="container">
 		<div class="pdt-shortInfo">
-			<div class="grid-col-10of7">
-				<div class="pdt-image">
+			<div class="grid-col-12of8">
+				<div class="pdt-image">			
+					<img src="img/touchpoint-event.jpg" alt="img for touchpoint 2017">
 				</div>
 			</div>
-			<div class="grid-col-10of3 pdt-ticketSection">
-				<div class="pdt-info">
-					<div class="pdt-top-info">
-						<h4>CAD30</h4>
-						<h3>Touchpoint 2017</h3>
-						<P class="product-grayed">by School of Interactive Arts & Technology</P>
-					</div>
-					<a class="ticket-btn" href="payment.html">Ticket</a>
-
+			<div class="grid-col-12of4">
+				<div class="pdt-top-info">
+					<h3>Touchpoint 2017</h3>
+					<P class="product-grayed">by School of Interactive Arts & Technology</P>
+					<h4>$30</h4>
+				</div>
+				<div class="pdt-bottom-btn">
+					<a class="ticket-btn-filled" href="payment.html">buy ticket</a>
+					<a class="ticket-btn" href="cart.html">add to cart</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="pdt-content">
-			<div class="grid-col-10of7">
+			<div class="grid-col-12of8">
 				<div class="pdt-info">
 					<h4>Description</h4>
 					<p>Touchpoint is a design conference for the creative community, where bright ideas from the most inspired minds convene. This year Touchpoint will be held at SFU's Goldcorp Centre for the Arts, at Djavad Mowafaghian Cinema, Vancouver, BC on Thursday February 16th.</p>
@@ -55,10 +61,10 @@
 				</div>
 				<div class="pdt-info">
 					<h4>Comments</h4>
-					<p>View <a class="in-text-nav" href="comment-page.html">comments</a> from previous years</p>
+					<p>Check out <a class="in-text-nav" href="comment-page.html">comments</a> from past year and share your experinces</p>
 				</div>
 			</div>
-			<div class="grid-col-10of3">
+			<div class="grid-col-12of4">
 				<div class="pdt-info">
 					<div class="pdt-small-info">
 						<h4>Date and Time</h4>
@@ -67,12 +73,19 @@
 					</div>
 					<div class="pdt-small-info">
 						<h4>Location</h4>
-						<p>Goldcorp Centre for the Arts, 149 W Hastings St Vancouver, BC V6B 1H4</p>
+						<a href="https://www.google.ca/maps/place/SFU+Goldcorp+Centre+for+the+Arts/@49.2824852,-123.110386,17z/data=!3m1!4b1!4m5!3m4!1s0x548671798b945ec1:0xd34d5b6ae6ed0386!8m2!3d49.2824817!4d-123.108192">Goldcorp Centre for the Arts, 149 W Hastings St Vancouver, BC V6B 1H4</a>
+						<div id="map"></div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYF07E1MRLUUurB_spidUjw0HmijAPWH0&callback=initMap">
+	    </script>
+
 	</div>
+
 
 	<footer>
 		<div class="footer-contact-info">
