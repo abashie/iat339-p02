@@ -69,13 +69,22 @@
 	width:31%;
 }*/
 /*-------------------------------12 GRID Structure---------------------*/
-.grid-col-12of8{
+.grid-col-12of8, .small-col-12of8{
 	float:left;
 	width:65%;
 }
+.grid-col-12of7{
+	float:left;
+	width:58%;
+}
+
 .grid-col-12of6{
 	float:left;
 	width:50%;
+}
+.grid-col-12of5{
+	float:left;
+	width:42%;
 }
 .grid-col-12of4, .small-col-12of4{
 	float:left;

@@ -12,7 +12,7 @@ h1{
 h2{
 	font-family: 'Hind Vadodara', sans-serif;
 	text-align: center;
-	margin: 2em 1rem;
+	margin:1rem;
 }
 
 h3{
@@ -232,6 +232,8 @@ img{
 	margin-bottom:6rem;
 	margin-left:10%;
 	width:80%;
+}
+.box-shadow{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .pdt-shortInfo{
@@ -308,13 +310,13 @@ img{
 	width:80%;
 	margin-top:5rem;
 }
-.pdt-small-info a{
+.location{
 	color:black;
 	text-decoration: underline;
 	text-decoration-color: black;
 	transition:color ease-out 0.1s;
 }
-.pdt-small-info a:hover, .pdt-small-info a:focus{
+.location:hover, .location:focus{
 	color:rgb(234,86,68);
 }
 .product-grayed{
@@ -474,6 +476,7 @@ margin: 3em 0;
 	border-bottom:solid 0.3px rgb(220,220,220);
 }
 .nums-item{
+	margin-top:0.5rem;
 	margin-bottom:1.5rem;
 	text-align:center;
 }
@@ -545,55 +548,72 @@ margin: 3em 0;
 	background-color:rgb(134,175,73);
 	color:white;
 }
+.load-section{
+	display:block;
+	float:left;
+	width:100%;
+	margin-bottom:6rem;
+}
+.load-section a{
+	text-align:center;
+	color:rgb(180,180,180);
+}
+.load-section a:hover, .load-section a:focus{
+	text-decoration: underline;
+	cursor:pointer;
+
+}
 /* 
   COMFIRMATION PAGE --------------------------------------------------------
 */
-.comfirmation-container{
-	float:left;
-	margin-left:10%;
-	width:80%;
-	margin-top:4rem;
-	margin-bottom:5rem;
-}
 .confirmation-info{
+	display:block;
 	float:left;
 	width:100%;
 	text-align:center;
 	margin-bottom:3rem;
 }
-.product-img{
-	width:100%;
-	height:auto;
-	background-color:rgb(200,200,200);
-}
-.pdt-info{
-	margin-top:2rem;
+#complete-logo{
+	display:block;
+	margin:auto;
+	width:12%;
 }
 .product-summary{
 	float:left;
 	width:100%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+.pdt-info{
+	margin-top:1rem;
+}
+#more-detail{
+	color:rgb(239,120,42);
+}
+#more-detail:hover, #more-detail:focus{
+	cursor:pointer;
+	color:rgb(200,200,200);
+}
+
 .ticket-method{
-	width:100%;
-	display:block;
+	margin-left:10%;
+	width:80%;
 	float:left;
-	margin-top:3rem;
-	margin-bottom:5rem;
+	margin-top:1.5rem;
+	margin-bottom:1rem;
 }
 .ticket-method img{
- 	width:100px;
+ 	width:30%;
  	height:auto;
- 	margin-left:12rem;
 }
 .ticket-method p{
+	width:70%;
 	text-align:center;
-	margin-top:0;
-	margin-left:8rem;
-	transition:color ease-out 0.3s;
+	margin-top:17%;
+	transition:color ease-out 0.1s;
 }
 .ticket-method p:hover,.ticket-method p:focus{
+	cursor:pointer;
 	color:rgb(239,120,42);
+	text-decoration: underline;
 }
 /*
 	PAYMENT PAGE
@@ -683,6 +703,9 @@ margin: 3em 0;
 	.comment-block{
 		margin-bottom:2rem;
 	}
+	.grid-col-12of5, .grid-col-12of7{
+		width:100%;
+	}
 }
 @media(max-width:680px){
 	.container{
@@ -703,11 +726,6 @@ margin: 3em 0;
 		float:left;
 		margin-left:10%;
 		padding-top:0;
-		width:80%;
-	}
-	/*comment page grid structure change*/
-	.grid-col-12of5{
-		margin-left:10%;
 		width:80%;
 	}
 }
