@@ -68,16 +68,29 @@
 	float:left;
 	width:31%;
 }*/
-/*---------------------------------12 GRID Structure----------------*/
+/*-------------------------------12 GRID Structure---------------------*/
 .grid-col-12of8{
 	float:left;
-	width:66%;
+	width:65%;
 }
-.grid-col-12of4{
-	float:right;
-	width:34%;
+.grid-col-12of6{
+	float:left;
+	width:50%;
+}
+.grid-col-12of4, .small-col-12of4{
+	float:left;
+	width:32%;
+}
+.grid-col-12of3{
+	float:left;
+	width:24%;
+}
+.grid-col-12of2{
+	float:left;
+	width:16%;
 }
 
+/*--------------------------------------end----------------------------*/
 
 @media (max-width: 47em){
 

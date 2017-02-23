@@ -1,67 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Comments Page</title>
-<meta charset="utf-8">
-<link href="css/grids.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+	<title>Comments Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
+	<link href="css/grids.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
 </head>
 <body>
-	<nav class="main-nav">
-      	<div class="main-nav-left">
-      		<a href="events.html">event gallery</a>
-      	</div>
-      	<div class="logo">
-      		<p>Event Market</p>
-      	</div>
-      	
-      	<div class="main-nav-right">
-            <a href="#" class="main-nav-link">cart</a>
-            <a href="#" class="main-nav-link">account</a>
-            <a href="#" class="main-nav-link">about</a>
-        </div>
-      </nav>
+	<nav id="main-nav">
+		<div class="main-nav-section main-nav-left">
+				<a class="main-nav-left-item" href="events.html">event gallery</a>
+		</div>
+		<a id="logo" href="home.html">
+			<h1>Event Market</h1>
+		</a>
+		<div class="main-nav-section main-nav-right">
+			<a href="#" class="hamburger-icon" id="hamburger-icon"></a>
+			<div class="main-nav-right-content">
+				<a href="#" class="main-nav-right-item">about</a>
+				<a href="#" class="main-nav-right-item">account</a>
+				<a href="#" class="main-nav-right-item">cart</a>
+			</div>
+		</div>
+	</nav>
+
 
     <div class="comment-container">
-		<div class="pdt-image">
-		</div>
+    	<section class="comment-summary">
+    		<div class="pdt-image">			
+				<img src="img/touchpoint2016.png" alt="img for touchpoint 2017">
+			</div>
 
-		<div class="pdt-comments-summary">
-			<div class="pdt-title grid-col-lof3">
-			<h3>Touchpoint</h3>
-			<p>by School of Interactive Arts & Technology</p>
-			</div>
-			<div class="nums-item grid-col-lof3">
-				<h4>year</h4>
-				<p>2016</p>
-			</div>
-			<div class="nums-item grid-col-lof3">
-				<h4>comments</h4>
-				<p>438</p>
-			</div>
-			<div class="nums-item grid-col-lof3">
-				<h4>likes</h4>
-				<p>720</p>
-			</div>
-		</div>
+			<div class="pdt-comments-summary">
+				<div class="pdt-title grid-col-12of4">
+				<h3>Touchpoint</h3>
+				<p>by School of Interactive Arts & Technology</p>
+				</div>
 
-		<div class="write-comment">
-			<div class="text-block">
-				<label class="label">Comments</label>
-				<textarea class="text-area" placeholder="Please leave you comments here"></textarea>
-				<div class="button-erea">
-					<a class="submit-btn">Submit</a>
-				</div>	
+				<div class="grid-col-12of8">
+					<div class="nums-item small-col-12of4">
+					<h4>year</h4>
+					<p>2016</p>
+				</div>
+				<div class="nums-item small-col-12of4">
+					<h4>comments</h4>
+					<p>438</p>
+				</div>
+				<div class="nums-item small-col-12of4">
+					<h4>likes</h4>
+					<p>720</p>
+				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="comment-area">		
-			<div class="comment-block"></div>
-			<div class="comment-block"></div>
-			<div class="comment-block"></div>
-		</div>
+		<section class="inner-container ">
+			<div class="comment-block grid-col-12of4">
+				<div class="comment-top">			
+					<img  class="comment-img" src="img/comment-img-1.jpg" alt="comment image from touchpoint 2016">
+				</div>
+
+				<div class="comment-bottom">
+					<h4>
+						<a href="#">32 likes</a>
+					</h4>
+					<p >inspired #touchpoint #2016</p>
+					<div class="comment-area">
+						<form class="comment-form">
+							<input type="text" class="add-comment" aria-label="add-comment" placeholder="Add a comment…">
+						</form>
+						<a class="submit-btn">submit</a>
+					</div>
+				</div>
+			</div>
+			<div class="comment-block grid-col-12of4">
+				<div class="comment-top">			
+					<img  class="comment-img" src="img/comment-img-2.jpg" alt="comment image from touchpoint 2016">
+				</div>
+
+				<div class="comment-bottom">
+					<h4>
+						<a href="#">63 likes</a>
+					</h4>
+					<p >What you need?</p>
+					<div class="comment-area">
+						<form class="comment-form">
+							<input type="text" class="add-comment" aria-label="add-comment" placeholder="Add a comment…">
+						</form>
+						<a class="submit-btn">submit</a>
+					</div>
+				</div>
+			</div>
+			<div class="comment-block grid-col-12of4">
+				<div class="comment-top">			
+					<img  class="comment-img" src="img/comment-img-3.jpg" alt="comment image from touchpoint 2016">
+				</div>
+
+				<div class="comment-bottom">
+					<h4>
+						<a href="#">18 likes</a>
+					</h4>
+					<p >pitch</p>
+					<div class="comment-area">
+						<form class="comment-form">
+							<input type="text" class="add-comment" aria-label="add-comment" placeholder="Add a comment…">
+						</form>
+						<a class="submit-btn">submit</a>
+					</div>
+				</div>
+			</div>
+			<div class="comment-block grid-col-12of4">
+				<div class="comment-top">			
+					<img  class="comment-img" src="img/comment-img-4.jpg" alt="comment image from touchpoint 2016">
+				</div>
+
+				<div class="comment-bottom">
+					<h4>
+						<a href="#">48 likes</a>
+					</h4>
+					<p >#netherland # dutchdesign</p>
+					<div class="comment-area">
+						<form class="comment-form">
+							<input type="text" class="add-comment" aria-label="add-comment" placeholder="Add a comment…">
+						</form>
+						<a class="submit-btn">submit</a>
+					</div>
+				</div>
+			</div>
+			<div class="comment-block grid-col-12of4">
+				<div class="comment-top">			
+					<img  class="comment-img" src="img/comment-img-5.jpg" alt="comment image from touchpoint 2016">
+				</div>
+
+				<div class="comment-bottom">
+					<h4>
+						<a href="#">22 likes</a>
+					</h4>
+					<p >people from different industries</p>
+					<div class="comment-area">
+						<form class="comment-form">
+							<input type="text" class="add-comment" aria-label="add-comment" placeholder="Add a comment…">
+						</form>
+						<a class="submit-btn">submit</a>
+					</div>
+				</div>
+			</div>
+			<div class="comment-block grid-col-12of4">
+				<div class="comment-top">			
+					<img  class="comment-img" src="img/comment-img-6.jpg" alt="comment image from touchpoint 2016">
+				</div>
+
+				<div class="comment-bottom">
+					<h4>
+						<a href="#">37 likes</a>
+					</h4>
+					<p >#typography</p>
+					<div class="comment-area">
+						<form class="comment-form">
+							<input type="text" class="add-comment" aria-label="add-comment" placeholder="Add a comment…">
+						</form>
+						<a class="submit-btn">submit</a>
+					</div>
+				</div>
+			</div>
+
+		</section>
 	</div>
 
 	<footer>
