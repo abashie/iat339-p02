@@ -15,7 +15,7 @@
 
 <body>
 
- <nav id="main-nav">
+  <nav id="main-nav">
     <div class="main-nav-section main-nav-left">
         <a class="main-nav-left-item" href="events.html">event gallery</a>
     </div>
@@ -25,156 +25,122 @@
     <div class="main-nav-section main-nav-right">
       <a href="#" class="hamburger-icon" id="hamburger-icon"></a>
       <div class="main-nav-right-content">
-        <a href="#" class="main-nav-right-item">about</a>
-        <a href="#" class="main-nav-right-item">account</a>
-        <a href="#" class="main-nav-right-item">cart</a>
+        <a href="about.html" class="main-nav-right-item">about</a>
+        <a href="account.html" class="main-nav-right-item">account</a>
+        <a href="cart.html" class="main-nav-right-item">cart</a>
       </div>
     </div>
   </nav>
 
-<div class="homepage-container">
-	<div class="home-image">
-    <img src="img/uni.jpg" alt="uni">
+  <div class="home-container">
+    <section class="img-gallery">
+      <img src="img/promote.jpg" alt="image of students discusing">
+    </section>
 
-
-    <div class="search-bar">
-      <h1>Enter your location to find a school event.</h1>
-      <input class="text-input" name="search" type="text">
-      <a class="submit-btn" href="events.html">Find Events</a>
-    </div><!-- search end -->   
-
-  </div>
-
-
-
-  <div class="inner-container">
-    <h2>Featured Events</h2>
-
-
-    <div class="grid-col-1of3">
-     <div class="product-list-item">
-       <div class="product-image">
-         <img src="img/1.jpg" alt="touchpoint">
-       </div>
-
-       <h3 class="product-name">
-        <a href="product-info.html">Touchpoint 2017</a> 
-        $30
-      </h3>
-      <div class="product-info">
-        <h4 class="date">MON, 17 JAN 10PM</h4>                       
+    <section class="section-event">
+      <div class="search-bar">
+          <h1>Enter your location to find a school event.</h1>
+          <form class="search-form">
+            <input class="text-input" name="search" type="text" placeholder="search">
+            <a class="search-btn" href="events.html">locate</a>
+          </form>
       </div>
 
-      <P class="product-tag">#event-tag 1  #event-tag 2</P>
-    </div>
-  </div>
+      <div class="inner-container">
+        <h2>Featured Events</h2>
 
-  <div class="grid-col-1of3">
-   <div class="product-list-item">
-     <div class="product-image">
-       <img src="img/2.jpg" alt="workshop">
-     </div>
+        <div class="product-list-item box-shadow grid-col-12of4">
+          <div class="pdt-img">
+             <img src="img/1.jpg" alt="touchpoint">
+          </div>
 
-     <h3 class="product-name">
-      <a href="product-info.html">UBC MATH 100 Workshop</a> 
-      $24
-    </h3>
-    <div class="product-info">
-      <h4 class="date">TUES, 17 MAR 8AM</h4>                       
-    </div>
+          <div class="pdt-info">
+            <h3 class="title"><a href="product-info.html">SIAT Touchpoint 2017</a></h3>
+            <p class="date">MON,17 JAN 10PM</p>  
+            <h4>$30</h4>  
+            <P class="product-tag">#conference  #SIAT</P>
+          </div>
+        </div>
 
-    <P class="product-tag">#event-tag 1  #event-tag 2</P>
-  </div>
-</div>
+        <div class="product-list-item box-shadow grid-col-12of4">
+          <div class="pdt-img">
+             <img src="img/2.jpg" alt="touchpoint">
+          </div>
 
-<div class="grid-col-1of3">
- <div class="product-list-item">
-   <div class="product-image">
-    <img src="img/3.jpg" alt="basketball">
-  </div>
+          <div class="pdt-info">
+            <h3 class="title"><a href="product-info.html">UBC MATH100 Workshop</a></h3>
+            <p class="date">TUES, 17 MAR 8AM</p>  
+            <h4>$30</h4>  
+            <P class="product-tag">#workshop #math #UBC</P>
+          </div>
+        </div>
 
-  <h3 class="product-name">
-    <a href="product-info.html">SFU Basketball Playoff 2017</a> 
-    $30
-  </h3>
-  <div class="product-info">
-    <h4 class="date">FRI, 17 NOV 5PM</h4>                       
-  </div>
+        <div class="product-list-item box-shadow grid-col-12of4">
+          <div class="pdt-img">
+             <img src="img/3.jpg" alt="touchpoint">
+          </div>
 
-  <P class="product-tag">#event-tag 1  #event-tag 2</P>
-</div>
-</div>
+          <div class="pdt-info">
+            <h3 class="title"><a href="product-info.html">SFU Basketball Playoff</a></h3>
+            <p class="date">FRI, 17 NOV 5PM</p>  
+            <h4>$30</h4>  
+            <P class="product-tag">#activity</P>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="img-gallery">
+      <img src="img/student-thinking.jpg" alt="image showing students having meeting">
+    </section>
 
+    <section class="section-event">
+      <div class="inner-container">
+        <h2>Promoted Events</h2>
 
-</div>
-<div class="pdt-image">
-</div>
+        <div class="product-list-item box-shadow grid-col-12of4">
+          <div class="pdt-img">
+             <img src="img/8.jpg" alt="touchpoint">
+          </div>
 
-<div class="inner-container">
-  <h2>Promoted Events</h2>
+          <div class="pdt-info">
+            <h3 class="title"><a href="product-info.html">Entrepreneur Send Off</a></h3>
+            <p class="date">SUN, 17 FEB 10AM</p>  
+            <h4>$30</h4>  
+            <P class="product-tag">#business</P>
+          </div>
+        </div>
 
-  <div class="grid-col-1of3">
-   <div class="product-list-item">
-     <div class="product-image">
-       <img src="img/8.jpg" alt="sendoff">
-     </div>
+        <div class="product-list-item box-shadow grid-col-12of4">
+          <div class="pdt-img">
+             <img src="img/9.jpg" alt="touchpoint">
+          </div>
 
-     <h3 class="product-name">
-      <a href="product-info.html">Entrepreneur Send Off 2017</a> 
-      $115
-    </h3>
-    <div class="product-info">
-      <h4 class="date">SUN, 17 FEB 10AM</h4>                       
-    </div>
+          <div class="pdt-info">
+            <h3 class="title"><a href="product-info.html">Technica Art Conference</a></h3>
+            <p class="date">TSUN, 17 FEB 3PM</p>  
+            <h4>$30</h4>  
+            <P class="product-tag">#conference</P>
+          </div>
+        </div>
 
-    <P class="product-tag">#event-tag 1  #event-tag 2</P>
-  </div>
-</div>
+        <div class="product-list-item box-shadow grid-col-12of4">
+          <div class="pdt-img">
+             <img src="img/10.jpg" alt="touchpoint">
+          </div>
 
+          <div class="pdt-info">
+            <h3 class="title"><a href="product-info.html">Fairness Rally</a></h3>
+            <p class="date">MON, 17 JAN 10PM</p>  
+            <h4>$30</h4>  
+            <P class="product-tag">#community</P>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="grid-col-1of3">
- <div class="product-list-item">
-   <div class="product-image">
-    <img src="img/9.jpg" alt="technica">
-  </div>
-
-  <h3 class="product-name">
-    <a href="product-info.html">Technica Art Conference 2017</a> 
-    $20
-  </h3>
-  <div class="product-info">
-    <h4 class="date">SUN, 17 FEB 3PM</h4>                       
-  </div>
-
-  <P class="product-tag">#event-tag 1  #event-tag 2</P>
-</div>
-</div>
-
-
-<div class="grid-col-1of3">
- <div class="product-list-item">
-   <div class="product-image">
-     <img src="img/10.jpg" alt="rally">
-   </div>
-
-   <h3 class="product-name">
-    <a href="product-info.html">Community Fairness Rally</a> 
-    $30
-  </h3>
-  <div class="product-info">
-    <h4 class="date">MON, 17 JAN 10PM</h4>                       
-  </div>
-
-  <P class="product-tag">#event-tag 1  #event-tag 2</P>
-</div>
-</div>
-
-</div>
-
-<div class="category">
-
-  <h1>Categories</h1>
+    <section class="category">
+       <h1>Categories</h1>
 
   <div class="grid-col-2of3">
    <a href="events.html">
@@ -243,20 +209,21 @@
     <h2>Music</h2>
   </a>
 </div>
+    </section>
+  </div>
 
-</div><!-- category end -->
+  <footer>
+    <div class="footer-contact-info">
+      <p href="#">contact information here (not complete)</p>
+    </div>
+    <div class="footer-other-info">
+      <a class="footer-links" href="#">help</a>
+      <a class="footer-links" href="#">terms and policy</a>
+      <a class="footer-links" href="#">FAQs</a>
+    </div>
+  </footer>
 
-</div><!-- home container end -->
-<footer>
-	<div class="footer-contact-info">
-		<p href="#">contact information here (not complete)</p>
-	</div>
-	<div class="footer-other-info">
-		<a class="footer-links" href="#">help</a>
-		<a class="footer-links" href="#">terms and policy</a>
-		<a class="footer-links" href="#">FAQs</a>
-	</div>
-</footer>
 
-</body>
-</html>
+
+  </body>
+  </html>
