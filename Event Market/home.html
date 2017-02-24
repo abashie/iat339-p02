@@ -5,6 +5,7 @@
 	<title>Home</title>
 
 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="css/grids.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -14,19 +15,22 @@
 
 <body>
 
- <nav class="main-nav">
-  <div class="main-nav-left">
-   <a href="events.html">event gallery</a>
- </div>
- <div class="logo">
-   <a href="home.html"> <p>Event Market</p></a>
- </div>
- <div class="main-nav-right">
-   <a href="#" class="main-nav-link">about</a>
-   <a href="#" class="main-nav-link">account</a>
-   <a href="payment.html" class="main-nav-link">cart</a>
- </div>
-</nav>
+ <nav id="main-nav">
+    <div class="main-nav-section main-nav-left">
+        <a class="main-nav-left-item" href="events.html">event gallery</a>
+    </div>
+    <a id="logo" href="home.html">
+      <h1>Event Market</h1>
+    </a>
+    <div class="main-nav-section main-nav-right">
+      <a href="#" class="hamburger-icon" id="hamburger-icon"></a>
+      <div class="main-nav-right-content">
+        <a href="#" class="main-nav-right-item">about</a>
+        <a href="#" class="main-nav-right-item">account</a>
+        <a href="#" class="main-nav-right-item">cart</a>
+      </div>
+    </div>
+  </nav>
 
 <div class="homepage-container">
 	<div class="home-image">
@@ -34,11 +38,9 @@
 
 
     <div class="search-bar">
-  <h1>Enter your location to find a school event.</h1>
-
+      <h1>Enter your location to find a school event.</h1>
       <input class="text-input" name="search" type="text">
       <a class="submit-btn" href="events.html">Find Events</a>
-
     </div><!-- search end -->   
 
   </div>
@@ -167,9 +169,6 @@
   <P class="product-tag">#event-tag 1  #event-tag 2</P>
 </div>
 </div>
-
-
-
 
 </div>
 
