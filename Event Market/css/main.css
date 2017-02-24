@@ -632,10 +632,6 @@ width: 100%;
 	margin: 0;
 	bottom: 200px;
 }
-img{
-	width: 100%;
-	height: auto;
-}
 
 .prod-container{
 margin-left: 5%;
@@ -905,6 +901,14 @@ margin: 3em 0;
 		width:48%;
 	}
 
+
+  /*about page*/
+  .grid-col-1of3.about-segment{
+  	float: left;
+  	display: inline-block;
+  	margin: 10px;
+  	margin-bottom: 40px;
+  }
 	
 }
 @media(max-width:680px){
@@ -951,6 +955,10 @@ margin: 3em 0;
   	}
 
 
+  	.about-segment{
+  		width: 47%;
+  	}
+
   	.home-image .search-bar input{
   		width: 100%;
   	}
@@ -983,14 +991,9 @@ margin: 3em 0;
   	}
 
 
-  	.grid-col-1of3.about-segment{
-  		width: 100%;
-margin-bottom: 5rem;
-
-  	}
 
   	.grid-col-1of3{
-  		width: 48%;
+  		width: 90%;
   	}
 
 
