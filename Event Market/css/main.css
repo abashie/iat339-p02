@@ -471,10 +471,13 @@ footer{
   	text-align: center;
   	font-family: 'Quicksand', sans-serif;
   	font-size: 1.5rem;
-  	width: 300px;
-  	height: 35px;
+  
   	margin: 0 35%;
   	margin-bottom: 3em;
+  }
+
+  a.pay-btn{
+  	font-size: 1.5rem;
   }
 
   .back-image{
@@ -983,7 +986,7 @@ margin: 3em 0;
 
 
   	.grid-col-1of4{
-  		width: 48%;
+  		width: 100%;
   	}
 
   	.home-image .search-bar h1{
@@ -1004,8 +1007,6 @@ margin: 3em 0;
   	.grid-col-1of3{
   		width: 100%;
   	}
-
-
 
 
   	.grid-col-1of4{
