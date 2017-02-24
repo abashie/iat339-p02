@@ -159,7 +159,7 @@ footer{
 
   .inner-container{
   	float:left;
-  	margin-left:10%;
+  	margin-left:12%;
   	width:80%;
   	margin-bottom:4rem;
   }
@@ -985,6 +985,8 @@ margin: 3em 0;
 
   	.grid-col-1of3.about-segment{
   		width: 100%;
+margin-bottom: 5rem;
+
   	}
 
   	.grid-col-1of3{
