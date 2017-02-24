@@ -955,6 +955,11 @@ margin: 3em 0;
   	}
 
 
+	.events-container .grid-col-1of3{
+  		width: 45%;
+  	}
+
+
   	.about-segment{
   		width: 47%;
   	}
@@ -997,6 +1002,10 @@ margin: 3em 0;
   	}
 
 
+	.events-container .grid-col-1of3{
+  		width: 45%;
+  	}
+
   	.grid-col-1of4{
   		width: 100%;
   	}
@@ -1023,6 +1032,12 @@ margin: 3em 0;
 
   	.grid-col-1of4{
   		width: 100%;
+  	}
+
+
+
+	.events-container .grid-col-1of3{
+  		width: 90%;
   	}
 
   }
