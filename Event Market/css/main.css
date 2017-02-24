@@ -512,22 +512,18 @@ footer{
 /*ACCOUNT*/
 
 section.account{
-		margin: 15px;	
+	margin: 15px;	
 	background-color: rgb(245,245,245);
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-text-align: center;
-padding: 40px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 40px 20px;
 }
 
 .account label, .account label.up{
-display: block;
-color: rgb(134,175,73);
+	display: block;
+	color: black;
 }
 
-.account label.up{
-	color: rgb(234,85,68);
-
-}
 
 
 
