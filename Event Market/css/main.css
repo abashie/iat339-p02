@@ -44,7 +44,6 @@ p, a, label{
 	background-color:white;
 	justify-content: space-between;
 	align-items:center;
-	z-index:1000;
 }
 
 .main-nav-section{
@@ -107,6 +106,7 @@ p, a, label{
 .main-nav-right-item:hover{
 	border:solid 2px rgb(134,175,73);
 }
+
 /*footer*/
 footer{
 	display:block;
@@ -868,9 +868,7 @@ margin: 3em 0;
 	#main-nav{
 		height:50px;
 	}
-	#logo{
-		right:42%;
-	}
+
 	#logo h1{
 		margin-top:0.4rem;
 		font-size:1.5rem;
@@ -963,6 +961,10 @@ margin: 3em 0;
 	
 }
 @media(max-width:680px){
+	#logo{
+		right:0;
+		left:20%;
+	}
 	.container{
 		margin-top:50px;
 		margin-left:0;
