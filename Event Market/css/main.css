@@ -955,7 +955,13 @@ margin: 3em 0;
 	.search-bar h1{
 		font-size:1.2rem;
 	}
+
+.grid-col-2of4{
+		width: 100%;
+	}
+
 }
+
 @media(max-width:415px){
 	/*product page*/
 	.pdt-top-info{
@@ -969,6 +975,8 @@ margin: 3em 0;
 		padding-top:0;
 		width:80%;
 	}
+
+
 }
 
 
