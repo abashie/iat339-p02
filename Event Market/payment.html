@@ -31,174 +31,148 @@
 		</div>
 	</nav>
 	
-	<div class="margin-container">
+	<div class="container">
 		<p class="guide"> <a href="home.html">Home</a> > Payment</p>
-
-		<div class="pay-container">
+		<div class="pay-container box-shadow">
 			<h3>Payment Information</h3>
 			<div class="grid-row">
 
-<!-- first and last name -->
-	<div class="grid-col-1of4">
-	<label class="label">First Name</label>
-</div>
+					<!-- first and last name -->
+					<div class="grid-col-1of4">
+						<label class="label">First Name</label>
+					</div>
 
-			<div class="grid-col-1of4">
-	<input type="text" name="first name">
-			</div>
+					<div class="grid-col-1of4">
+						<input type="text" name="first name">
+					</div>
+					<div class="grid-col-1of4">
+						<label class="label">Last Name</label>
+					</div>
 
-	<div class="grid-col-1of4">
-	<label class="label">Last Name</label>
-</div>
+					<div class="grid-col-1of4">
+						<input type="text" name="last name">
+					</div>
 
-			<div class="grid-col-1of4">
-	<input type="text" name="last name">
-			</div>
-		
+					<!-- address and city -->
+					<div class="grid-col-1of4">
+						<label class="label">Address</label>
+					</div>
 
-<!-- address and city -->
-	<div class="grid-col-1of4">
-	<label class="label">Address</label>
-</div>
+					<div class="grid-col-1of4">
+						<input type="text" name="address">
+					</div>
 
-			<div class="grid-col-1of4">
-	<input type="text" name="address">
-			</div>
+					<div class="grid-col-1of4">
+						<label class="label">City</label>
+					</div>
 
-	<div class="grid-col-1of4">
-	<label class="label">City</label>
-</div>
-
-			<div class="grid-col-1of4">
-	<input type="text" name="City">
-			</div>
+					<div class="grid-col-1of4">
+						<input type="text" name="City">
+					</div>
 
 			
-			<!-- province, country -->
-	<div class="grid-col-1of4">
-	<label class="label">Province</label>
-</div>
+					<!-- province, country -->
+					<div class="grid-col-1of4">
+						<label class="label">Province</label>
+					</div>
 
-			<div class="grid-col-1of4">
-	<input type="text" name="first name">
-			</div>
+					<div class="grid-col-1of4">
+						<input type="text" name="first name">
+					</div>
 
-	<div class="grid-col-1of4">
-	<label class="label">Country</label>
-</div>
+					<div class="grid-col-1of4">
+						<label class="label">Country</label>
+					</div>
 
-			<div class="grid-col-1of4">
-	<input type="text" name="last name">
-			</div>
+					<div class="grid-col-1of4">
+						<input type="text" name="last name">
+					</div>
 
+					<!-- postal code and contact # -->
+					<div class="grid-col-1of4">
+						<label class="label">Postal Code</label>
+					</div>
+					<div class="grid-col-1of4">
+						<input type="text" name="postal code">
+					</div>
+					<div class="grid-col-1of4">
+						<label class="label">Contact #</label>
+					</div>
 
-<!-- postal code and contact # -->
-	<div class="grid-col-1of4">
-	<label class="label">Postal Code</label>
-</div>
+					<div class="grid-col-1of4">
+						<input type="text" name="contact number">
+					</div>
 
-			<div class="grid-col-1of4">
-	<input type="text" name="postal code">
-			</div>
+					<!-- email -->
+					<div class="grid-col-1of4">
+						<label class="label">Email</label>
+					</div>
 
-	<div class="grid-col-1of4">
-	<label class="label">Contact #</label>
-</div>
+						<div class="grid-col-1of4">
+							<input type="text" name="email">
+						</div>
+					</div><!-- row end -->
+				</div><!-- pay container end -->
 
-			<div class="grid-col-1of4">
-	<input type="text" name="contact number">
-			</div>
+				<div class="pay-container box-shadow">
+					<h3>Payment Method</h3>
+						<div class="grid-row">
+							<div class="grid-col-1of4">
+							<label class="label">Card Type</label>
+						</div>
 
+						<div class="grid-col-3of4">
+							<form class="card-type">
+							  <input class="radio" type="radio" name="gender" value="1" checked> <img src="img/visa.png" >
+							  <input class="radio" type="radio" name="gender" value="2"> <img src="img/mc.png" >
+							  <input class="radio" type="radio" name="gender" value="3"> <img src="img/amex.png" >
+							    <input class="radio" type="radio" name="gender" value="3"> <img src="img/interac.png" >
+							</form>
+						</div>
+					</div><!-- card type -->
 
-<!-- email -->
+					<div class="grid-row">
+						<div class="grid-col-1of4">
+						<label class="label">Cardholder Name</label>
+					</div>
 
-	<div class="grid-col-1of4">
-	<label class="label">Email</label>
-</div>
+					<div class="grid-col-3of4">
+						<input type="text" name="card holder">
+					</div>
+				</div><!-- cardholder row end -->
 
-			<div class="grid-col-1of4">
-	<input type="text" name="email">
-			</div>
+				<div class="grid-row">
+					<div class="grid-col-1of4">
+						<label class="label">Card Number</label>
+					</div>
 
+					<div class="grid-col-3of4">
+						<input type="Card Number" name="card number">
+					</div>
+				</div><!-- cardnumber row end -->
 
+				<div class="grid-row">
+					<div class="grid-col-1of4">
+					<label class="label">Expires</label>
+				</div>
+				<div class="grid-col-1of4">			
+					<input id="expire1" type="expiry" name="expiry date" placeholder="Month">
+				<h4> / </h4>				
+					<input id="expire2" type="expiry" name="expiry date" placeholder="Year">
+				</div>
 
+				<div class="grid-col-1of4">
+					<label class="label">CVV</label>
+				</div>
 
-
-			</div><!-- row end -->
-		</div><!-- pay container end -->
-
-		<div class="pay-container">
-			<h3>Payment Method</h3>
-
-<div class="grid-row">
-
-	<div class="grid-col-1of4">
-	<label class="label">Card Type</label>
-</div>
-
-			<div class="grid-col-3of4">
-<form class="card-type">
-  <input class="radio" type="radio" name="gender" value="1" checked> <img src="img/visa.png" >
-  <input class="radio" type="radio" name="gender" value="2"> <img src="img/mc.png" >
-  <input class="radio" type="radio" name="gender" value="3"> <img src="img/amex.png" >
-    <input class="radio" type="radio" name="gender" value="3"> <img src="img/interac.png" >
-</form>
-			</div>
-</div><!-- card type -->
-
-
-<div class="grid-row">
-	<div class="grid-col-1of4">
-	<label class="label">Cardholder Name</label>
-</div>
-
-			<div class="grid-col-3of4">
-	<input type="text" name="card holder">
-			</div>
-</div><!-- cardholder row end -->
-
-
-<div class="grid-row">
-	<div class="grid-col-1of4">
-	<label class="label">Card Number</label>
-</div>
-
-			<div class="grid-col-3of4">
-	<input type="Card Number" name="card number">
-			</div>
-</div><!-- cardnumber row end -->
-
-<div class="grid-row">
-
-	<div class="grid-col-1of4">
-	<label class="label">Expires</label>
-</div>
-
-			<div class="grid-col-1of4">
-			
-	<input id="expire1" type="expiry" name="expiry date" placeholder="Month">
-<h4> / </h4>
-	
-	<input id="expire2" type="expiry" name="expiry date" placeholder="Year">
-
-			</div>
-
-<div class="grid-col-1of4">
-	<label class="label">CVV</label>
-</div>
-
-			<div class="grid-col-1of4">			
-	<input type="cvv" name="cvv" >
-
-			</div>
-
-		</div><!-- expires row end -->
-
+				<div class="grid-col-1of4">			
+					<input type="cvv" name="cvv" >
+				</div>
+			</div><!-- expires row end -->
 		</div><!-- pay container end -->
 		<div class="buttons">
 			<a class="btn-filled" href="confirmation-page.html">complete payment</a>
 		</div>
-
 	</div><!-- margin top container -->
 
 

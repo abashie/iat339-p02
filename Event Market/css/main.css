@@ -471,23 +471,28 @@ overflow: hidden;
 	float:left;
 	width:50%;
 	margin-top:0.8rem;
+	margin-bottom:1.5rem;
 }
 .price-form{
 	float:left;
 	width:50%;
+	margin-bottom:1.5rem;
+}
+.quantity-form label{
+	float:left;
+	margin-right:1rem;
 }
 .quantity-selector{
-	float:right;
+	float:left;
 	border:solid 1px rgb(134,175,73);
-	width:60%;
+	width:30%;
 	font-size: 0.8rem;
-	font-family:"Catamaran-Light",sans-serif;
 	padding:0.2rem 0 0.2rem 0.2rem;
 }
 .buttons{
-	float:left;
-	margin-left:10%;
-	width:80%;
+	float:right;
+	width:100%;
+	margin-top:1.5rem;
 	margin-bottom:3rem;
 }
 .btn{
@@ -517,37 +522,28 @@ overflow: hidden;
 }
 
 /*ACCOUNT*/
-
 section.account{
-		margin: 15px;	
+	margin: 15px;	
 	background-color: rgb(245,245,245);
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-text-align: center;
-padding: 40px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 40px 20px;
 }
 
 .account label, .account label.up{
-display: block;
-color: rgb(134,175,73);
+	display: block;
+	color: black;
 }
-
-.account label.up{
-	color: rgb(234,85,68);
-
-}
-
-
-
 .account input{
-display: block;
-width: 60%;
-margin: 15px 20%;
-margin-bottom: 25px;
+	display: block;
+	width: 60%;
+	margin: 15px 20%;
+	margin-bottom: 25px;
 }
 
 .account img{
-width: 20%;
-margin-bottom: 1rem;
+	width: 20%;
+	margin-bottom: 1rem;
 }
 
 .account h3{
@@ -578,13 +574,12 @@ cursor: pointer;
   	margin-bottom: 150px;
   }
 
-  .pay-container, .cart-container{
-  	position: relative;
-  	margin: 4rem 10%;
-  	background-color: rgb(245,245,245);
-  	padding: 40px;
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  	overflow: hidden;
+  .pay-container{
+  	float:left;
+  	width:100%;
+  	margin-top:2rem;
+  	padding:2rem;
+  	background-color:rgb(250,250,250);
   }
 
   .summary-line{
@@ -608,14 +603,15 @@ cursor: pointer;
   }
 
   .pay-container label{
-  	float: right;
-  	margin-right: 30px;
+  	float: left;
+  	margin-right: 10px;
   }
 
   .pay-container input{
-  	width: 98%;
+  	width: 80%;
   	height:1rem;
   	margin-bottom: 0.5rem;
+  	border:solid 1px rgb(200,200,200);
   }
   .pay-container input.radio{
   	width: 3%;
@@ -826,6 +822,7 @@ margin: 3em 0;
 }
 .pdt-info{
 	margin-top:1rem;
+	margin-bottom:2rem;
 }
 .ticket-method{
 	margin-left:10%;
@@ -988,7 +985,7 @@ margin: 3em 0;
 		font-size:1.2rem;
 	}
 
-.grid-col-2of4{
+	.grid-col-2of4{
 		width: 100%;
 	}
 
@@ -1010,6 +1007,22 @@ margin: 3em 0;
 		float:left;
 		margin-left:10%;
 		padding-top:0;
+		width:80%;
+	}
+	.ticket-method{
+		margin-left:2%;
+		width:96%;
+		margin-top:0;
+	}
+	.ticket-method p{
+		margin-top:10%;
+	}
+	.grid-col-12of6{
+		margin-left:15%;
+		width:70%;
+	}
+	.btn, .btn-filled{
+		float:left;
 		width:80%;
 	}
 
