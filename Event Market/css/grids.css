@@ -86,7 +86,7 @@
 	float:left;
 	width:42%;
 }
-.grid-col-12of4, .small-col-12of4{
+.grid-col-12of4, .small-col-12of4, .grid-full-col-12of4{
 	float:left;
 	width:32%;
 }
