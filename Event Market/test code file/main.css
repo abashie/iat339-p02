@@ -232,6 +232,11 @@ a.hamburger-icon{
 @media(max-width:400px){
 
 #logo{
-    right: 10%;
+    left: 10%;
 }
+
+div.main-nav-left div.main-nav-section{
+display: none;
+}
+
 }

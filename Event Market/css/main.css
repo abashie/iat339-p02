@@ -362,6 +362,11 @@ overflow: hidden;
   .about-segment{
   	padding: 10px;
   }
+
+  h1#about{
+  	margin-top: 0;
+  }
+  
   img{
   	width:100%;
   	height:auto;
@@ -958,6 +963,7 @@ margin: 3em 0;
   	margin: 10px;
   	margin-bottom: 40px;
   }
+
 	
 }
 @media(max-width:680px){
