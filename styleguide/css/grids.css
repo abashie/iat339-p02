@@ -23,6 +23,13 @@ div{
 	width:80%;
 }
 
+
+	.grid-col-12of4{
+			width:35%;
+
+		}
+
+
 .section{
 	float:left;
 	width:80%;

@@ -124,15 +124,15 @@
 						<div class="grid-col-3of4">
 							<form class="card-type">
 
-							  <input class="radio" type="radio" name="gender" value="1" checked> <img src="img/visa.png" >
+							  <input class="radio" type="radio" name="gender" value="1" checked> <img src="img/visa.png" alt="visa">
 
-							  <input class="radio" type="radio" name="gender" value="2"> <img src="img/mc.png" >
-
-
-							  <input class="radio" type="radio" name="gender" value="3"> <img src="img/amex.png" >
+							  <input class="radio" type="radio" name="gender" value="2"> <img src="img/mc.png" alt="mc" >
 
 
-							    <input class="radio" type="radio" name="gender" value="3"> <img src="img/interac.png" >
+							  <input class="radio" type="radio" name="gender" value="3"> <img src="img/amex.png" alt="amex">
+
+
+							    <input class="radio" type="radio" name="gender" value="3"> <img src="img/interac.png" alt="debit">
 
 
 							</form>
@@ -155,7 +155,7 @@
 					</div>
 
 					<div class="grid-col-3of4">
-						<input type="Card Number" name="card number">
+						<input type="number" name="card number">
 					</div>
 				</div><!-- cardnumber row end -->
 
@@ -164,9 +164,9 @@
 					<label class="label">Expires</label>
 				</div>
 				<div class="grid-col-1of4">			
-					<input id="expire1" type="expiry" name="expiry date" placeholder="Month">
+					<input id="expire1" type="number" name="expiry date" placeholder="Month">
 				<h4> / </h4>				
-					<input id="expire2" type="expiry" name="expiry date" placeholder="Year">
+					<input id="expire2" type="number" name="expiry date" placeholder="Year">
 				</div>
 
 				<div class="grid-col-1of4">
@@ -174,7 +174,7 @@
 				</div>
 
 				<div class="grid-col-1of4">			
-					<input id="cvv" type="cvv" name="cvv" >
+					<input id="cvv" type="number" name="cvv" >
 				</div>
 			</div><!-- expires row end -->
 		</div><!-- pay container end -->

@@ -38,7 +38,7 @@
 
 		        <h4>Sample code:</h4>
 		        <code>
-		        &lt;p&gt;This is a paragraph to demonstrate the style of &lt;a class="in-text-nav" href="#"&gt;in-text link.&lt;/a&gt;&lt;/p&gt;
+		        &lt;p&gt;This is a paragraph to demonstrate the style of an &lt;a class="in-text-nav" href="#"&gt;in-text link.&lt;/a&gt;&lt;/p&gt;
 		        </code>
 
 		        <h4>Rendered element:</h4>
@@ -56,7 +56,7 @@
 
 		        <h4>Sample code:</h4>
 		        <code>
-		        &lt;a class="ticket-btn"&gt;Submit&lt;/a&gt;<br>
+		        &lt;a class="ticket-btn" href="#"&gt;Submit&lt;/a&gt;<br>
 		        &lt;a class="submit-btn" href="#"&gt;Buy Tickets&lt;/a&gt;<br>
 		         &lt;a class="ticket-btn" href="#"&gt;Sign In&lt;/a&gt;<br>
 
@@ -127,9 +127,9 @@
 		        </code>
 
 		        <h4>Rendered element:</h4>  
-			        <h2>Level two heading (font: Hind Vadodara)</h2>
-			        <h3>Level three heading (font: Quicksand)</h3>
-			        <h4>Level four heading (font: Quicksand)</h4>
+			        <h2 >Level two heading (font: Hind Vadodara)</h2>
+			        <h3 class="demo">Level three heading (font: Quicksand)</h3>
+			        <h4 class="demo">Level four heading (font: Quicksand)</h4>
 			</div>
 			<div class="box">
 				<h3>Bulleted List</h3>       
@@ -148,14 +148,14 @@
 		        </code>
 
 		        <h4>Rendered element:</h4>  
-		            <ul class="bullet-list">
+		            <ul>
 		               <li class="bullet-list-item">item 1 (0.8rem)</li>
 		               <li class="bullet-list-item">item 2 (0.8rem)</li>
 		               <li class="bullet-list-item">item 3 (0.8rem)</li>
 		            </ul>
 			</div>
 			<div class="box">
-				<h3>Number List</h3>       
+				<h3>Numbered List</h3>       
 
 		        <h4>CSS selector:</h4>
 		        <p>.num-list</p>
@@ -186,14 +186,14 @@
 
 		        <h4>CSS selector:</h4>
 		        <p>.colour</p>
-		        <p>#scarlet-lbi, #orange, #grenny, #dark-gray, #gray, #light-gray</p>
+		        <p>#scarlet-lbi, #orange, #green, #dark-gray, #gray, #light-gray</p>
 
 		        <h4>Sample code:</h4>
 		        <code>
 		          &lt;div class="colour"&gt;<br>
 		          &lt;p id="scarlet-lbis"&gt;scarlet lbis RGB(234,85,68)&lt;/p&gt;<br>
 		          &lt;p id="orange"&gt;orange RGB(239,120,42)&lt;/p&gt;<br>
-		          &lt;p id="grenny"&gt;grenny RGB(134,175,73)&lt;/p&gt;<br>
+		          &lt;p id="green"&gt;green RGB(134,175,73)&lt;/p&gt;<br>
 		          &lt;p id="dark-gray"&gt;dark gray RGB(60,60,60)&lt;/p&gt;<br>
 		          &lt;p id="gray"&gt;sharkskin RGB(111,111,111)&lt;/p&gt;<br>
 		          &lt;p id="light-gray"&gt;light gray RGB(178,178,178)&lt;/p&gt;<br>
@@ -204,7 +204,7 @@
 		         <div class="colour">
 		          <p id="scarlet-lbis">scarlet lbis RGB(234,85,68)</p>
 		          <p id="orange">orange RGB(239,120,42)</p>
-		          <p id="grenny">grenny RGB(134,175,73)</p>
+		          <p id="green">green RGB(134,175,73)</p>
 		          <p id="dark-gray">dark gray RGB(60,60,60)</p>
 		          <p id="gray">sharkskin RGB(111,111,111)</p>
 		          <p id="light-gray">light gray RGB(178,178,178)</p>
@@ -236,21 +236,25 @@
 		        </code>
 
 		        <h4>Rendered element:</h4>
-		          <nav class="main-nav">
-		          	<div class="main-nav-left">
-		          		<a href="#">event gallery</a>
-		          	</div>
-		          	<div class="logo">
-		          		<p>Event Market</p>
-		          	</div>
-		          	
-		          	<div class="main-nav-right">
-			            <a href="#" class="main-nav-link">about</a>
-			            <a href="#" class="main-nav-link">account</a>
-			            <a href="#" class="main-nav-link">cart</a>
-			        </div>
-		          </nav>
+		     	<nav id="main-nav">
+	    <div class="main-nav-section main-nav-left">
+	        <a class="main-nav-left-item" href="events.html">event gallery</a>
+	    </div>
+	    <a id="logo" href="home.html">
+	      <h1>Event Market</h1>
+	    </a>
+	    <div class="main-nav-section main-nav-right">
+	      <a href="#" class="hamburger-icon" id="hamburger-icon"></a>
+	      <div class="main-nav-right-content">
+	        <a href="about.html" class="main-nav-right-item">about</a>
+	        <a href="account.html" class="main-nav-right-item">account</a>
+	        <a href="cart.html" class="main-nav-right-item">cart</a>
+	      </div>
+    	</div>
+  	</nav>
+
 			</div>
+
 			<div class="box">
 				<h3>Footer</h3>
 
@@ -284,6 +288,8 @@
 		          	
 		          </footer>
 			</div>
+
+
 			<div class="box">
 				<h3>Product List</h3>
 
@@ -307,49 +313,39 @@
 		        </code>
 
 		        <h4>Rendered elements:</h4>
-		        <div class="product-list-col4">
-		          <div class="product-list-item">
-		          	<div class="product-image">
-		          		<P>Product Image</P>
-		          	</div>
+		       
+	
+        <div class="product-list-item box-shadow grid-col-12of4">
+          <div class="pdt-img">
+             <img src="img/1.jpg" alt="touchpoint">
+          </div>
 
-		          	<h3 class="product-name">Product Name CAD30</h3>
-		          	<div class="product-info">
-		          		<h4 class="date">FRI, 17 FEB 9AM</h4>	          		
-		          	</div>
+          <div class="pdt-info">
+            <h3 class="title"><a href="product-info.html">SIAT Touchpoint 2017</a></h3>
+            <p class="date">MON, 17 JAN 10PM</p>  
+            <h4>$30</h4>  
+            <P class="product-tag">#conference  #SIAT</P>
+          </div>
+        </div>
 
-		          	<P class="product-tag">#event-tag 1  #event-tag 2</P>
-		          </div>
 
-		          <div class="product-list-item">
-		          	<div class="product-image">
-		          		<P>Product Image</P>
-		          	</div>
+    <div class="product-list-item box-shadow grid-col-12of4">
+          <div class="pdt-img">
+             <img src="img/8.jpg" alt="touchpoint">
+          </div>
 
-		          	<h3 class="product-name">Product Name CAD30</h3>
-		          	<div class="product-info">
-		          		<h4 class="date">FRI, 17 FEB 9AM</h4>	          		
-		          	</div>
+          <div class="pdt-info">
+            <h3 class="title"><a href="product-info.html">Entrepreneur Send Off 2017</a></h3>
+            <p class="date">SUN, 17 FEB 10AM</p>  
+            <h4>$30</h4>  
+            <P class="product-tag">#business</P>
+          </div>
+        </div>
 
-		          	<P class="product-tag">#event-tag 1  #event-tag 2</P>
-		          </div>
 
-		          <div class="product-list-item">
-		          	<div class="product-image">
-		          		<P>Product Image</P>
-		          	</div>
-
-		          	<h3 class="product-name">Product Name CAD30</h3>
-		          	<div class="product-info">
-		          		<h4 class="date">FRI, 17 FEB 9AM</h4>	          		
-		          	</div>
-
-		          	<P class="product-tag">#event-tag 1  #event-tag 2</P>
-		          </div>
-		        </div>
-			</div>
-
-			<div class="box">
+      </div><!-- box end -->
+	
+	<div class="box">
 				<h3>Grid System</h3>
           
 		        <h4>CSS selector:</h4>
@@ -384,21 +380,30 @@
 		        </div>
 		        				
 			</div>
+
+
+	<section id="sitemap" class="section">
+		<h2>Site Map</h2>
+			
+				<img src="img/sitemap.jpg" alt="site map image" width=120% height=auto>
+			
 		</section>
 
-		<section id="sitemap" class="section">
-		<h2>Site Map</h2>
-			<div class="box">
-				<img src="img/sitemap.jpg" alt="site map image" width=1000px height=auto>
-			</div>
+
+
+		
+
 		</section>
+
+
 
 		<section id="citation" class="section">
-		<h2>citation</h2>
+		<h2>citations</h2>
 			<div class="box">
-				<p>Clink <a href="citation.html" class="in-text-nav">this link</a> to open citation page</p>
+				<p>Clink <a href="citation.html" class="in-text-nav">this link</a> to open the citations page</p>
 			</div>
 		</section>
+
 	</div>
 </div>
 </body>
