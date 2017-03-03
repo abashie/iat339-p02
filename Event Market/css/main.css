@@ -11,6 +11,7 @@ body{
 		text-align: center;
 	}
 	h2{
+
 		font-family: 'Hind Vadodara', sans-serif;
 		text-align: center;
 		margin:1rem;
@@ -113,27 +114,60 @@ body{
   	display:block;
   	float:left;
   	width:100%;
-  	height:160px;
+  	height:300px;
   	background-color:rgb(60,60,60);
   }
+
+footer h3{
+margin-bottom: 2rem;
+color: rgb(134,175,73);
+}
+
   .footer-contact-info{
   	display:block;
   	float:right;
-  	width:65%;
-  	height:160px;
-  	background-color:rgba(255,255,255,0.8);
+  	background-color:rgba(100,100,100,0.8);
+    text-align:center;
+    padding: 30px;
+  padding-bottom: 10px;
+
   }
-  .footer-contact-info{
-  	text-align:center;
-  	color:rgb(180,180,180);
-  }
+
+
+.contact-item{
+  display: inline-block;
+}
+
+input.footer-input {
+  float: left;
+  margin-left: 20px;
+  width: 500px;
+    margin-left: 20px;
+    border-radius: 2px;
+    border: none;
+}
+
+h4.footer-input {
+  float: right;
+  padding: 0;
+ margin: 0;
+ color: white;
+ text-align: right;
+}
+
+input#large-input{
+  height: 80px;
+}
+
+
   .footer-other-info{
   	display:block;
   	float:left;
-  	width:35%;
+  	width:100%;
   	margin-top:1rem;
   }
-  .footer-links{
+
+  .footer-links, span#address{
   	display:block;
   	text-decoration:none;
   	font-size:0.9rem;
@@ -144,9 +178,21 @@ body{
   	transition:color ease-out 0.3s;
 
   }
+
+
   .footer-links:hover,.footer-links:focus{
   	color:rgb(134,175,73);
   }
+
+span#address{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+border-top: 1px solid white;
+margin-top: 4rem;
+padding-top: 2rem;
+
+}
+
   /*--------------------------Containers--------------------------*/
   .container{
   	display:block;
@@ -157,7 +203,7 @@ body{
   	width:80%;
   }
   .inner-container{
-  	display:blcok;
+  	display:block;
   	float:left;
   	margin-left:15%;
   	width:70%;
@@ -240,6 +286,7 @@ body{
   .search-btn:hover, .search-btn:focus{
   	background-color:rgb(80,80,80);
   }
+
   /*product item*/
   .product-list-item{
   	margin-top:2rem;
@@ -849,7 +896,22 @@ a#pay-btn{
 
 	/*----------------------------------------------------------------------------------*/
 	/*----------------------------------@MEIDA STYLING----------------------------------*/
-	@media(max-width:965px){
+	
+  @media (max-width: 1069px){
+    .grid-col-1of3{
+      width: 45%;
+    }
+
+  .footer-contact-info{
+width: 100%;
+padding-left: 20rem;
+
+  }
+
+  }
+
+
+  @media(max-width:965px){
 		#main-nav{
 			height:50px;
 		}
@@ -952,6 +1014,23 @@ a#pay-btn{
 }
 
 	}
+
+  @media(max-width:810px){
+
+input.footer-input {
+width: 100%;
+margin: 0;
+}
+
+h4.footer-input {
+  float: left;
+
+}
+
+
+  }
+
+
 	@media(max-width:680px){
 		#logo{
 			right:0;
@@ -1026,19 +1105,13 @@ a#pay-btn{
 
 
 
-	@media (max-width: 1069px){
-		.grid-col-1of3{
-			width: 45%;
-		}
-
-	}
-
 
 	@media (max-width: 897px){
 
 		.grid-col-1of3{
 			width: 45%;
 		}
+
 
 		.category .grid-col-2of3 img{
 			height: 100%;
