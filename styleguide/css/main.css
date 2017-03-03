@@ -100,6 +100,7 @@ code{
 	background-color:white;
 	color:rgb(234,86,68);
 	text-decoration: none;
+	cursor: pointer;
 	transition:background-color ease-out 0.3s;
 }
 .ticket-btn:hover, .ticket-btn:focus,.btn:hover, .btn:focus{
@@ -308,6 +309,7 @@ footer{
   	margin-top:2rem;
   	margin-right:2%;
   	display: inline-block;
+  	min-width: 250px;
   }
 
  .pdt-info{
@@ -344,3 +346,21 @@ footer{
   }
 
 
+	@media(max-width:965px){
+
+	.grid-col-12of4{
+			width:43%;
+
+		}
+
+	}
+
+
+		@media(max-width:765px){
+
+	.grid-col-12of4{
+			width:80%;
+
+		}
+
+	}
