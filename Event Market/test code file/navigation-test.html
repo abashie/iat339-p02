@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="main.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id="main-nav">
+      <a href="#" class="main-nav-section main-nav-left">
+          <h1 id="logo">Event Market</h1>
+      </a>
+
+      <div class="main-nav-section" href="home.html">
+        <nav id="main-nav-links">
+          <a href="event-gallery.html" id="highlight-item">event gallery</a>
+          <a href="about.html">about</a>
+          <a href="account.html">sign in</a>
+          <a href="cart.html">cart</a>
+        </nav>
+      </div>
+
+      <div class="main-nav-section main-nav-right">
+        <form id="search-form">
+          <input type="text" name="search-bar">
+        </form>
+        <div id="search-icon">
+          <a href="#">
+            <img src="search-icon.png">
+          </a>
+        </div>
+        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
+      </div>
+    </div>
+  </header>
+
+  <div id="img-gallery">
+      <img id="intro-img" src="intro-img.jpg">
+
+      <div id="content-nav">
+        <a href="#" class="content-nav-item">Popular Events</a>
+        <a href="#" class="content-nav-item">Pomoted Events</a>
+        <a href="#" class="content-nav-item">All Categories</a>
+      </div>
+  </div>
+
+  <div id="content">
+  </div>
+
+</body>
+
+<script src="zepto.js"></script>
+<script src="hamburger.js"></script>
+
+</html>

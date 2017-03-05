@@ -4,39 +4,162 @@ body{
 }
 a{
 	font-family: 'Quicksand', sans-serif;
+	cursor: pointer;
 }
 h1{
 	font-family: 'Permanent Marker', cursive;
 }
-/*-----------------------------MAIN NAVIGATION-----------------------*/
-#main-nav{
-	display:flex;
+/*---------------------------------------MAIN NAVIGATION---------------------------------*/
+header{
+	display:fixed;
 	position:fixed;
 	top:0;
 	margin:0;
 	width:100%;
-	height:68px;
-	background-color:white;
-	justify-content: space-between;
-	align-items:center;
+	z-index:100;
 }
 
+#main-nav{
+	display:inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color:rgb(134,175,73);
+	width:100%;
+	height:60px;
+}
 .main-nav-section{
 	display:flex;
-	align-items:center;
-	justify-content: space-between;
+	align-items: center;
 }
 .main-nav-left{
-	margin:0 auto 0 0;
-	height:68px;
 	margin-left:20px;
+	text-decoration: none;
+}
+#logo{
+	font-size:1.7rem;
+	font-weight:normal;
+  	color:white;
+  	margin:0;
+}
+#main-nav-links{
+	padding:0;
+}
+#main-nav-links a{
+	text-decoration: none;
+	font-size:0.9rem;
+	margin-left:0.7rem;
+	margin-right:0.7rem;
+	color:white;
+	padding:0.4rem 0.6rem;
+	border:solid 1px rgb(134,175,73);	
+	transition:border ease-out 0.1s;
+}
+#main-nav-links a:hover, #main-nav-links a:focus, #main-nav-links a:active{
+	border:solid 1px white;
+}
+/*--------------------hightlight is NOT working*/
+#highlight-item{
+	border:solid 1px white;
 }
 .main-nav-right{
-	margin: 0 0 0 auto;
-	height:68px;
 	margin-right:20px;
 }
-.main-nav-left-item{
+#search-form{
+   margin-right:0.5rem;
+}
+#search-form input{
+	height:28px;
+	border:none;
+	color:white;
+	border-bottom:1px solid white;
+	background-color:rgb(134,175,73);
+	font-size:0.9rem;
+	font-family: 'Quicksand', sans-serif;
+}
+#search-icon img{
+	margin-top:0.5rem;
+	height:20px;
+	width:auto;
+}
+
+#img-gallery{
+	float:left;
+	position:relative;
+	width:100%;
+}
+#intro-img{
+	width:100%;
+	height:auto;
+}
+#content-nav{
+	position:absolute;
+	width:100%;
+	height:4.6rem;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(237,237,237,0.9);
+}
+.content-nav-item{
+	display:inline-block;
+	text-align:center;
+	margin-top:1.5rem;
+	width:32%;
+	font-size:1rem;
+	font-weight:bold;
+	text-decoration:none;
+	color:rgb(80,80,80);
+	transition:color ease-out 0.1s;
+}
+.content-nav-item:hover, .content-nav-item:focus{
+	color:rgb(134,175,73);
+}
+#hamburger-icon{
+	position:relative;
+	margin-left:2rem;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+}
+#hamburger-icon::after{
+	content: '';
+	display:block;
+	box-shadow: 0 3px 0 1px white, 
+	0 12px 0 1px white, 
+	0 20px 0 1px white;
+}
+#hamburger-icon.hidden{
+	visibility: hidden;
+	display: none;
+}
+/*#main-nav-links.hidden{
+	visibility: hidden;
+	display: none;
+}*/
+/*------------------------------------------INTRO SCREEN SECTION----------------------------------------*/
+@media(max-width:965px){
+	#search-form input{
+		width:60px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.main-nav-left-item{
 	font-family: 'Hind Vadodara', sans-serif;
 	color:rgb(134,175,73);
 	text-decoration: none;
@@ -46,28 +169,13 @@ h1{
 	background-color:white;
 	transition:background-color ease-out 0.3s;
 }
+
 .main-nav-left-item:hover{
 	background-color:rgb(134,175,73);
 	color:white;
 }
 
-#logo{
-	position: absolute;
-	text-decoration: none;
-    top: 0;
-    right: 43%;
-    height:70px;
-    max-width: 220px;
-}
 
-
-#logo h1{
-	font-family: 'Permanent Marker', cursive;
-	font-size:2em;
-	font-weight:normal;
-	color:rgb(134,175,73);
-	margin-top:0.5rem;
-}
 .main-nav-right-item, .dropdown-content a{
 	font-family: 'Quicksand', sans-serif;
 	display:inline-block;
@@ -113,11 +221,11 @@ color: rgb(239,120,42);
 	width:100%;
 	height:400px;
 	background-color:pink;
-}
+}*/
 
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------@MEIDA STYLING----------------------------------*/
-@media(max-width:950px){
+/*@media(max-width:950px){
 	#main-nav{
 		height:50px;
 	}
@@ -239,4 +347,4 @@ div.main-nav-left div.main-nav-section{
 display: none;
 }
 
-}
+}*/

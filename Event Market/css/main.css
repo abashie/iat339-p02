@@ -107,6 +107,14 @@ body{
   .main-nav-right-item:hover{
   	border:solid 2px rgb(134,175,73);
   }
+  #search-form{
+    margin-right:1rem;
+  }
+  #search-form input{
+    height:30px;
+    border:none;
+    border-bottom:2px solid rgb(134,175,73);
+  }
 
   /*footer*/
   footer{
