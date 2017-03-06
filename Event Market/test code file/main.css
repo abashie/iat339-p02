@@ -2,12 +2,41 @@ body{
 	display: block;
 	margin:0;
 }
-a{
-	font-family: 'Quicksand', sans-serif;
-	cursor: pointer;
-}
 h1{
 	font-family: 'Permanent Marker', cursive;
+	margin:0;
+}
+h2{
+	font-family: 'Hind Vadodara', sans-serif;
+	margin:0;
+	font-size:1.3rem;
+	color:rgb(80,80,80);
+}
+h3{
+	font-family: 'Quicksand', sans-serif;
+	color:rgb(134,175,73);
+	margin:0;
+	font-size:1.1rem;
+}
+h4{
+	font-family: 'Quicksand', sans-serif;
+	font-size:0.9rem;
+	margin:0;
+}
+p{
+	font-family: 'Quicksand', sans-serif;
+	font-size:0.8rem;
+	margin:0;
+}
+.gray{
+	color:rgb(157,157,157);
+}
+a{
+	font-family: 'Quicksand', sans-serif;
+	cursor:pointer;
+	font-size:0.8rem;
+	margin:0;
+	text-decoration:none;
 }
 /*---------------------------------------MAIN NAVIGATION---------------------------------*/
 header{
@@ -59,10 +88,10 @@ header{
 #main-nav-links a:hover, #main-nav-links a:focus, #main-nav-links a:active{
 	border:solid 1px white;
 }
-/*--------------------hightlight is NOT working*/
-#highlight-item{
+/*--------------------hightlight is NOT working--------------*/
+/*#highlight-item{
 	border:solid 1px white;
-}
+}*/
 .main-nav-right{
 	margin-right:20px;
 }
@@ -84,38 +113,6 @@ header{
 	width:auto;
 }
 
-#img-gallery{
-	float:left;
-	position:relative;
-	width:100%;
-}
-#intro-img{
-	width:100%;
-	height:auto;
-}
-#content-nav{
-	position:absolute;
-	width:100%;
-	height:4.6rem;
-	bottom:0;
-	left:0;
-	right:0;
-	background-color:rgba(237,237,237,0.9);
-}
-.content-nav-item{
-	display:inline-block;
-	text-align:center;
-	margin-top:1.5rem;
-	width:32%;
-	font-size:1rem;
-	font-weight:bold;
-	text-decoration:none;
-	color:rgb(80,80,80);
-	transition:color ease-out 0.1s;
-}
-.content-nav-item:hover, .content-nav-item:focus{
-	color:rgb(134,175,73);
-}
 #hamburger-icon{
 	position:relative;
 	margin-left:2rem;
@@ -138,7 +135,137 @@ header{
 	visibility: hidden;
 	display: none;
 }*/
-/*------------------------------------------INTRO SCREEN SECTION----------------------------------------*/
+/*------------------------------------------INTRO SCREEN----------------------------------------*/
+#img-gallery{
+	float:left;
+	position:relative;
+	width:100%;
+}
+#intro-img{
+	width:100%;
+	height:auto;
+}
+#content-nav{
+	position:absolute;
+	width:100%;
+	height:4.6rem;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(237,237,237,0.9);
+}
+.content-nav-item{
+	display:inline-block;
+	text-align:center;
+	margin-top:1.5rem;
+	font-size:1rem;
+	font-weight:bold;
+	text-decoration:underline;
+	color:rgb(80,80,80);
+	transition:color ease-out 0.1s;
+}
+.content-nav-item:hover, .content-nav-item:focus{
+	color:rgb(134,175,73);
+}
+/*-----------------------------------------Content(Featured event, promoted, all categories)-----------------------------------------*/
+/*featured event*/
+.container{
+	display:block;
+	float:left;
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom:3rem;
+	width:90%;
+}
+.content-title{
+	width:100%;
+	display:inline-block;
+	margin-top:3rem;
+	margin-bottom:1.5rem;
+}
+.content-title h2{
+	float:left;
+	margin-left:1.5%;
+}
+
+.content-title a{
+	float:right;
+	margin-right:3%;
+}
+.event-container{
+	display:block;
+	float:left;
+	width:100%;
+}
+.img-container{
+	display:block;
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+	height:14rem;
+	background-color:pink;
+}
+.content-container{
+	display:block;
+	margin-left:5%;
+	margin-right:5%;	
+	width:90%;
+}
+.top-content{
+	width:100%;
+	display:inline-block;
+	margin-top:0.8rem;
+}
+.top-content h3{
+	float:left;
+}
+.top-content h4{
+	float:left;
+	margin-left:0.3rem;
+	margin-top:0.2rem;
+	text-decoration:line-through;
+}
+.top-content p{
+	float:right;
+}
+.center-content{
+	display:block;
+	margin-top:0.6rem;
+}
+.bottom-content{
+	display:block;
+	margin-top:0.5rem;
+}
+
+.category-img{
+	display:block;
+	float:left;
+	width:100%;
+	margin-bottom:2rem;
+}
+/*promoted-event*/
+.promoted-bar{
+	display:block;
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+	height:1.2rem;
+	background-color:rgb(239,120,43);
+}
+.promoted-bar p{
+	text-align:center;
+	color:white;
+	padding-top:0.1rem;
+}
+/*---------------------------------GRID--------------------------------*/
+.grid-col-4of12{
+	width:33%;
+}
+.grid-col-12of12{
+	width:100%;
+}
+/*------------------------------------------RESPONSIVE STYLING----------------------------------------*/
+
 @media(max-width:965px){
 	#search-form input{
 		width:60px;
