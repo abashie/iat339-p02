@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Info Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="css/grids.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<script src="js/javascript.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
+</head>
+<body>
+	<header>
+	    <div id="main-nav">
+	      <a href="#" class="main-nav-section main-nav-left">
+	          <h1 id="logo">Event Market</h1>
+	      </a>
+
+	      <div class="main-nav-section" href="home.html">
+	        <nav id="main-nav-links">
+	          <a href="event-gallery.html" id="highlight-item">event gallery</a>
+	          <a href="about.html">about</a>
+	          <a href="account.html">sign in</a>
+	          <a href="cart.html">cart</a>
+	        </nav>
+	      </div>
+
+	      <div class="main-nav-section main-nav-right">
+	        <form id="search-form">
+	          <input type="text" name="search-bar">
+	        </form>
+	        <div id="search-icon">
+	          <a href="#">
+	            <img src="img/search-icon.png">
+	          </a>
+	        </div>
+	        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
+	      </div>
+	    </div>
+	</header>
+
+	<div class="container box-shadow">
+		<div class="pdt-shortInfo">
+			<div class="grid-col-12of8">
+				<div class="pdt-image">			
+					<img src="img/touchpoint-event.jpg" alt="img for touchpoint 2017">
+				</div>
+			</div>
+			<div class="grid-full-col-12of4">
+				<div class="pdt-top-info">
+					<h3>Touchpoint 2017</h3>
+					<P class="product-grayed">by School of Interactive Arts & Technology</P>
+					<h4>$30</h4>
+				</div>
+				<div class="pdt-bottom-btn">
+					<a class="ticket-btn-filled" href="payment.html">buy ticket</a>
+					<a class="ticket-btn" href="cart.html">add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="pdt-content">
+			<div class="grid-col-12of8">
+				<div class="pdt-info">
+					<h4>Description</h4>
+					<p>Touchpoint is a design conference for the creative community, where bright ideas from the most inspired minds convene. This year Touchpoint will be held at SFU's Goldcorp Centre for the Arts, at Djavad Mowafaghian Cinema, Vancouver, BC on Thursday February 16th.</p>
+					<p>Your ticket reserves your seat for the design talks held at Goldcorp Centre for the Arts, Vancouver, BC on Thursday February 16th.</p>
+					<p>Design talks include speakers from:</p>
+					<p>Inamoto & Co., Green Stone, SAP, Artefact, Axiom Zen, TWG, Engine Digital, IBM, Dossier, and more!</p>
+					<p>Learn more about Touchpoint Interaction Design Conference on <a class="in-text-nav" href="http://www.sfu.ca/idc/">our website</a>.</p>
+				</div>
+				<div class="pdt-info">
+					<h4>Comments</h4>
+					<p>Check out <a class="in-text-nav" href="comment-page.html">comments</a> from past year and share your experinces</p>
+				</div>
+			</div>
+			<div class="grid-full-col-12of4">
+				<div class="pdt-info">
+					<div class="pdt-small-info">
+						<h4>Date and Time</h4>
+						<p>Thu, 16 February 2017</p>
+						<p> 9:00 AM – 2:30 PM</p>
+					</div>
+					<div class="pdt-small-info">
+						<h4>Location</h4>
+						<a href="https://www.google.ca/maps/place/SFU+Goldcorp+Centre+for+the+Arts/@49.2824852,-123.110386,17z/data=!3m1!4b1!4m5!3m4!1s0x548671798b945ec1:0xd34d5b6ae6ed0386!8m2!3d49.2824817!4d-123.108192" class="location">Goldcorp Centre for the Arts, 149 W Hastings St Vancouver, BC V6B 1H4</a>
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYF07E1MRLUUurB_spidUjw0HmijAPWH0&callback=initMap">
+	    </script>
+
+	</div>
+
+
+	<footer>
+		<div class="footer-contact-info">
+			<p href="#">contact information here (not complete)</p>
+		</div>
+		<div class="footer-other-info">
+			<a class="footer-links" href="#">help</a>
+			<a class="footer-links" href="#">terms and policy</a>
+			<a class="footer-links" href="#">FAQs</a>
+		</div>	  	
+	 </footer>
+</body>
+</html>

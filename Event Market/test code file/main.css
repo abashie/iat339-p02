@@ -136,12 +136,12 @@ header{
 	display: none;
 }*/
 /*------------------------------------------INTRO SCREEN----------------------------------------*/
-#img-gallery{
+.img-gallery{
 	float:left;
 	position:relative;
 	width:100%;
 }
-#intro-img{
+.img-gallery img{
 	width:100%;
 	height:auto;
 }
@@ -174,8 +174,14 @@ header{
 	float:left;
 	margin-left:5%;
 	margin-right:5%;
-	margin-bottom:3rem;
+	margin-top:1rem;
+	margin-bottom:6rem;
 	width:90%;
+}
+.event-container{
+	display:block;
+	float:left;
+	width:100%;
 }
 .content-title{
 	width:100%;
@@ -190,12 +196,10 @@ header{
 
 .content-title a{
 	float:right;
-	margin-right:3%;
+	margin-right:3%;	
 }
-.event-container{
-	display:block;
-	float:left;
-	width:100%;
+.content-title a:hover, .content-title a:active, .content-title a:focus{
+	text-decoration: underline;
 }
 .img-container{
 	display:block;
@@ -203,7 +207,17 @@ header{
 	margin-right:5%;
 	width:90%;
 	height:14rem;
-	background-color:pink;
+	background-position: center;
+	background-size:cover;
+}
+#sfu-hack{
+	background-image:url('img/SFU-hack.png');
+}
+#ubc-bustur{
+	background-image:url('img/UBC-bustur.png');
+}
+#ubc-plant{
+	background-image:url('img/UBC-plant.png');
 }
 .content-container{
 	display:block;
@@ -227,10 +241,14 @@ header{
 }
 .top-content p{
 	float:right;
+	margin-top:0.3rem;
 }
 .center-content{
 	display:block;
 	margin-top:0.6rem;
+}
+.center-content a:hover, .center-content a:focus, .center-content a:active{
+	text-decoration: underline;
 }
 .bottom-content{
 	display:block;
@@ -257,9 +275,46 @@ header{
 	color:white;
 	padding-top:0.1rem;
 }
+#food-service{
+	background-image:url('img/food-service.png');
+}
+#photography{
+	background-image:url('img/photography-class.png');
+}
+#creative-class{
+	background-image:url('img/creative-class.png');
+}
+/*all categories section*/
+#fitness{	
+	background-image:url('img/fitness.jpg');
+}
+#business{
+	background-image:url('img/business.jpg');
+}
+#music{
+	background-image:url('img/music.jpg');
+}
+#fashion{
+	background-image:url('img/fashion.jpg');
+}
+#art{
+	background-image:url('img/art.jpg');
+}
+#design{
+	background-image:url('img/design.jpg');
+}
+#tech{
+	background-image:url('img/tech.jpg');
+}
+#math{
+	background-image:url('img/math.jpg');
+}
+#science{
+	background-image:url('img/science.jpg');
+}
 /*---------------------------------GRID--------------------------------*/
 .grid-col-4of12{
-	width:33%;
+	width:32.67%;
 }
 .grid-col-12of12{
 	width:100%;

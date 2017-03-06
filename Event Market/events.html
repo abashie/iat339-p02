@@ -15,24 +15,34 @@
 </head>
 
 <body>
-     <nav id="main-nav">
-          <div class="main-nav-section main-nav-left">
-                    <a class="main-nav-left-item" href="events.html">event gallery</a>
-          </div>
-          <a id="logo" href="home.html">
-               <h1>Event Market</h1>
+<header>
+    <div id="main-nav">
+      <a href="#" class="main-nav-section main-nav-left">
+          <h1 id="logo">Event Market</h1>
+      </a>
+
+      <div class="main-nav-section" href="home.html">
+        <nav id="main-nav-links">
+          <a href="event-gallery.html" id="highlight-item">event gallery</a>
+          <a href="about.html">about</a>
+          <a href="account.html">sign in</a>
+          <a href="cart.html">cart</a>
+        </nav>
+      </div>
+
+      <div class="main-nav-section main-nav-right">
+        <form id="search-form">
+          <input type="text" name="search-bar">
+        </form>
+        <div id="search-icon">
+          <a href="#">
+            <img src="img/search-icon.png">
           </a>
-          <div class="main-nav-section main-nav-right">
-               <a href="#" class="hamburger-icon" id="hamburger-icon"></a>
-               <div class="main-nav-right-content">
-                    <a href="about.html" class="main-nav-right-item">about</a>
-                    <a href="account.html" class="main-nav-right-item">account</a>
-                    <a href="cart.html" class="main-nav-right-item">cart</a>
-               </div>
-          </div>
-     </nav>
-
-
+        </div>
+        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
+      </div>
+    </div>
+</header>
 
 <div class="events-container">
 
