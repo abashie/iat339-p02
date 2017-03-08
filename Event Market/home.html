@@ -7,267 +7,294 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="css/grids.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/grids.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand|Palanquin+Dark" rel="stylesheet">
 </head>
 
 <body>
+<header>
+    <div id="main-nav">
+      <a href="#" class="main-nav-section main-nav-left">
+          <h1 id="logo">Event Market</h1>
+      </a>
 
-  <nav id="main-nav">
-    <div class="main-nav-section main-nav-left">
-      <a class="main-nav-left-item" href="events.html">event gallery</a>
-    </div>
-    <a id="logo" href="home.html">
-      <h1>Event Market</h1>
-    </a>
-    <div class="main-nav-section main-nav-right">
-      <a href="#" class="hamburger-icon" id="hamburger-icon"></a>
-      <div class="main-nav-right-content">
-        <a href="about.html" class="main-nav-right-item">about</a>
-        <a href="account.html" class="main-nav-right-item">account</a>
-        <a href="cart.html" class="main-nav-right-item">cart</a>
+      <div class="main-nav-section" href="home.html">
+        <nav id="main-nav-links">
+          <a href="event-gallery.html" id="highlight-item">event gallery</a>
+          <a href="about.html">about</a>
+          <a href="account.html">sign in</a>
+          <a href="cart.html">cart</a>
+        </nav>
       </div>
-    </div>
-  </nav>
 
-  <div class="home-container">
-    <section class="img-gallery">
-      <img src="img/promote.jpg" alt="image of students discusing">
-    </section>
-
-    <section class="section-event">
-      <div class="search-bar">
-        <h1>Enter your location to find a school event.</h1>
-        <form class="search-form">
-          <input class="text-input" name="search" type="text" placeholder="search">
-          <a class="search-btn" href="events.html">locate</a>
+      <div class="main-nav-section main-nav-right">
+        <form id="search-form">
+          <input type="text" name="search-bar">
         </form>
-      </div>
-
-      <div class="inner-container">
-        <h2>Featured Events</h2>
-
-        <div class="product-list-item box-shadow grid-col-12of4">
-          <div class="pdt-img">
-           <img src="img/1.jpg" alt="touchpoint">
-         </div>
-
-         <div class="pdt-info">
-          <h3 class="title"><a href="product-info.html">SIAT Touchpoint 2017</a></h3>
-          <p class="date">MON,17 JAN 10PM</p>  
-          <h4>$30</h4>  
-          <P class="product-tag">#conference  #SIAT</P>
+        <div id="search-icon">
+          <a href="#">
+            <img src="img/search-icon.png">
+          </a>
         </div>
-      </div>
-
-      <div class="product-list-item box-shadow grid-col-12of4">
-        <div class="pdt-img">
-         <img src="img/2.jpg" alt="touchpoint">
-       </div>
-
-       <div class="pdt-info">
-        <h3 class="title"><a href="product-info.html">UBC MATH Workshop</a></h3>
-        <p class="date">TUES, 17 MAR 8AM</p>  
-        <h4>$30</h4>  
-        <P class="product-tag">#workshop #math #UBC</P>
+        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
       </div>
     </div>
+</header>
 
-    <div class="product-list-item box-shadow grid-col-12of4">
-      <div class="pdt-img">
-       <img src="img/3.jpg" alt="touchpoint">
-     </div>
+<div class="img-gallery">
+    <img 
+      src="img/intro-large.jpg" 
+      srcset="
+      img/intro-medium.jpg 1x, 
+      img/intro-large.jpg 2x"
+      alt="intro screen image">
 
-     <div class="pdt-info">
-      <h3 class="title"><a href="product-info.html">SFU Basketball Playoff</a></h3>
-      <p class="date">FRI, 17 NOV 5PM</p>  
-      <h4>$30</h4>  
-      <P class="product-tag">#activity</P>
+    <div id="content-nav">
+        <a href="#featured" class="content-nav-item grid-col-12of4">Featured events</a>
+        <a href="#promoted" class="content-nav-item grid-col-12of4">Promoted events</a>
+        <a href="#categories" class="content-nav-item grid-col-12of4">All categories</a>
     </div>
-  </div>
+
+</div>
+
+  									<!-- featured event section -->
+<section id="featured" class="container">
+<div class="content-title">
+	  <h2 >Featured events</h2>
+	  <a class="gray" href="#">see more ></a>
+</div>
+
+<div class="row grid-col-12of12">
+  	<div class="event-container grid-col-12of4">
+  		<a href="#">
+  			<div class="img-container" id="sfu-hack">
+  			</div>
+  		</a>
+  
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$40</h3><p class="gray">22 booked</p>
+			</div>
+			<div class="center-content">
+				<a>
+				<h4>Enactus SFU Presents - Take HACKtion</h4>
+				</a>
+			</div>
+			<div class="bottom-content">
+				<p>Sat 25 March, 2017</p>
+			</div>
+		</div>
+    </div> 
+
+    <div class="event-container grid-col-12of4">
+  		<a href="#">
+  			<div class="img-container" id="ubc-bustur">
+  			</div>
+  		</a>
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$7</h3><p class="gray">83 booked</p>
+			</div>
+			<div class="center-content">
+				<a>
+				<h4>UBC Bus Transport</h4>
+				</a>
+			</div>
+			<div class="bottom-content">
+				<p>Fri 10 March, 2017</p>
+			</div>
+		</div>
+    </div> 
+
+    <div class="event-container grid-col-12of4">
+  		<a href="#">
+  			<div class="img-container" id="ubc-plant">
+  			</div>
+  		</a>
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$60 - $65</h3><p class="gray">8 booked</p>
+			</div>
+			<div class="center-content">
+				<a>
+				<h4>Living Sedum Wreath Workshop</h4>
+				</a>
+			</div>
+			<div class="bottom-content">
+				<p>Mon 13 March, 2017</p>
+			</div>
+		</div>
+    </div> 	
 </div>
 </section>
 
-<section class="img-gallery">
-  <img src="img/student-thinking.jpg" alt="image showing students having meeting">
-</section>
-
-<section class="section-event">
-  <div class="inner-container">
-    <h2>Promoted Events</h2>
-
-    <div class="product-list-item box-shadow grid-col-12of4">
-      <div class="pdt-img">
-       <img src="img/8.jpg" alt="touchpoint">
-     </div>
-
-     <div class="pdt-info">
-      <h3 class="title"><a href="product-info.html">Entrepreneur Send Off 2017</a></h3>
-      <p class="date">SUN, 17 FEB 10AM</p>  
-      <h4>$30</h4>  
-      <P class="product-tag">#business</P>
+								<!-- promoted event section -->
+<section>
+	<div class="img-gallery">
+      <img 
+      src="img/promoted-large.jpg" 
+      srcset="
+      img/promoted-medium.jpg 1x, 
+      img/promoted-large.jpg 2x"
+      alt="promoted event image">
     </div>
-  </div>
 
-  <div class="product-list-item box-shadow grid-col-12of4">
-    <div class="pdt-img">
-     <img src="img/9.jpg" alt="touchpoint">
-   </div>
-
-   <div class="pdt-info">
-    <h3 class="title"><a href="product-info.html">Technica Art Conference</a></h3>
-    <p class="date">SUN, 17 FEB 3PM</p>  
-    <h4>$30</h4>  
-    <P class="product-tag">#conference</P>
-  </div>
+</section>
+<section id="promoted" class="container">
+<div class="content-title">
+	  <h2 >Promoted events</h2>
+	  <a class="gray" href="#">see more ></a>
 </div>
 
-<div class="product-list-item box-shadow grid-col-12of4">
-  <div class="pdt-img">
-   <img src="img/10.jpg" alt="touchpoint">
- </div>
+<div class="row grid-col-12of12">
+  	<div class="event-container grid-col-12of4">
+  		<div class="promoted-bar">
+    		<p>free</p>
+    	</div>
+  		<a href="#">
+  			<div class="img-container" id="food-service">
+  			</div>
+  		</a>
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$0</h3><h4>($30)</h4><p class="gray">132 booked</p>
+			</div>
+			<div class="center-content">
+				<a><h4>Training for the Food Service Industry</h4></a>
+			</div>
+			<div class="bottom-content">
+				<p>Mon 5 March, 2017</p>
+			</div>
+		</div>
+    </div> 
 
- <div class="pdt-info">
-  <h3 class="title"><a href="product-info.html">Community Fairness Rally</a></h3>
-  <p class="date">MON, 17 JAN 10PM</p>  
-  <h4>$30</h4>  
-  <P class="product-tag">#community</P>
-</div>
-</div>
+    <div class="event-container grid-col-12of4">
+    	<div class="promoted-bar">
+    		<p>30% off</p>
+    	</div>
+  		<a href="#">
+  			<div class="img-container" id="photography">
+  			</div>
+  		</a>
+  		<div class="content-container">
+			<div class="top-content">
+				<h3>$50</h3><h4>($35)</h4><p class="gray">74 booked</p>
+			</div>
+			<div class="center-content">
+				<a><h4>Introduction to Photography</h4></a>
+			</div>
+			<div class="bottom-content">
+				<p>Wed 8 March, 2017</p>
+			</div>
+		</div>
+    </div> 
+
+    <div class="event-container grid-col-12of4">
+    	<div class="promoted-bar">
+    		<p>30% off</p>
+    	</div>
+  		<a href="#">
+  			<div class="img-container" id="creative-class">
+  			</div>
+  		</a>
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$196</h3><h4>($280)</h4><p class="gray">29 booked</p>
+			</div>
+			<div class="center-content">
+				<a><h4>Clear + Create: Beyond the Vision Board</h4></a>
+			</div>
+			<div class="bottom-content">
+				<p>Fri 31 March, 2017</p>
+			</div>
+		</div>
+    </div> 	
 </div>
 </section>
 
-<section class="category">
- <h1>Categories</h1>
 
- <div class="grid-col-3of4">
-   <a href="events.html">
-    <img src="img/fitness.jpg" alt="fitness">
-    <h2>Sports & Fitness</h2>
-  </a>
-</div>
+									<!-- all categories section -->
+<section id="categories" class="container">
+	<div class="content-title">
+		  <h2 >All categories</h2>
+	</div>
+	<div class="row grid-col-12of12">
+		<div class="category-img grid-col-12of4">
+	  		<a href="#">
+	  			<div class="img-container" id="fitness">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-12of4">
+	  		<a href="#">
+	  			<div class="img-container" id="business">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-12of4">
+	  		<a href="#">
+	  			<div class="img-container" id="music">
+	  			</div>
+  			</a>
+	  	</div>
+	</div>
 
-<div class="grid-col-1of3">
-  <a href="events.html">
-    <img src="img/art.jpg" alt="art">
-    <h2>Arts</h2>
-  </a>
-</div>
-
-
-<div class="grid-col-1of3">
-  <a href="events.html">
-    <img src="img/fashion.jpg" alt="fashion">
-    <h2>Fashion</h2>
-  </a>
-</div>
-
-
-<div class="grid-col-1of3">
-  <a href="events.html">
-    <img src="img/design.jpg" alt="design">
-    <h2>Design</h2>
-  </a>
-</div>
-
-
-<div class="grid-col-1of3">
-  <a href="events.html">
-    <img src="img/science.jpg" alt="science">
-    <h2>Sciences</h2>
-  </a>
-</div>
-
-
-<div class="grid-col-1of3">
-  <a href="events.html">
-    <img src="img/business.jpg" alt="business">
-    <h2>Business</h2>
-  </a>
-</div>
-
-
-<div class="grid-col-2of3">
-  <a href="events.html">
-    <img src="img/math.jpg" alt="math">
-    <h2>Mathematics</h2>
-  </a>
-</div>
-
-<div class="grid-col-2of3">
-  <a href="events.html">
-   <img src="img/tech.jpeg" alt="tech">
-   <h2>Technology</h2>
- </a>
-</div>
-
-<div class="grid-col-1of3">
-  <a href="events.html">
-    <img src="img/music.jpg" alt="music">
-    <h2>Music</h2>
-  </a>
-</div>
+	<div class="row grid-col-12of12">
+		<div class="category-img grid-col-12of4">
+	  		<a href="#">
+	  			<div class="img-container" id="fashion">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-12of4">
+	  		<a href="#">
+	  			<div class="img-container" id="art">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-12of4">
+	  		<a href="#">
+	  			<div class="img-container" id="design">
+	  			</div>
+  			</a>
+	  	</div>
+	</div>
+	<div class="row grid-col-12of12">
+		<div class="category-img grid-col-12of4">
+	  		<a href="#">
+	  			<div class="img-container" id="tech">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-12of4">
+	  		<a href="#">
+	  			<div class="img-container" id="math">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-12of4">
+	  		<a href="#">
+	  			<div class="img-container" id="science">
+	  			</div>
+  			</a>
+	  	</div>
+	</div>
 </section>
-</div>
 
 <footer>
-
-  <div class="footer-contact-info grid-col-2of3">
-    <h3>Contact Us</h3>
-
-    <!-- NAME -->
-    <div class="grid-row">
-      <div class="contact-item grid-col-1of4">
-        <h4 class="footer-input">Name</h4>
-      </div>      <!-- 1/3 -->
-
-
-      <div class="contact-item grid-col-3of4">
-        <input class="footer-input" name="name" type="text">
-      </div>      <!-- 2/3 -->
-    </div> 
-
-    <!-- NUMBER -->
-    <div class="grid-row">
-      <div class="contact-item grid-col-1of4">
-        <h4 class="footer-input">Phone Number</h4>
-      </div>      <!-- 1/3 -->
-
-
-      <div class="contact-item grid-col-3of4">
-        <input class="footer-input" name="number" type="text">
-      </div>      <!-- 2/3 -->
-
-    </div> 
-
-    <!-- reason for contacting -->
-    <div class="grid-row">
-      <div class="contact-item grid-col-1of4">
-        <h4 class="footer-input">Why are you contacting us?</h4>
-      </div>      <!-- 1/3 -->
-
-
-      <div class="contact-item grid-col-3of4">
-        <input id="large-input" class="footer-input" name="message" type="text">
-      </div>      <!-- 2/3 -->
-
-    </div> 
-  </div>
-
-  <div class="grid-col-1of4">
-    <div class="footer-other-info">
-      <a class="footer-links" href="#">Help</a>
-      <a class="footer-links" href="#">Terms and Conditions</a>
-      <a class="footer-links" href="#">FAQs</a>
-      <span id="address">8888 University Dr, Burnaby, BC V5A 1S6</span>
-    </div>
-  </div>
-
+	<p>IAT334 | EVENT MARKET</p>
+	<ul>
+		<a class="grid-col-12of4">sitemap</a>
+		<a class="grid-col-12of4">styleguide</a>
+		<a class="grid-col-12of4">repository</a>
+	</ul>
 </footer>
 
-
-
 </body>
+
+<script src="js/zepto.js"></script>
+<script src="js/javascript.js"></script>
+
 </html>

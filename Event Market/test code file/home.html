@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="main.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand|Palanquin+Dark" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div id="main-nav">
+      <a href="#" class="main-nav-section main-nav-left">
+          <h1 id="logo">Event Market</h1>
+      </a>
+
+      <div class="main-nav-section" href="home.html">
+        <nav id="main-nav-links">
+          <a href="event-gallery.html">event gallery</a>
+          <a href="about.html">about</a>
+          <a href="account.html">sign in</a>
+          <a href="cart.html">cart</a>
+        </nav>
+      </div>
+
+      <div class="main-nav-section main-nav-right">
+        <form id="search-form">
+          <input type="text" name="search-bar">
+        </form>
+        <div id="search-icon">
+          <a href="#">
+            <img src="search-icon.png">
+          </a>
+        </div>
+        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
+      </div>
+    </div>
+</header>
+
+<div class="img-gallery">
+    <img 
+      src="img/intro-large.jpg" 
+      srcset="
+      img/intro-medium.jpg 1x, 
+      img/intro-large.jpg 2x"
+      alt="intro screen image">
+
+    <div id="content-nav">
+        <a href="#featured" class="content-nav-item grid-col-4of12">Featured events</a>
+        <a href="#promoted" class="content-nav-item grid-col-4of12">Promoted events</a>
+        <a href="#categories" class="content-nav-item grid-col-4of12">All categories</a>
+    </div>
+
+</div>
+
+  									<!-- featured event section -->
+<section id="featured" class="container">
+<div class="content-title">
+	  <h2 >Featured events</h2>
+	  <a class="gray" href="#">see more ></a>
+</div>
+
+<div class="row grid-col-12of12">
+  	<div class="event-container grid-col-4of12">
+  		<a href="#">
+  			<div class="img-container" id="sfu-hack">
+  			</div>
+  		</a>
+  
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$40</h3><p class="gray">22 booked</p>
+			</div>
+			<div class="center-content">
+				<a>
+				<h4>Enactus SFU Presents - Take HACKtion</h4>
+				</a>
+			</div>
+			<div class="bottom-content">
+				<p>Sat 25 March, 2017</p>
+			</div>
+		</div>
+    </div> 
+
+    <div class="event-container grid-col-4of12">
+  		<a href="#">
+  			<div class="img-container" id="ubc-bustur">
+  			</div>
+  		</a>
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$7</h3><p class="gray">83 booked</p>
+			</div>
+			<div class="center-content">
+				<a>
+				<h4>UBC Bus Transport</h4>
+				</a>
+			</div>
+			<div class="bottom-content">
+				<p>Fri 10 March, 2017</p>
+			</div>
+		</div>
+    </div> 
+
+    <div class="event-container grid-col-4of12">
+  		<a href="#">
+  			<div class="img-container" id="ubc-plant">
+  			</div>
+  		</a>
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$60 - $65</h3><p class="gray">8 booked</p>
+			</div>
+			<div class="center-content">
+				<a>
+				<h4>Living Sedum Wreath Workshop</h4>
+				</a>
+			</div>
+			<div class="bottom-content">
+				<p>Mon 13 March, 2017</p>
+			</div>
+		</div>
+    </div> 	
+</div>
+</section>
+
+								<!-- promoted event section -->
+<section>
+	<div class="img-gallery">
+      <img 
+      src="img/promoted-large.jpg" 
+      srcset="
+      img/promoted-medium.jpg 1x, 
+      img/promoted-large.jpg 2x"
+      alt="promoted event image">
+    </div>
+
+</section>
+<section id="promoted" class="container">
+<div class="content-title">
+	  <h2 >Promoted events</h2>
+	  <a class="gray" href="#">see more ></a>
+</div>
+
+<div class="row grid-col-12of12">
+  	<div class="event-container grid-col-4of12">
+  		<div class="promoted-bar">
+    		<p>free</p>
+    	</div>
+  		<a href="#">
+  			<div class="img-container" id="food-service">
+  			</div>
+  		</a>
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$0</h3><h4>($30)</h4><p class="gray">132 booked</p>
+			</div>
+			<div class="center-content">
+				<a><h4>Training for the Food Service Industry</h4></a>
+			</div>
+			<div class="bottom-content">
+				<p>Mon 5 March, 2017</p>
+			</div>
+		</div>
+    </div> 
+
+    <div class="event-container grid-col-4of12">
+    	<div class="promoted-bar">
+    		<p>30% off</p>
+    	</div>
+  		<a href="#">
+  			<div class="img-container" id="photography">
+  			</div>
+  		</a>
+  		<div class="content-container">
+			<div class="top-content">
+				<h3>$50</h3><h4>($35)</h4><p class="gray">74 booked</p>
+			</div>
+			<div class="center-content">
+				<a><h4>Introduction to Photography</h4></a>
+			</div>
+			<div class="bottom-content">
+				<p>Wed 8 March, 2017</p>
+			</div>
+		</div>
+    </div> 
+
+    <div class="event-container grid-col-4of12">
+    	<div class="promoted-bar">
+    		<p>30% off</p>
+    	</div>
+  		<a href="#">
+  			<div class="img-container" id="creative-class">
+  			</div>
+  		</a>
+		<div class="content-container">
+			<div class="top-content">
+				<h3>$196</h3><h4>($280)</h4><p class="gray">29 booked</p>
+			</div>
+			<div class="center-content">
+				<a><h4>Clear + Create: Beyond the Vision Board</h4></a>
+			</div>
+			<div class="bottom-content">
+				<p>Fri 31 March, 2017</p>
+			</div>
+		</div>
+    </div> 	
+</div>
+</section>
+
+
+									<!-- all categories section -->
+<section id="categories" class="container">
+	<div class="content-title">
+		  <h2 >All categories</h2>
+	</div>
+	<div class="row grid-col-12of12">
+		<div class="category-img grid-col-4of12">
+	  		<a href="#">
+	  			<div class="img-container" id="fitness">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-4of12">
+	  		<a href="#">
+	  			<div class="img-container" id="business">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-4of12">
+	  		<a href="#">
+	  			<div class="img-container" id="music">
+	  			</div>
+  			</a>
+	  	</div>
+	</div>
+
+	<div class="row grid-col-12of12">
+		<div class="category-img grid-col-4of12">
+	  		<a href="#">
+	  			<div class="img-container" id="fashion">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-4of12">
+	  		<a href="#">
+	  			<div class="img-container" id="art">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-4of12">
+	  		<a href="#">
+	  			<div class="img-container" id="design">
+	  			</div>
+  			</a>
+	  	</div>
+	</div>
+	<div class="row grid-col-12of12">
+		<div class="category-img grid-col-4of12">
+	  		<a href="#">
+	  			<div class="img-container" id="tech">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-4of12">
+	  		<a href="#">
+	  			<div class="img-container" id="math">
+	  			</div>
+  			</a>
+	  	</div>
+	  	<div class="category-img grid-col-4of12">
+	  		<a href="#">
+	  			<div class="img-container" id="science">
+	  			</div>
+  			</a>
+	  	</div>
+	</div>
+</section>
+
+<footer>
+	<ul>
+		<a>sitemap</a>
+		<a>styleguide</a>
+		<a>repository</a>
+	</ul>
+</footer>
+
+</body>
+
+<script src="zepto.js"></script>
+<script src="hamburger.js"></script>
+
+</html>
