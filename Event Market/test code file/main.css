@@ -88,10 +88,6 @@ header{
 #main-nav-links a:hover, #main-nav-links a:focus, #main-nav-links a:active{
 	border:solid 1px white;
 }
-/*--------------------hightlight is NOT working--------------*/
-/*#highlight-item{
-	border:solid 1px white;
-}*/
 .main-nav-right{
 	margin-right:20px;
 }
@@ -112,29 +108,10 @@ header{
 	height:20px;
 	width:auto;
 }
-
-#hamburger-icon{
-	position:relative;
-	margin-left:2rem;
-	width:20px;
-	height:20px;
-	cursor:pointer;
-}
-#hamburger-icon::after{
-	content: '';
-	display:block;
-	box-shadow: 0 3px 0 1px white, 
-	0 12px 0 1px white, 
-	0 20px 0 1px white;
-}
 #hamburger-icon.hidden{
 	visibility: hidden;
 	display: none;
 }
-/*#main-nav-links.hidden{
-	visibility: hidden;
-	display: none;
-}*/
 /*------------------------------------------INTRO SCREEN----------------------------------------*/
 .img-gallery{
 	float:left;
@@ -322,8 +299,52 @@ header{
 /*------------------------------------------RESPONSIVE STYLING----------------------------------------*/
 
 @media(max-width:965px){
+	#main-nav{
+		height:50px;
+	}
+	#logo{
+		font-size:1.4rem;
+	}
+	#main-nav-links.hidden{
+		visibility: hidden;
+		display: none;
+	}
+	#hamburger-icon{
+		position:relative;
+		margin-left:2rem;
+		width:20px;
+		height:20px;
+		cursor:pointer;
+	}
+	#hamburger-icon::after{
+		content: '';
+		display:block;
+		box-shadow: 0 3px 0 0.7px white, 
+		0 12px 0 0.7px white, 
+		0 20px 0 0.7px white;
+	}
+
+	#main-nav-links{
+		position:absolute;
+		top:50px;
+		right:0;
+		height:180px;
+		width:33.3%;
+		background-color:white;
+		
+	}
+	#main-nav-links a{
+		display:block;
+		text-align:center;
+		margin-top:0.5rem;
+		color:rgb(134,175,73);
+		border:1px solid white;
+	}
+	#main-nav-links a:hover, #main-nav-links a:active, #main-nav-links a:focus{
+		border:1px solid rgb(134,175,73);
+	}
 	#search-form input{
-		width:60px;
+		height:20px;
 	}
 }
 
