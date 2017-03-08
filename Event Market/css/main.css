@@ -41,7 +41,7 @@ a{
   text-decoration:none;
 }
 /* 
-  MAIN NAVIGATION ---------------------------------------
+  ------------------------------MAIN NAVIGATION ---------------------------
   */
   header{
   display:fixed;
@@ -92,7 +92,7 @@ a{
 #main-nav-links a:hover, #main-nav-links a:focus, #main-nav-links a:active{
   border:solid 1px white;
 }
-/*--------------------hightlight is NOT working--------------*/
+/*-----------hightlight is NOT working--------------*/
 /*#highlight-item{
   border:solid 1px white;
 }*/
@@ -139,7 +139,11 @@ a{
   visibility: hidden;
   display: none;
 }*/
-/*----------------------------------footer----------------------*/
+/*-----------page-indicator----------------*/
+.page-indicator a:hover, .page-indicator a:active, .page-indicator a:focus{
+  text-decoration: underline;
+}
+/*------------------footer----------------------*/
 footer{
   display:block;
   float:left;
@@ -192,28 +196,36 @@ footer a:hover, footer a:focus, footer a:active{
 .content-nav-item:hover, .content-nav-item:focus{
   color:rgb(134,175,73);
 }
-  /*--------------------------Containers--------------------------*/
-  .inner-container{
+/*--------------Containers---------------*/
+.top-container{
+  float:left;
+  display:block;
+  margin-left:6.5%;
+  margin-right:6.5%;
+  width:87%;
+  margin-top:3rem;
+}
+.inner-container{
   	display:blcok;
   	float:left;
   	margin-left:15%;
   	width:70%;
   	margin-top:3rem;
   	margin-bottom:3rem;
-  }
+}
   /*Page Guide*/
-  .guide{
+.guide{
   	float:left;
   	width:100%;
-  }
-  .guide a{
+}
+.guide a{
   	color:black;
   	transition:color ease-out 0.1s;
-  }
-  .guide a:hover, .guide a:focus{
+}
+.guide a:hover, .guide a:focus{
   	color:rgb(234,86,68);
-  }
-/*-----------------------------------------Content(Featured event, promoted, all categories)-----------------------------------------*/
+}
+/*----------------Content-----------------*/
 /*featured event*/
 .container{
   display:block;
@@ -221,13 +233,12 @@ footer a:hover, footer a:focus, footer a:active{
   margin-left:5%;
   margin-right:5%;
   margin-top:1rem;
-  margin-bottom:6rem;
+  margin-bottom:3rem;
   width:90%;
 }
 .event-container{
   display:block;
   float:left;
-  width:100%;
 }
 .content-title{
   width:100%;
@@ -269,6 +280,7 @@ footer a:hover, footer a:focus, footer a:active{
   display:block;
   margin-left:5%;
   margin-right:5%;  
+  margin-bottom:3rem;
   width:90%;
 }
 .top-content{
@@ -472,8 +484,27 @@ footer a:hover, footer a:focus, footer a:active{
   	margin-top:1rem;
   	height:200px;
   }
-/*CART PAGE------------------------------------------------------------
-*/
+/*-----------------------------------EVENT GALLERY----------------------------------*/
+#sec-nav{
+  display:block;
+  float:left;
+  width:100%;
+}
+#sec-nav-bar{
+  display:block;
+  float:left;
+  width:100%;
+  margin-top:60px;
+  height:4.3rem;
+  background-color:rgba(237,237,237,0.9);
+}
+#filter-box{
+  height:4.5rem;
+  margin-bottom:4rem;
+  border:2px solid rgb(134,175,73);
+}
+
+/*----------------------------------CART PAGE---------------------------------------*/
 .quantity-form{
 	float:left;
 	width:50%;
@@ -566,9 +597,6 @@ section.account{
 .account form{
 	margin-bottom: 3rem;
 }
-
-
-
 /* 
   PAYMENT PAGE --------------------------------------------------------
   */
@@ -687,8 +715,6 @@ a#pay-btn{
   .filter-bar h3{
   	margin: 1.5em;
   }
-
-
 /*
   COMMENTS PAGE --------------------------------------------------------
   */
