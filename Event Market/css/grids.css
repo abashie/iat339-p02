@@ -1,4 +1,4 @@
-.grid-row::after {
+/*.grid-row::after {
 	content: "";
 	display: block;
 	clear: both;
@@ -49,7 +49,7 @@
 	float:left;
 	width:100%;
 	margin-bottom:3rem;
-}
+}*/
 /*-------------------------------12 GRID Structure---------------------*/
 .grid-col-12of12{
 	width:100%;
@@ -63,7 +63,7 @@
 	width:58%;
 }
 
-.filter-12of6, .grid-col-12of6{
+.grid-col-12of6{
 	float:left;
 	width:50%;
 }
@@ -71,43 +71,18 @@
 	float:left;
 	width:42%;
 }
-.filter-12of4, .grid-col-12of4, .small-col-12of4, .grid-full-col-12of4{
+.grid-col-12of4, .small-col-12of4, .grid-full-col-12of4, .medium-col-12of4 {
 	float:left;
 	width:33.3%;
 }
 .grid-col-12of3{
 	float:left;
-	width:24%;
+	width:23%;
 }
-.grid-col-12of2{
+.grid-col-12of2, .medium-col-12of2{
 	width:16%;
 }
 .grid-col-12of1{
 	width:8.3%;
-}
-/*--------------------------------------end----------------------------*/
-
-@media (max-width: 47em){
-
-
-/*THIS IS NOT WORKING. WONT FLOAT LEFT.*/
-.pay-container label{
-	float: left;
-}
-
-
-.grid-col-1of4{
-width: 48%;
-}
-
-}
-
-
-@media (max-width: 30em){
-
-.grid-col-1of4{
-width: 100%;
-}
-
 }
 
