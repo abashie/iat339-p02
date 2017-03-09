@@ -63,7 +63,7 @@
 	width:58%;
 }
 
-.grid-col-12of6{
+.filter-12of6, .grid-col-12of6{
 	float:left;
 	width:50%;
 }
@@ -71,7 +71,7 @@
 	float:left;
 	width:42%;
 }
-.grid-col-12of4, .small-col-12of4, .grid-full-col-12of4{
+.filter-12of4, .grid-col-12of4, .small-col-12of4, .grid-full-col-12of4{
 	float:left;
 	width:33.3%;
 }
