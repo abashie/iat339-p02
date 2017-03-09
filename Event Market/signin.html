@@ -43,24 +43,35 @@
 
 <div class="container-box">
 <div class="top-container">
-  <p class="page-indicator"><a>home</a> > sign in</p>
+  <p class="page-indicator"><a href="home.html">home</a> > sign in</p>
 </div>
 
 
   <section class="container">
-    <div class="grid-col-12of6">
-    <div class="signin-box">
+    <div class="grid-col-12of6 signin-box">
       <h3>Sign In</h3>
       <form  name="form-content">
-        <div class="input-block">
+        <div class="field-block">
           <input class="text-input" name="text-input" type="text" placeholder="username">
         </div>
-        <div class="input-block">
+        <div class="field-block">
           <input class="text-input" name="text-input" type="Password" placeholder="password">
         </div>
+        <div class="field-block">
+          <input id="check-box" type="checkbox" name="checkbox" value="value">
+          <label for="check-box">remember me</label>
+        </div>
+        <div class="field-block">
+        <a href="home.html">
+          <input id="signin-btn" type="button" name="signin" value="Sign in">
+        </a>
+        </div>
       </form>
-      <a href="home.html">Sign in</a>
-    </div>
+
+      <div id="signup-block">
+      <p>Don't have an account?</p>
+      <a href="#">sign up an account to join us</a>
+      </div>
     </div>
 
     <!-- <div class="grid-col-12of6">
