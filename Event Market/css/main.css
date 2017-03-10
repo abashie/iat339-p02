@@ -181,6 +181,10 @@ footer span{
   margin-right: 5px;
 }
 
+footer .grid-col-12of3{
+  float: right;
+}
+
 
 /*------------------------------------------INTRO SCREEN----------------------------------------*/
 .img-gallery{
@@ -626,11 +630,13 @@ footer span{
  }
 
  .filter-box-border a.btn-filled{
+  float: right;
    background-color: rgb(239, 120, 43);
+   color: white;
    border-color: rgb(239, 120, 43);
    font-size: 0.9rem;
    max-width: 90px;
-   padding: 0.1rem 1rem;
+   padding: 0.1rem 1.5rem;
    margin-right: 1.5rem;
  }
 
@@ -1022,6 +1028,8 @@ footer span{
   /*----------------------------------------------------------------------------------*/
   /*----------------------------------@MEIDA STYLING----------------------------------*/
   @media(max-width:1200px){
+
+
   .filter-12of4s{
 width: 25%;
 min-width: 250px;
@@ -1180,6 +1188,7 @@ width: 40%;
    footer .grid-col-12of3{
     width: 50%;
   }
+
 
 }
 
