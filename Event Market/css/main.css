@@ -687,6 +687,7 @@ footer .grid-col-12of3{
   padding-left:1rem;
 }
 #signin-btn{
+  cursor: pointer;
   width:110%;
   font-size:0.9rem;
   color:white;
