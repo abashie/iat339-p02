@@ -15,71 +15,80 @@
 </head>
 
 <body>
-	<header>
-    <div id="main-nav">
-      <a href="#" class="main-nav-section main-nav-left">
-          <h1 id="logo">Event Market</h1>
-      </a>
+  <header>
+      <div id="main-nav">
+        <a href="home.html" class="main-nav-section main-nav-left">
+            <h1 id="logo">Event Market</h1>
+        </a>
 
-      <div class="main-nav-section" href="home.html">
-        <nav id="main-nav-links">
-          <a href="event-gallery.html" id="highlight-item">event gallery</a>
-          <a href="about.html">about</a>
-          <a href="account.html">sign in</a>
-          <a href="cart.html">cart</a>
-        </nav>
-      </div>
-
-      <div class="main-nav-section main-nav-right">
-        <form id="search-form">
-          <input type="text" name="search-bar">
-        </form>
-        <div id="search-icon">
-          <a href="#">
-            <img src="img/search-icon.png">
-          </a>
+        <div class="main-nav-section" href="home.html">
+          <nav id="main-nav-links">
+            <a href="event-gallery.html" id="highlight-item">event gallery</a>
+            <a href="about.html">about</a>
+            <a href="signin.html">sign in</a>
+            <a href="cart.html">cart</a>
+          </nav>
         </div>
-        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
+
+        <div class="main-nav-section main-nav-right">
+          <form id="search-form">
+            <input type="text" name="search-bar">
+          </form>
+          <div id="search-icon">
+            <a href="#">
+              <img src="img/search-icon.png">
+            </a>
+          </div>
+          <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
+        </div>
       </div>
+  </header>
+
+  <div class="container-box">
+    <div class="top-container">
+      <p class="page-indicator"><a href="home.html">home</a> > cart</p>
     </div>
-</header>
 
 	<div class="container">
-		<p class="guide"> <a href="home.html">Home</a> > Cart</p>
     	<section class="product-summary box-shadow">
         <div class="grid-full-col-12of4">
-          <div class="pdt-image">
-            <img src="img/touchpoint-event.jpg" alt="touchpoint"> 
+          <div class="pdt-image" id="touchpoint">
           </div>
         </div>
 
-        <div class="grid-col-12of8">
-          <div class="pdt-info">
-            <h4>Touchpoint 2017</h4>
-            <p>Date: Thu, 16 February 2017 9:00 AM – 2:30 PM</p>
-            <div class="price-form">
-            	<p>Price: $30</p>
-            </div>
-
-            <div class="quantity-form">
-            	<form>
-	            	<label>Quantity: </label>
-			        <input class="quantity-selector" type="number" name="quantity" min="1" max="100" step="1" value="1">
-		     	</form>
-            </div>
+        <div class="cart-block grid-col-12of8">
+          <div class="cart-detail">
+          <div class="info-block">
+            <h2>SFU Touchpoint 2017</h2>
+          </div>
+          <div class="info-block">
+            <h3>Date:</h3>
+            <P>March 13, 2017</P> 
+          </div>
+          <div class="info-block">
+            <h3>Price: </h3>
+            <P>$30</P> 
+          </div>
+          <div class="info-block">
+             <form>
+                  <h3>Quantity: </h3>
+                <input class="quantity-selector" type="number" name="quantity" min="1" max="100" step="1" value="1">
+  		     	</form>
           </div>
         </div>
-        </section>
+      </div>
+    </section>
 
-        <div class="buttons">
-		<div class="grid-col-12of6">
-			<a class="btn" href="events.html">continue browsing</a>
-		</div>
-		<div class="grid-col-12of6">
-			<a class="btn-filled" href="payment.html">check out</a>
-		</div>		
+    <div class="buttons">
+  		<div class="grid-col-12of6">
+  			<a id="continue-btn" href="events.html">continue browsing</a>
+  		</div>
+  		<div class="grid-col-12of6">
+  			<a  id="complete-btn" href="payment.html">check out</a>
+		  </div>		
+	  </div>
 	</div>
-	</div><!-- margin top container -->
+</div><!-- margin top container -->
 	
 	<footer>
 		<div class="footer-contact-info">
@@ -93,4 +102,6 @@
 	</footer>
 
 </body>
+<script src="js/zepto.js"></script>
+<script src="js/javascript.js"></script>
 </html>

@@ -14,7 +14,7 @@
 <body>
   <header>
       <div id="main-nav">
-        <a href="#" class="main-nav-section main-nav-left">
+        <a href="home.html" class="main-nav-section main-nav-left">
             <h1 id="logo">Event Market</h1>
         </a>
 
@@ -22,7 +22,7 @@
           <nav id="main-nav-links">
             <a href="event-gallery.html" id="highlight-item">event gallery</a>
             <a href="about.html">about</a>
-            <a href="account.html">sign in</a>
+            <a href="signin.html">sign in</a>
             <a href="cart.html">cart</a>
           </nav>
         </div>
@@ -40,56 +40,36 @@
         </div>
       </div>
   </header>
+
+  <div class="container-box">
+<div class="top-container">
+  <p class="page-indicator"><a href="payment.html">payment</a> > confirmation</p>
+</div>
   
   <div class="container">
-  <p class="guide"> <a href="home.html">Home</a> > Confirm</p>
    	<section class="confirmation-info">
-      <div id="complete-logo">
-        <img src="img/check-mark.png">
-      </div>
-  		<h2>Payment Completed</h2>
+  		<h2>Thank you ! Your payment completed.</h2>
   	</section>
 
   	<section class="product-summary box-shadow">
         <div class="grid-full-col-12of4">
-          <div class="pdt-image">
-            <img src="img/touchpoint-event.jpg"> 
+          <div class="pdt-image" id="touchpoint">
           </div>
         </div>
 
         <div class="grid-col-12of8">
           <div class="pdt-info">
             <h3>Order Number: 3DN9JF81F95</h3>
-            <h4>Touchpoint 2017</h4>
-            <p>Date: Thu, 16 February 2017 9:00 AM – 2:30 PM</p>
-            <p>Location: <a href="https://www.google.ca/maps/place/SFU+Goldcorp+Centre+for+the+Arts/@49.2824852,-123.110386,17z/data=!3m1!4b1!4m5!3m4!1s0x548671798b945ec1:0xd34d5b6ae6ed0386!8m2!3d49.2824817!4d-123.108192" class="location">Goldcorp Centre for the Arts, 149 W Hastings St Vancouver, BC V6B 1H4</a></p>
+            <h2>Touchpoint 2017</h2>
+            <h4>Date:</h4>
+            <p>Thu, 16 February 2017 9:00 AM – 2:30 PM</p>
+            <h4>Location:</h4>
+            <a href="https://www.google.ca/maps/place/SFU+Goldcorp+Centre+for+the+Arts/@49.2824852,-123.110386,17z/data=!3m1!4b1!4m5!3m4!1s0x548671798b945ec1:0xd34d5b6ae6ed0386!8m2!3d49.2824817!4d-123.108192" class="location">Goldcorp Centre for the Arts, 149 W Hastings St Vancouver, BC V6B 1H4</a>
           </div>
         </div>
-         		
-      <div class="ticket-method">
-        <div class="small-col-12of4">
-          <img class="grid-col-12of4"src="img/download.png" alt="download icon">
-          <div class="small-col-12of8">
-            <p>download</p>
-          </div>
-        </div>
-
-        <div class="small-col-12of4">
-          <img class="grid-col-12of4" src="img/email.png" alt="email icon">
-          <div class="small-col-12of8">
-            <p>email</p>
-          </div>
-        </div>
-
-        <div class="small-col-12of4">
-          <img class="grid-col-12of4" src="img/message.png" alt="message icon">
-          <div class="small-col-12of8">
-            <p>message</p>
-          </div>
-        </div>  
-      </div>
     </div>
   	</section>
+  </div>
 
 	<footer>
 		<div class="footer-contact-info">
@@ -102,4 +82,6 @@
 		</div>	  	
 	 </footer>
 </body>
+<script src="js/zepto.js"></script>
+<script src="js/javascript.js"></script>
 </html>
