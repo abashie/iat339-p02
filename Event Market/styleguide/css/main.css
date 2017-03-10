@@ -161,10 +161,16 @@ code{
 	text-indent: 0.3rem;
 	border:solid 1px rgb(180,180,180);
 }
-.bullet-list-item, .num-list-item{
+ul, ol{
 	font-family: 'Hind Vadodara', sans-serif;
 	color:rgb(120,120,120);
 }
+
+li{
+  margin: 1rem 0;
+  list-style-type: none;
+}
+
 .colour p{
 	display:inline-block;
 	width:80px;
@@ -415,6 +421,15 @@ margin-top: 0;
       height:20px;
     }
 
+/*citations*/
+
+.box{
+  margin-bottom: 3rem;
+}
+
+.citation-container{
+  margin: 0 15%;
+}
 
 	@media(max-width:965px){
 

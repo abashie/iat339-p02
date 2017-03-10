@@ -1,454 +1,497 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Style Guide</title>
-<meta charset="utf-8">
-<link href="css/grids.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+	<title>Style Guide</title>
+	<meta charset="utf-8">
+	<link href="css/grids.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="container">
-	<div class="header">
-		<p>Event Market</p>
+	<div class="container">
+		<div class="header">
+			<p>Event Market</p>
+		</div>
+
+		<div class="grid-col-lof2 side-nav">	
+			<h1>Style Guide</h1>
+			<nav class="side-bar">
+				<a href="#interative-elm"># Interative Elements</a>
+				<a href="#text-elm"># Text Elements</a>
+				<a href="#combined-elm"># Combined Elements</a>
+				<a href="#sitemap"># Site Map</a>
+				<a href="#citation"># Citation</a>
+			</nav>
+		</div>
+
+		<div class="grid-col-lof8 content ">
+			<section id="interative-elm" class="section">
+				<h2>Interative Elements</h2>
+				<div class="box">
+					<h3>In-text Link</h3>
+
+					<h4>CSS selector:</h4>
+					<p>.in-text-nav</p>
+
+					<h4>Sample code:</h4>
+					<code>
+						&lt;p&gt;This is a paragraph to demonstrate the style of an &lt;a class="in-text-nav" href="#"&gt;in-text link.&lt;/a&gt;&lt;/p&gt;
+					</code>
+
+					<h4>Rendered element:</h4>
+					<p>This is a paragraph to demonstrate the style of an
+						<a class="in-text-nav" href="#">in-text link.</a>
+					</p>
+				</div>
+				<div class="box">
+					<h3>Navigation Buttons</h3>
+
+					<h4>CSS selector:</h4>
+					<p>.ticket-btn</p>
+					<p>.submit-btn</p>
+
+
+					<h4>Sample code:</h4>
+					<code>
+						&lt;a class="ticket-btn" href="#"&gt;Submit&lt;/a&gt;<br>
+						&lt;a class="submit-btn" href="#"&gt;Buy Tickets&lt;/a&gt;<br>
+						&lt;a class="ticket-btn" href="#"&gt;Sign In&lt;/a&gt;<br>
+
+
+					</code>
+
+					<h4>Rendered element:</h4>
+					<a class="ticket-btn" href="#">Buy Tickets</a>
+					<a class="submit-btn">Submit</a>
+
+					<a class="ticket-btn">Sign In</a>
+
+				</div>
+				<div class="box">
+					<h3>Input Field and Form</h3>
+
+					<h4>CSS selector:</h4>
+					<p>.label .text-input</p>
+
+					<h4>Sample code:</h4>
+					<code>
+
+						&lt;form class="form" name="form-content"&gt; <br>
+						&lt;label class="label"&gt;Username&lt;/label&gt;<br>
+						&lt;input class="text-input" name="text-input" type="text"&gt;<br>
+						&lt;label class="label"&gt;Password&lt;/label&gt;<br>
+						&lt;input class="text-input" name="text-input" type="Password"&gt; 	 <br>      
+						&lt;/form&gt;
+
+
+					</code>
+
+					<h4>Rendered element:</h4>
+					<form class="form" name="form-content">
+						<label class="label">Username</label>
+						<input class="text-input" name="text-input" type="text">
+						<label class="label">Password</label>
+						<input class="text-input" name="text-input" type="Password"> 	       
+					</form>
+				</div>
+			</section>
+
+			<section id="text-elm" class="section">
+				<h2>Text Elements</h2>
+				<div class="box">
+					<h3>A Paragraph</h3>
+
+					<h4>CSS selector:</h4>
+					<p>p</p>
+
+					<h4>Sample code:</h4>
+					<code>
+						&lt;p class="paragraph" &gt;This is an example to demonstrate the style of a paragraph element. (0.8rem) &lt;/p &gt;   
+					</code>
+
+					<h4>Rendered element:</h4>  
+					<p class="paragraph">This is an example to demonstrate the style of a paragraph element. (0.8rem)</p>				
+				</div>
+				<div class="box">
+					<h3>Three Level Heading</h3>
+
+					<h4>Sample code:</h4>
+					<code>
+						&lt;h2&gt;Level two heading (font: Hind Vadodara)&lt;/h2&gt;<br>
+						&lt;h3&gt;Level three heading (font: Quicksand)&lt;/h3&gt;<br>
+						<&lt;h4&gt;Level four heading (font: Quicksand)&lt;/h4&gt; 
+					</code>
+
+					<h4>Rendered element:</h4>  
+					<h2 >Level two heading (font: Hind Vadodara)</h2>
+					<h3 class="demo">Level three heading (font: Quicksand)</h3>
+					<h4 class="demo">Level four heading (font: Quicksand)</h4>
+				</div>
+				<div class="box">
+					<h3>Bulleted List</h3>       
+
+					<h4>CSS selector:</h4>
+					<p>ul</p>
+
+
+					<h4>Sample code:</h4>
+					<code>
+						&lt;ul&gt;<br>
+						&lt;li&gt;item 1 (0.8rem)&lt;/li&gt;<br>
+						&lt;li&gt;item 2 (0.8rem)&lt;/li&gt;<br>
+						&lt;li&gt;item 3 (0.8rem)&lt;/li&gt;<br>
+						&lt;/ul>  
+					</code>
+
+					<h4>Rendered element:</h4>  
+					<ul>
+						<li class="bullet-list-item">item 1 (0.8rem)</li>
+						<li class="bullet-list-item">item 2 (0.8rem)</li>
+						<li class="bullet-list-item">item 3 (0.8rem)</li>
+					</ul>
+				</div>
+				<div class="box">
+					<h3>Numbered List</h3>       
+
+					<h4>CSS selector:</h4>
+					<p>ol</p>
+
+
+					<h4>Sample code:</h4>
+					<code>
+						&lt;ol><br>
+						&lt;li&gt;item 1 (0.8rem)&lt;/li&gt;<br>
+						&lt;li&gt;item 2 (0.8rem)&lt;/li&gt;<br>
+						&lt;li&gt;item 3 (0.8rem)&lt;/li&gt;<br>
+						&lt;/ol&gt; 
+					</code>
+
+					<h4>Rendered element:</h4>  
+					<ol class="num-list">
+						<li class="num-list-item">item 1 (0.8rem)</li>
+						<li class="num-list-item">item 2 (0.8rem)</li>
+						<li class="num-list-item">item 3 (0.8rem)</li>
+					</ol>
+				</div>
+			</section>
+
+			<section id="combined-elm" class="section">
+				<h2>Combined Elements</h2>
+				<div class="box">
+					<h3>Colour Swatches</h3>
+
+					<h4>CSS selector:</h4>
+					<p>.colour</p>
+					<p>#scarlet-lbis, #orange, #green, #dark-gray, #gray, #light-gray</p>
+
+					<h4>Sample code:</h4>
+					<code>
+						&lt;div class="colour"&gt; <br>
+						&lt;p id="scarlet-lbis"&gt;scarlet lbis RGB(234,85,68)  &lt;/p&gt;<br>
+						&lt;p id="orange"&gt;orange RGB(239,120,42)  &lt;/p&gt;<br>
+						&lt;p id="green"&gt;green RGB(134,175,73)  &lt;/p&gt;<br>
+						&lt;p id="dark-gray"&gt;dark gray RGB(60,60,60)  &lt;/p&gt;<br>
+						&lt;p id="gray"&gt;sharkskin RGB(111,111,111)  &lt;/p&gt;<br>
+						&lt;p id="light-gray"&gt;light gray RGB(178,178,178)  &lt;/p&gt;<br>
+						&lt;/div&gt;     
+					</code>
+
+					<h4>Rendered elements:</h4>
+					<div class="colour">
+						<p id="scarlet-lbis">scarlet lbis RGB(234,85,68)</p>
+						<p id="orange">orange RGB(239,120,42)</p>
+						<p id="green">green RGB(134,175,73)</p>
+						<p id="dark-gray">dark gray RGB(60,60,60)</p>
+						<p id="gray">sharkskin RGB(111,111,111)</p>
+						<p id="light-gray">light gray RGB(178,178,178)</p>
+					</div>
+				</div>
+				<div class="box">
+					<h3>Main Navigation</h3>
+
+					<h4>CSS selector:</h4>
+					<p>.main-nav, .main-nav-section, .main-nav-links, .main-nav-right, .main-nav-left</p>
+					<p>#logo</p>
+
+					<h4>Sample code:</h4>
+					<code> 
+						&lt;div id="main-nav"&gt;<br>
+						&lt;a href="home.html" class="main-nav-section main-nav-left"&gt;<br>
+						&lt;h1 id="logo"&gt;Event Market  &lt;/h1&gt;<br>
+						&lt;/a&gt;<br>
+
+						&lt;div class="main-nav-section" href="home.html"&gt;<br>
+						&lt;nav id="main-nav-links"&gt;<br>
+						&lt;a href="event-gallery.html" id="highlight-item"&gt;event gallery  &lt;/a&gt;<br>
+						&lt;a href="about.html"&gt;about  &lt;/a&gt;<br>
+						&lt;a href="signin.html"&gt;sign in  &lt;/a&gt;<br>
+						&lt;a href="cart.html"&gt;cart  &lt;/a&gt;<br>
+						&lt;/nav&gt;<br>
+						&lt;/div&gt;<br>
+
+						&lt;div class="main-nav-section main-nav-right"&gt;<br>
+						&lt;form id="search-form"&gt;<br>
+						&lt;input type="text" name="search-bar"&gt;<br>
+						&lt;/form&gt;<br>
+						&lt;div id="search-icon"&gt;<br>
+						&lt;a href="#"&gt;<br>
+						&lt;img src="img/search-icon.png"&gt;<br>
+						&lt;/a&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"&gt;  &lt;/a&gt;<br>
+						&lt;/div&gt;<br>
+
+						&lt;/div&gt; 
+					</code>
+
+					<h4>Rendered element:</h4>
+
+
+					<div id="main-nav">
+						<a href="home.html" class="main-nav-section main-nav-left">
+							<h1 id="logo">Event Market</h1>
+						</a>
+
+						<div class="main-nav-section" href="home.html">
+							<nav id="main-nav-links">
+								<a href="event-gallery.html" id="highlight-item">event gallery</a>
+								<a href="about.html">about</a>
+								<a href="signin.html">sign in</a>
+								<a href="cart.html">cart</a>
+							</nav>
+						</div>
+
+						<div class="main-nav-section main-nav-right">
+							<form id="search-form">
+								<input type="text" name="search-bar">
+							</form>
+							<div id="search-icon">
+								<a href="#">
+									<img src="img/search-icon.png">
+								</a>
+							</div>
+							<a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
+						</div>
+
+					</div>
+
+
+				</div>
+
+				<div class="box">
+					<h3>Footer</h3>
+
+					<h4>CSS selector:</h4>
+					<p>footer</p>
+					<p>.footer-padding, .container</p>
+
+					<h4>Sample code:</h4>
+					<code> 
+
+
+						&lt;footer&gt;<br>
+						&lt;div class="container"&gt;<br>
+						&lt;div class="footer-padding grid-col-12of3"&gt;<br>
+						&lt;h3&gt;Event Market  &lt;/h3&gt;<br>
+
+						&lt;p&gt;A sentence about the website's mission.  &lt;/p&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;div class="footer-padding grid-col-12of2"&gt;<br>
+						&lt;h4&gt;contact us  &lt;/h4&gt;<br>
+						&lt;ul&gt;<br>
+						&lt;li&gt;  &lt;span&gt;phone:  &lt;/span&gt;604-573-2346  &lt;/li&gt;<br>
+						&lt;li&gt;  &lt;span&gt;email:  &lt;/span&gt;service@eventmarket.com  &lt;/li&gt;<br>
+						&lt;li&gt;  &lt;span&gt;facebook:  &lt;/span&gt;event market  &lt;/li&gt;<br>
+						&lt;li&gt;  &lt;span&gt;twitter:  &lt;/span&gt;@event_market  &lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+						&lt;/div&gt;<br>
+
+						&lt;div class="footer-padding grid-col-12of2"&gt;<br>
+						&lt;h4&gt;website  &lt;/h4&gt;<br>
+						&lt;ul&gt;<br>
+						&lt;li&gt;  &lt;a href="#"&gt;site map  &lt;/a&gt;  &lt;/li&gt;<br>
+						&lt;li&gt;  &lt;a href="#"&gt;styleguide  &lt;/a&gt;  &lt;/li&gt;<br>
+						&lt;li&gt;  &lt;a href="#"&gt;github repository  &lt;/a&gt;  &lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+						&lt;/div&gt;<br>
+
+						&lt;/div&gt;  <br>
+						&lt;/footer&gt;    
+					</code>
+
+					<h4>Rendered element:</h4>
+					<footer>
+						<div class="container">
+							<div class="footer-padding grid-col-12of3">
+								<h3>Event Market</h3>
+
+								<p>A sentence about the website's mission.</p>
+							</div>
+							<div class="footer-padding grid-col-12of2">
+								<h4>contact us</h4>
+								<ul>
+									<li><span>phone:</span>604-573-2346</li>
+									<li><span>email:</span>service@eventmarket.com</li>
+									<li><span>facebook:</span>event market</li>
+									<li><span>twitter:</span>@event_market</li>
+								</ul>
+							</div>
+
+							<div class="footer-padding grid-col-12of2">
+								<h4>website</h4>
+								<ul>
+									<li><a href="#">site map</a></li>
+									<li><a href="#">styleguide</a></li>
+									<li><a href="#">github repository</a></li>
+								</ul>
+							</div>
+
+						</div>  <!-- container end -->
+					</footer>
+
+				</div>
+
+
+				<div class="box">
+					<h3>Product List</h3>
+
+					<h4>CSS selector:</h4>
+					<p>.event-container, .img-container, .content-container, .top-content, .center-content, .bottom-content</p>
+
+					<h4>Sample code:</h4>
+					<code>
+					  &lt;div class="event-container grid-col-12of4"&gt;<br>
+						  &lt;a href="#"&gt;<br>
+							  &lt;div class="img-container" id="sfu-hack"&gt;<br>
+							  &lt;/div&gt;<br>
+						  &lt;/a&gt;<br>
+
+						  &lt;div class="content-container"&gt;<br>
+							  &lt;div class="top-content"&gt;<br>
+								  &lt;h3&gt;$40  &lt;/h3&gt;  &lt;p class="gray"&gt;22 booked  &lt;/p&gt;<br>
+							  &lt;/div&gt;<br>
+							  &lt;div class="center-content"&gt;<br>
+								  &lt;a&gt;<br>
+									  &lt;h4&gt;Enactus SFU Presents - Take HACKtion  &lt;/h4&gt;<br>
+								  &lt;/a&gt;<br>
+							  &lt;/div&gt;<br>
+							  &lt;div class="bottom-content"&gt;<br>
+								  &lt;p&gt;Sat 25 March, 2017  &lt;/p&gt;<br>
+							  &lt;/div&gt;<br>
+						  &lt;/div&gt;<br>
+					  &lt;/div&gt;
+					</code>
+
+					<h4>Rendered elements:</h4>
+
+					<div class="event-container grid-col-12of4">
+						<a href="#">
+							<div class="img-container" id="sfu-hack">
+							</div>
+						</a>
+
+						<div class="content-container">
+							<div class="top-content">
+								<h3>$40</h3><p class="gray">22 booked</p>
+							</div>
+							<div class="center-content">
+								<a>
+									<h4>Enactus SFU Presents - Take HACKtion</h4>
+								</a>
+							</div>
+							<div class="bottom-content">
+								<p>Sat 25 March, 2017</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="event-container grid-col-12of4">
+						<a href="#">
+							<div class="img-container" id="ubc-bustur">
+							</div>
+						</a>
+						<div class="content-container">
+							<div class="top-content">
+								<h3>$7</h3><p class="gray">83 booked</p>
+							</div>
+							<div class="center-content">
+								<a>
+									<h4>UBC Bus Transport</h4>
+								</a>
+							</div>
+							<div class="bottom-content">
+								<p>Fri 10 July, 2017</p>
+							</div>
+						</div>
+					</div> 
+
+
+				</div><!-- box end -->
+
+				<div class="box">
+					<h3>Grid System</h3>
+
+					<h4>CSS selector:</h4>
+					<p>.grid-col-lof4</p>
+
+					<h4>Sample code:</h4>
+					<code>
+				
+		  &lt;div class="grid-col-lof4"&gt;<br>
+						  &lt;div class="col"&gt;<br>
+							  &lt;p&gt;4&lt;/p&gt;<br>
+						  &lt;/div&gt;<br>
+						  &lt;div class="col"&gt;<br>
+							  &lt;p&gt;4&lt;/p&gt;<br>
+						  &lt;/div&gt;<br>
+						  &lt;div class="col"&gt;<br>
+							  &lt;p&gt;4&lt;/p&gt;<br>
+						  &lt;/div&gt;<br>
+					  &lt;/div&gt;
+					</code>
+
+					<h4>Rendered element:</h4>  
+					<div class="grid-col-lof4">
+						<div class="col">
+							<p>4</p>
+						</div>
+						<div class="col">
+							<p>4</p>
+						</div>
+						<div class="col">
+							<p>4</p>
+						</div>
+					</div>
+
+				</div>
+
+
+				<section id="sitemap" class="section">
+					<h2>Site Map</h2>
+
+					<img src="img/sitemap.jpg" alt="site map image" width=120% height=auto>
+
+				</section>
+
+
+
+
+
+			</section>
+
+
+
+			<section id="citation" class="section">
+				<h2>Citations</h2>
+				<div class="box">
+					<p>Click <a href="citations.html" class="in-text-nav">this link</a> to open the citations page</p>
+				</div>
+			</section>
+
+		</div>
 	</div>
-
-	<div class="grid-col-lof2 side-nav">	
-		<h1>Style Guide</h1>
-		<nav class="side-bar">
-			<a href="#interative-elm"># Interative Elements</a>
-			<a href="#text-elm"># Text Elements</a>
-			<a href="#combined-elm"># Combined Elements</a>
-			<a href="#sitemap"># Site Map</a>
-			<a href="#citation"># Citation</a>
-		</nav>
-	</div>
-
-	<div class="grid-col-lof8 content ">
-		<section id="interative-elm" class="section">
-		<h2>Interative Elements</h2>
-			<div class="box">
-				<h3>In-text Link</h3>
-
-		        <h4>CSS selector:</h4>
-		        <p>.in-text-nav</p>
-
-		        <h4>Sample code:</h4>
-		        <code>
-		        &lt;p&gt;This is a paragraph to demonstrate the style of an &lt;a class="in-text-nav" href="#"&gt;in-text link.&lt;/a&gt;&lt;/p&gt;
-		        </code>
-
-		        <h4>Rendered element:</h4>
-		        <p>This is a paragraph to demonstrate the style of an
-		        <a class="in-text-nav" href="#">in-text link.</a>
-		        </p>
-			</div>
-			<div class="box">
-				<h3>Navigation Buttons</h3>
-
-		        <h4>CSS selector:</h4>
-		        <p>.ticket-btn</p>
-		        <p>.submit-btn</p>
-		   
-
-		        <h4>Sample code:</h4>
-		        <code>
-		        &lt;a class="ticket-btn" href="#"&gt;Submit&lt;/a&gt;<br>
-		        &lt;a class="submit-btn" href="#"&gt;Buy Tickets&lt;/a&gt;<br>
-		         &lt;a class="ticket-btn" href="#"&gt;Sign In&lt;/a&gt;<br>
-
-		   
-		        </code>
-
-		        <h4>Rendered element:</h4>
-		        <a class="ticket-btn" href="#">Buy Tickets</a>
-		        <a class="submit-btn">Submit</a>
-		     
-		         <a class="ticket-btn">Sign In</a>
-		
-			</div>
-			<div class="box">
-				<h3>Input Field and Form</h3>
-
-		        <h4>CSS selector:</h4>
-		        <p>.label .text-input</p>
-
-		        <h4>Sample code:</h4>
-		        <code>
-		        &lt;form class="form" name="form-content"&gt;<br>
-		            &lt;label class="label"&gt;Username&lt;/label&gt;<br>
-		            &lt;input class="text-input" name="text-input" type="text"&gt;<br>
-		            &lt;label class="label">Password&lt;/label&gt;<br>
-		            &lt;input class="text-input" name="text-input" type="Password">&gt;<br>
-		       
-		            &lt;label class="label">Comments&lt;/label&gt;<br>
-		            &lt;textarea class="text-area" placeholder="Please leave you comments here"&gt;&lt;/textarea&gt;
-		        </form>		          
-		        </code>
-
-		        <h4>Rendered element:</h4>
-		        <form class="form" name="form-content">
-		            <label class="label">Username</label>
-		            <input class="text-input" name="text-input" type="text">
-		            <label class="label">Password</label>
-		            <input class="text-input" name="text-input" type="Password"> 
-		       
-		        </form>
-			</div>
-		</section>
-
-		<section id="text-elm" class="section">
-		<h2>Text Elements</h2>
-			<div class="box">
-				<h3>A Paragraph</h3>
-          
-		        <h4>CSS selector:</h4>
-		        <p>.paragraph</p>
-
-		        <h4>Sample code:</h4>
-		        <code>
-		        &lt;p class="paragraph"&gt;This is an example to demonstrate the style of a paragraph element. (0.8rem)&lt;/p&gt;    
-		        </code>
-
-		        <h4>Rendered element:</h4>  
-		        <p class="paragraph">This is an example to demonstrate the style of a paragraph element. (0.8rem)</p>				
-			</div>
-			<div class="box">
-				<h3>Three Level Heading</h3>
-
-		        <h4>Sample code:</h4>
-		        <code>
-			        &lt;h2&gt;Level two heading (font: Hind Vadodara)&lt;/h2&gt;<br>
-			        &lt;h3&gt;Level three heading (font: Quicksand)&lt;/h3&gt;<br>
-			        <&lt;h4&gt;Level four heading (font: Quicksand)&lt;/h4&gt; 
-		        </code>
-
-		        <h4>Rendered element:</h4>  
-			        <h2 >Level two heading (font: Hind Vadodara)</h2>
-			        <h3 class="demo">Level three heading (font: Quicksand)</h3>
-			        <h4 class="demo">Level four heading (font: Quicksand)</h4>
-			</div>
-			<div class="box">
-				<h3>Bulleted List</h3>       
-
-		        <h4>CSS selector:</h4>
-		        <p>.bullet-list</p>
-		        <p>.bullet-list-item</p>
-
-		        <h4>Sample code:</h4>
-		        <code>
-		            &lt;ul class="bullet-list"><br>
-		            &lt;li class="bullet-list-item"&gt;item 1 (0.8rem)&lt;/li&gt;<br>
-		            &lt;li class="bullet-list-item"&gt;item 2 (0.8rem)&lt;/li&gt;<br>
-		            &lt;li class="bullet-list-item"&gt;item 3 (0.8rem)&lt;/li&gt;<br>
-		            &lt;/ul>  
-		        </code>
-
-		        <h4>Rendered element:</h4>  
-		            <ul>
-		               <li class="bullet-list-item">item 1 (0.8rem)</li>
-		               <li class="bullet-list-item">item 2 (0.8rem)</li>
-		               <li class="bullet-list-item">item 3 (0.8rem)</li>
-		            </ul>
-			</div>
-			<div class="box">
-				<h3>Numbered List</h3>       
-
-		        <h4>CSS selector:</h4>
-		        <p>.num-list</p>
-		        <p>.num-list-item</p>
-
-		        <h4>Sample code:</h4>
-		        <code>
-		            &lt;ol class="bullet-list"><br>
-		            &lt;li&gt;item 1 (0.8rem)&lt;/li&gt;<br>
-		            &lt;li&gt;item 2 (0.8rem)&lt;/li&gt;<br>
-		            &lt;li&gt;item 3 (0.8rem)&lt;/li&gt;<br>
-		            &lt;/ol>  
-		        </code>
-
-		        <h4>Rendered element:</h4>  
-		            <ol class="num-list">
-		               <li class="num-list-item">item 1 (0.8rem)</li>
-		               <li class="num-list-item">item 2 (0.8rem)</li>
-		               <li class="num-list-item">item 3 (0.8rem)</li>
-		            </ol>
-			</div>
-		</section>
-
-		<section id="combined-elm" class="section">
-		<h2>Combined Elements</h2>
-			<div class="box">
-				<h3>Colour Swatches</h3>
-
-		        <h4>CSS selector:</h4>
-		        <p>.colour</p>
-		        <p>#scarlet-lbi, #orange, #green, #dark-gray, #gray, #light-gray</p>
-
-		        <h4>Sample code:</h4>
-		        <code>
-		          &lt;div class="colour"&gt;<br>
-		          &lt;p id="scarlet-lbis"&gt;scarlet lbis RGB(234,85,68)&lt;/p&gt;<br>
-		          &lt;p id="orange"&gt;orange RGB(239,120,42)&lt;/p&gt;<br>
-		          &lt;p id="green"&gt;green RGB(134,175,73)&lt;/p&gt;<br>
-		          &lt;p id="dark-gray"&gt;dark gray RGB(60,60,60)&lt;/p&gt;<br>
-		          &lt;p id="gray"&gt;sharkskin RGB(111,111,111)&lt;/p&gt;<br>
-		          &lt;p id="light-gray"&gt;light gray RGB(178,178,178)&lt;/p&gt;<br>
-		         &lt;/div>         
-		        </code>
-
-		        <h4>Rendered elements:</h4>
-		         <div class="colour">
-		          <p id="scarlet-lbis">scarlet lbis RGB(234,85,68)</p>
-		          <p id="orange">orange RGB(239,120,42)</p>
-		          <p id="green">green RGB(134,175,73)</p>
-		          <p id="dark-gray">dark gray RGB(60,60,60)</p>
-		          <p id="gray">sharkskin RGB(111,111,111)</p>
-		          <p id="light-gray">light gray RGB(178,178,178)</p>
-         		</div>
-			</div>
-			<div class="box">
-				<h3>Main Navigation</h3>
-
-		        <h4>CSS selector:</h4>
-		        <p>.main-nav, .main-nav-left, .main-nav-right, .logo, .main-nav-link</p>
-
-		        <h4>Sample code:</h4>
-		        <code> 
-		        &lt;nav class="main-nav"&gt;<br>
-		        	&lt;div class="main-nav-left"&gt;<br>
-		          		&lt;a href="#"&gt;event gallery&lt;/a&gt;<br>
-		          	&lt;/div&gt;<br>
-		          	
-		          	&lt;div class="logo"&gt;<br>
-		          		&lt;p&gt;Event Market&lt;/p&gt;<br>
-		          	&lt;/div&gt;<br>
-		          	
-		          	&lt;div class="main-nav-right"&gt;<br>
-			            &lt;a href="#" class="main-nav-link">about&lt;/a&gt;<br>
-			            &lt;a href="#" class="main-nav-link">account&lt;/a&gt;<br>
-			            &lt;a href="#" class="main-nav-link">cart&lt;/a&gt;<br>
-			        &lt;/div&gt;<br>
-		        &lt;/nav&gt;      
-		        </code>
-
-		        <h4>Rendered element:</h4>
-
-
-    <div id="main-nav">
-      <a href="home.html" class="main-nav-section main-nav-left">
-        <h1 id="logo">Event Market</h1>
-      </a>
-
-      <div class="main-nav-section" href="home.html">
-        <nav id="main-nav-links">
-          <a href="event-gallery.html" id="highlight-item">event gallery</a>
-          <a href="about.html">about</a>
-          <a href="signin.html">sign in</a>
-          <a href="cart.html">cart</a>
-        </nav>
-      </div>
-
-      <div class="main-nav-section main-nav-right">
-        <form id="search-form">
-          <input type="text" name="search-bar">
-        </form>
-        <div id="search-icon">
-          <a href="#">
-            <img src="img/search-icon.png">
-          </a>
-        </div>
-        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
-      </div>
-    </div>
-
-
-			</div>
-
-			<div class="box">
-				<h3>Footer</h3>
-
-		        <h4>CSS selector:</h4>
-		        <p>.footer-contact-info, .footer-other-info, .footer-links</p>
-
-		        <h4>Sample code:</h4>
-		        <code> 
-		        &lt;footer&gt;<br>
-	          		&lt;div class="footer-contact-info"&gt;<br>
-	          			&lt;p href="#"&gt;contact information here (not complete)&lt;/p&gt;<br>
-	          		&lt;/div&gt;<br>
-	          		&lt;div class="footer-other-info"&gt;<br>
-		          		<&lt;a class="footer-links" href="#">help&lt;/a&gt;<br>
-		          		&lt;a class="footer-links" href="#">terms and policy&lt;/a&gt;<br>
-		          		&lt;a class="footer-links" href="#">FAQs&lt;/a&gt;<br>
-	          		&lt;/div&gt;<br>          	
-		          &lt;/footer&gt;       
-		        </code>
-
-		        <h4>Rendered element:</h4>
-		 <footer>
-  <div class="container">
-    <div class="footer-padding grid-col-12of3">
-      <h3>Event Market</h3>
-
-      <p>A sentence about the website's mission.</p>
-    </div>
-    <div class="footer-padding grid-col-12of2">
-      <h4>contact us</h4>
-      <ul>
-        <li><span>phone:</span>604-573-2346</li>
-        <li><span>email:</span>service@eventmarket.com</li>
-        <li><span>facebook:</span>event market</li>
-        <li><span>twitter:</span>@event_market</li>
-      </ul>
-    </div>
-
-    <div class="footer-padding grid-col-12of2">
-      <h4>website</h4>
-      <ul>
-        <li><a href="#">site map</a></li>
-        <li><a href="#">styleguide</a></li>
-        <li><a href="#">github repository</a></li>
-      </ul>
-    </div>
-
-  </div>  <!-- container end -->
-</footer>
-
-			</div>
-
-
-			<div class="box">
-				<h3>Product List</h3>
-
-		        <h4>CSS selector:</h4>
-		        <p>.product-list-item, .product-image, .product-info, .date, .product-tag</p>
-
-		        <h4>Sample code:</h4>
-		        <code>
-		          &lt;div class="product-list-item"&gt;<br>
-		          	&lt;div class="product-image"><br>
-		          		&lt;P&gt;Product Image&lt;/P&gt;<br>
-		          	&lt;/div&gt;<br>
-
-		          	&lt;h3 class="product-name">Product Name CAD30&lt;/h3&gt;<br>
-		          	&lt;div class="product-info"&gt;<br>
-		          		&lt;h4 class="date"&gt;FRI, 17 FEB 9AM&lt;/h4&gt;<br>      		
-		          	&lt;/div&gt;<br>
-
-		          	&lt;P class="product-tag"&gt;#event-tag 1  #event-tag 2&lt;/P&gt;<br>
-		          &lt;/div&gt;<br>
-		        </code>
-
-		        <h4>Rendered elements:</h4>
-		       
-	 <div class="event-container grid-col-12of4">
-      <a href="#">
-        <div class="img-container" id="sfu-hack">
-        </div>
-      </a>
-      
-      <div class="content-container">
-        <div class="top-content">
-          <h3>$40</h3><p class="gray">22 booked</p>
-        </div>
-        <div class="center-content">
-          <a>
-            <h4>Enactus SFU Presents - Take HACKtion</h4>
-          </a>
-        </div>
-        <div class="bottom-content">
-          <p>Sat 25 March, 2017</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="event-container grid-col-12of4">
-      <a href="#">
-        <div class="img-container" id="ubc-bustur">
-        </div>
-      </a>
-      <div class="content-container">
-        <div class="top-content">
-          <h3>$7</h3><p class="gray">83 booked</p>
-        </div>
-        <div class="center-content">
-          <a>
-            <h4>UBC Bus Transport</h4>
-          </a>
-        </div>
-        <div class="bottom-content">
-          <p>Fri 10 July, 2017</p>
-        </div>
-      </div>
-    </div> 
-
-
-      </div><!-- box end -->
-	
-	<div class="box">
-				<h3>Grid System</h3>
-          
-		        <h4>CSS selector:</h4>
-		        <p>.grid-col-lof3</p>
-
-		        <h4>Sample code:</h4>
-		        <code>
-		            &lt;div class="grid-col-lof4"&gt;<br>
-		        	&lt;div class="col"&gt;<br>
-		        		&lt;p&gt;4&lt;/p&gt;<br>
-		        	&lt;/div&gt;<br>
-		        	&lt;div class="col"&gt;<br>
-		        		&lt;p&gt;4&lt;/p&gt;<br>
-		        	&lt;/div&gt;<br>
-		        	&lt;div class="col"&gt;<br>
-		        		&lt;p&gt;4&lt;/p&gt;<br>
-		        	&lt;/div&gt;<br>
-		        &lt;/div&gt;
-		        </code>
-
-		        <h4>Rendered element:</h4>  
-		        <div class="grid-col-lof4">
-		        	<div class="col">
-		        		<p>4</p>
-		        	</div>
-		        	<div class="col">
-		        		<p>4</p>
-		        	</div>
-		        	<div class="col">
-		        		<p>4</p>
-		        	</div>
-		        </div>
-		        				
-			</div>
-
-
-	<section id="sitemap" class="section">
-		<h2>Site Map</h2>
-			
-				<img src="img/sitemap.jpg" alt="site map image" width=120% height=auto>
-			
-		</section>
-
-
-
-		
-
-		</section>
-
-
-
-		<section id="citation" class="section">
-		<h2>citations</h2>
-			<div class="box">
-				<p>Clink <a href="citation.html" class="in-text-nav">this link</a> to open the citations page</p>
-			</div>
-		</section>
-
-	</div>
-</div>
 </body>
 </html>

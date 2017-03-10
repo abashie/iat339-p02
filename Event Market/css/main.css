@@ -607,15 +607,14 @@ footer span{
   }
 
 
-  .filter-12of4{
+  .filter-12of4,   .filter-12of4s{
     width: 33%;
     min-width: 320px;
   }
 
-  .filter-12of4s{
-    width: auto;
+/*  .filter-12of4s{
     min-width: 180px;
-  }
+  }*/
 
   .filter-12of2{
     width: 16%;
@@ -1076,7 +1075,37 @@ footer span{
 
   /*----------------------------------------------------------------------------------*/
   /*----------------------------------@MEIDA STYLING----------------------------------*/
+  @media(max-width:1200px){
+  .filter-12of4s{
+width: 25%;
+min-width: 250px;
+  }
+
+  .filter-12of2{
+    width: 20%;
+    padding-left: 0.5rem;
+  }
+  }
+
+  @media(max-width:1115px){
+.filter-12of2{
+width: 40%;
+/*min-width: 250px;*/
+  padding-left: 3rem;
+  }
+
+   .filter-12of4,  .filter-12of4s{
+    width: 60%;
+    min-width: 320px;
+    padding-left: 3rem;
+   }
+
+ 
+  }
+
   @media(max-width:965px){
+
+
     /*fonts*/
     h2{
       font-size:1.1rem;
@@ -1263,12 +1292,20 @@ footer span{
   /*filter*/
 
 
-  .filter-12of4{
+  .filter-12of4, .filter-12of4s{
     width: 100%;
+    padding-left: 0.5rem;
+
+  }
+
+.filter-12of4s{
+    margin-bottom: 2.5rem;
   }
 
   .filter-12of2{
     width: 50%;
+        padding-left: 0.5rem;
+
   }
 
 
