@@ -199,7 +199,7 @@ footer span{
   bottom:0;
   left:0;
   right:0;
-  background-color:rgba(237,237,237,0.9);
+  background-color:rgb(237,237,237);
 }
 .content-nav-item{
   display:inline-block;
@@ -1059,6 +1059,9 @@ footer span{
       visibility: hidden;
       display: none;
     }
+    #hamburger-icon.hidden{
+      display: block;
+    }
     #hamburger-icon{
       position:relative;
       margin-left:2rem;
@@ -1104,6 +1107,11 @@ footer span{
     }
     .content-title h2{
       margin-left:2.5%;
+    }
+    /*event gallery*/
+    #sec-nav-bar{
+      margin-top:50px;
+      height: 3rem
     }
     /*product page grid strcture change*/
     .pdt-top-info{
@@ -1205,21 +1213,17 @@ footer span{
     width:100%;
     height: auto;
   }
-
   /*filter*/
-
-
   .filter-12of4{
     width: 100%;
   }
-
   .filter-12of2{
     width: 50%;
   }
-
-
-
-
+  #sec-nav-bar{
+    margin-top:40px;
+    height: 2.5rem;
+  }
 }
 
 @media(max-width:415px){
@@ -1281,10 +1285,6 @@ footer span{
 		margin-bottom:2rem;
 	}
   /*event gallery*/
-  #sec-nav-bar{
-    margin-top:50px;
-    height: 3rem
-  }
   .pdt-bottom-btn{
     float:left;
     margin-left:10%;
@@ -1307,7 +1307,6 @@ footer span{
     float:left;
     width:80%;
   }
-
   footer .grid-col-12of3{
     margin-left:15%;
     width:70%;
