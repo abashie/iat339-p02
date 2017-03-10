@@ -121,27 +121,62 @@ header{
 .page-indicator a:hover, .page-indicator a:active, .page-indicator a:focus{
   text-decoration: underline;
 }
+
+
+
 /*------------------footer----------------------*/
 footer{
   display:block;
   float:left;
   width:100%;
-  background-color:rgb(246,246,246);
+  background-color:rgb(60,60,60);
 }
+
+.footer-padding{
+  box-sizing: border-box;
+    min-width: 230px;
+  padding: 1rem;
+}
+
+footer .container{
+  margin-bottom: 1rem;
+}
+
+footer h3{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+}
+
+footer h4{
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+  
+
+footer ul, footer li a, footer h4, footer p{
+    font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+
 footer p{
-  text-align:center;
-  margin-top:1rem;
+  font-size: 1rem;
 }
-footer a{
-  text-align:center;
-  color:rgb(134,175,73);
-  font-size:0.9rem;
-  font-weight:bold;
-  margin-bottom:1rem;
+
+footer li{
+  font-size: 0.8rem;
+  margin: 6px 0;
 }
-footer a:hover, footer a:focus, footer a:active{
-  text-decoration: underline;
+
+footer span{
+  font-weight: 700;
+  margin-right: 5px;
 }
+
+
 /*------------------------------------------INTRO SCREEN----------------------------------------*/
 .img-gallery{
   float:left;
@@ -932,10 +967,38 @@ a#pay-btn{
 		float:left;
 	}
 
-	/*----------------------------------------------------------------------------------*/
-	/*----------------------------------@MEIDA STYLING----------------------------------*/
-	@media(max-width:965px){
-	#main-nav{
+
+
+  /*----------------------------------------------------------------------------------*/
+  /*----------------------------------@MEIDA STYLING----------------------------------*/
+  @media(max-width:965px){
+  /*fonts*/
+  h2{
+    font-size:1.1rem;
+  }
+  h4{
+    font-size:0.8rem;
+  }
+  /*grid systems*/
+  .grid-col-12of4{
+    width:50%;
+  }
+  /*about page*/
+  .grid-col-1of3.about-segment{
+    float: left;
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 40px;
+  }
+  .grid-col-12of8{
+    width:100%;
+  }
+  .grid-full-col-12of4{
+    float:left;
+    width:100%;
+  }
+  /*main-nav*/
+  #main-nav{
     height:50px;
   }
   #logo{
@@ -965,8 +1028,7 @@ a#pay-btn{
     right:0;
     height:180px;
     width:33.3%;
-    background-color:white;
-    
+    background-color:white;    
   }
   #main-nav-links a{
     display:block;
@@ -981,105 +1043,117 @@ a#pay-btn{
   #search-form input{
     height:20px;
   }
-	/*product page grid strcture change*/
-	.grid-col-12of8{
-		width:100%;
-	}
-	.grid-full-col-12of4{
-		float:left;
-		width:100%;
-	}
-	.pdt-top-info{
-		float:left;
-		width:70%;
-		margin-left:5%;
-		margin-top:1.5rem;
-		margin-bottom:1.5rem;
-	}
-	.pdt-bottom-btn{
-		float:right;
-		margin:0;
-		margin-right:5%;
-		width:20%;
-		margin-top:1.5rem;
-		margin-bottom:1.5rem;
-	}
-	/*comment page*/
-	.home-container{
-		margin-top:50px;
-	}
-	.comment-block{
-		margin-bottom:2rem;
-	}
-	.grid-col-12of4{
-		width:45%;
-	}
-	/*home page*/
-	.search-bar h1{
-		font-size:1.6rem;
-	}
-	.search-bar{
-		position:relative;
-		margin-top:-14rem;
-		margin-bottom:6rem;
-		margin-left:5%;
-		width:90%;
-	}
-	/*about page*/
-	.grid-col-1of3.about-segment{
-		float: left;
-		display: inline-block;
-		margin: 10px;
-		margin-bottom: 40px;
-	}
-	/*payment*/
-  a#pay-btn{
-  	width: 30%;
-  	margin: 0 25%;
+  /*home page*/
+  #content-nav{
+    height:3rem;
   }
+  .content-nav-item{
+    margin-top:0.8rem;
+    font-size:0.9rem;
+  }
+  .content-title h2{
+    margin-left:2.5%;
+  }
+  /*product page grid strcture change*/
+  .pdt-top-info{
+    float:left;
+    width:70%;
+    margin-left:5%;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+  }
+  .pdt-bottom-btn{
+    float:right;
+    margin:0;
+    margin-right:5%;
+    width:20%;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+  }
+  /*comment page*/
+  .home-container{
+    margin-top:50px;
+  }
+  .comment-block{
+    margin-bottom:2rem;
+  }
+  /*payment*/
+  a#pay-btn{
+    width: 30%;
+    margin: 0 25%;
+  }
+
+  /*footer*/
+   footer .grid-col-12of6{
+   width: 100%;
+margin-bottom: 2rem;
+    }
+
+       footer .grid-col-12of3{
+width: 50%;
+    }
 
 }
 
-	@media(max-width:680px){
+  @media(max-width:680px){
+    .img-gallery{
+      float:left;
+      margin-top:40px;
+    }
     #main-nav{
       height:40px;
     }
-		#logo{
-			font-size:1.2rem;
-		}
+    #logo{
+      font-size:1.2rem;
+    }
+    .main-nav-left{
+      margin-left:20px;
+    }
+    .main-nav-right{
+      margin-right:20px;
+    }
+    #search-form input{
+      width:6rem;
+    }
+    #main-nav-links{
+      top:40px;
+      width:100%;
+    }
     #hamburger-icon{
       margin-left:1.5rem;
     }
-		.container{
-			margin-top:50px;
-			margin-left:0;
-			margin-bottom:0;
-			width:100%;
-		}
-		/*comment page*/
-		.grid-col-12of4{
-			width:100%;
-		}
-		/*home page*/
-		.search-bar{
-			position:relative;
-			margin-top:-11rem;
-			margin-bottom:4rem;
-			margin-left:5%;
-			width:90%;
-		}
-		.search-bar h1{
-			font-size:1.2rem;
-		}
-
-		.grid-col-2of4{
-			width: 100%;
-		}
-
-		.pdt-img img{
-			width:100%;
-			height: auto;
-		}
+    .container{
+      margin:0;
+      width:100%;
+    }
+    .content-nav{
+      height:3rem;
+    }
+    .content-nav-item{
+      font-size:0.9rem;
+    }
+    /*comment page*/
+    .grid-col-12of4{
+      width:100%;
+    }
+    /*home page*/
+    .search-bar{
+      position:relative;
+      margin-top:-11rem;
+      margin-bottom:4rem;
+      margin-left:5%;
+      width:90%;
+    }
+    .search-bar h1{
+      font-size:1.2rem;
+    }
+    .content-title h2{
+    margin-left:5%;
+    }
+    .pdt-img img{
+      width:100%;
+      height: auto;
+    }
 
 /*filter*/
 
@@ -1093,11 +1167,26 @@ width: 50%;
 }
 
 
-	}
 
-	@media(max-width:415px){
+
+  }
+
+  @media(max-width:415px){
     #logo{
       font-size:1rem;
+    }
+    h2{
+      font-size:0.9rem
+    }
+    h3{
+      font-size:0.8rem;
+    }
+    h4{
+      font-size:0.78rem;
+      font-weight:bolder;
+    }
+    p,a,label{
+      font-size:0.7rem;
     }
     #search-form input{
       width:5rem;
@@ -1117,35 +1206,42 @@ width: 50%;
       0 11px 0 0.5px white, 
       0 17px 0 0.5px white;
     }
-		/*product page*/
-		.pdt-top-info{
-			width:80%;
-			margin-left:10%;
-			padding-bottom:0;
-		}
-		.pdt-bottom-btn{
-			float:left;
-			margin-left:10%;
-			padding-top:0;
-			width:80%;
-		}
-		.ticket-method{
-			margin-left:2%;
-			width:96%;
-			margin-top:0;
-		}
-		.ticket-method p{
-			margin-top:10%;
-		}
-		.grid-col-12of6{
-			margin-left:15%;
-			width:70%;
-		}
-		.btn, .btn-filled{
-			float:left;
-			width:80%;
-		}
+    .content-nav-item{
+      font-size:0.7rem;
+    }
+    /*product page*/
+    .pdt-top-info{
+      width:80%;
+      margin-left:10%;
+      padding-bottom:0;
+    }
+    .pdt-bottom-btn{
+      float:left;
+      margin-left:10%;
+      padding-top:0;
+      width:80%;
+    }
+    .ticket-method{
+      margin-left:2%;
+      width:96%;
+      margin-top:0;
+    }
+    .ticket-method p{
+      margin-top:10%;
+    }
+    .grid-col-12of6{
+      margin-left:15%;
+      width:70%;
+    }
+    .btn{
+      float:left;
+      width:80%;
+    }
 
+    footer .grid-col-12of3{
+      margin-left:15%;
+      width:70%;
+    }
 
 /*select.filter-choice{
 display: block;
@@ -1161,13 +1257,11 @@ width: 100%;
   float: right;
 }
 
-	}
+  }
 
 
 
-
-
-	/*@media (max-width: 1069px){
+  /*@media (max-width: 1069px){
     .grid-col-1of3{
       width: 45%;
     }
