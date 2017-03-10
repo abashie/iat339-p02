@@ -626,6 +626,7 @@ footer .grid-col-12of3{
      color: rgb(111,111,111);
      border: none;
      padding: 0 0.4rem;
+     background-color:white;
    }
 
    .filter-box-border a.btn-filled{
@@ -635,7 +636,7 @@ footer .grid-col-12of3{
     border-color: rgb(239, 120, 43);
     font-size: 0.9rem;
     max-width: 90px;
-    padding: 0.1rem 1.5rem;
+    padding: 0.4rem 2rem;
     margin-right: 1.5rem;
   }
 
@@ -1210,12 +1211,6 @@ footer .grid-col-12of3{
   .comment-block{
     margin-bottom:2rem;
   }
-  /*payment*/
-  a#pay-btn{
-    width: 30%;
-    margin: 0 25%;
-  }
-
   /*footer*/
   .footer-padding{
     padding-right: 0;
@@ -1535,6 +1530,15 @@ margin: 0 auto;
 
 .input-block input{
   width:100%;
+}
+  #signup-block{
+    margin-left:13%;
+    width:80%;
+  }
+
+  .card-type img{
+  width:40px;
+  margin-right:0.2rem;
 }
 
 }
