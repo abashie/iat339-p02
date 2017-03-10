@@ -30,9 +30,7 @@ p, label{
   font-size:0.8rem;
   margin:0;
 }
-.gray{
-  color:rgb(157,157,157);
-}
+
 a{
   font-family: 'Quicksand', sans-serif;
   cursor:pointer;
@@ -67,7 +65,7 @@ header{
   align-items: center;
 }
 .main-nav-left{
-  margin-left:20px;
+  margin-left:60px;
   text-decoration: none;
 }
 #logo{
@@ -93,7 +91,7 @@ header{
   border:solid 1px white;
 }
 .main-nav-right{
-  margin-right:20px;
+  margin-right:60px;
 }
 #search-form{
    margin-right:0.5rem;
@@ -106,7 +104,7 @@ header{
   background-color:rgb(134,175,73);
   font-size:0.9rem;
   font-family: 'Quicksand', sans-serif;
-  width:6rem;
+  width:8rem;
 }
 #search-icon img{
   margin-top:0.5rem;
@@ -118,6 +116,13 @@ header{
   display: none;
 }
 /*-----------page-indicator----------------*/
+.page-indicator{
+  text-align:center;
+  color:rgb(157,157,157);
+}
+.page-indicator a{
+  color:rgb(157,157,157);
+}
 .page-indicator a:hover, .page-indicator a:active, .page-indicator a:focus{
   text-decoration: underline;
 }
@@ -202,12 +207,15 @@ footer span{
   margin-top:1.5rem;
   font-size:1rem;
   font-weight:bold;
-  text-decoration:underline;
   color:rgb(80,80,80);
   transition:color ease-out 0.1s;
 }
 .content-nav-item:hover, .content-nav-item:focus{
   color:rgb(134,175,73);
+  text-decoration: underline;
+}
+.underline-text{
+  text-decoration: underline;
 }
 /*--------------Containers---------------*/
 .top-container{
@@ -216,7 +224,7 @@ footer span{
   margin-left:6.5%;
   margin-right:6.5%;
   width:87%;
-  margin-top:3rem;
+  margin-top:2rem;
 }
 .inner-container{
   	display:blcok;
@@ -226,7 +234,13 @@ footer span{
   	margin-top:3rem;
   	margin-bottom:3rem;
 }
-  /*Page Guide*/
+.container-box{
+  display:block;
+  float:left;
+  margin-top:60px; 
+  width:100%;
+}
+/*Page Guide*/
 .guide{
   	float:left;
   	width:100%;
@@ -275,6 +289,7 @@ footer span{
   display:block;
   margin-left:5%;
   margin-right:5%;
+  margin-bottom:0.5rem;
   width:90%;
   height:14rem;
   background-position: center;
@@ -299,7 +314,7 @@ footer span{
 .top-content{
   width:100%;
   display:inline-block;
-  margin-top:0.8rem;
+  margin-top:0.3rem;
 }
 .top-content h3{
   float:left;
@@ -310,9 +325,10 @@ footer span{
   margin-top:0.2rem;
   text-decoration:line-through;
 }
-.top-content p{
+.gray{
   float:right;
   margin-top:0.3rem;
+  color:rgb(157,157,157);
 }
 .center-content{
   display:block;
@@ -329,8 +345,18 @@ footer span{
 .category-img{
   display:block;
   float:left;
-  width:100%;
-  margin-bottom:2rem;
+  margin-bottom:1rem;
+}
+.img-heading{
+  position:relative;
+  top:6rem;
+  font-size:1.5rem;
+  text-align:center;
+  color:white;
+
+}
+.img-heading:hover{
+  text-decoration: underline;
 }
 /*promoted-event*/
 .promoted-bar{
@@ -386,18 +412,33 @@ footer span{
 /* 
   ABOUT PAGE --------------------------------------------------------
   */
-  .about-segment{
-  	padding: 10px;
-  }
+#about-image{
+  display:block;
+  float:left;
+  margin-top:40px;
+}
+#about-image img{
+	width:100%;
+	height:auto;
+}
+.value-block{
+  margin-bottom:3rem;
+}
+#about-img1{
+  background-image:url('../img/about1.jpg');
+}
+#about-img2{
+  background-image:url('../img/about2.jpg');
+}
+#about-img3{
+  background-image:url('../img/about3.jpg');
+}
+.about-para{
+  display:block;
+  float:left;
+  margin-top:1rem;
+}
 
-  h1#about{
-  	margin-top: 0;
-  }
-
-  img{
-  	width:100%;
-  	height:auto;
-  }
 /* 
   PRODUCT INFO PAGE --------------------------------------------------------
   */
@@ -512,64 +553,102 @@ footer span{
   background-color:rgba(237,237,237,0.9);
 }
 #filter-box{
-  box-sizing: border-box;
   height:4.5rem;
   margin-bottom:4rem;
- 
+  border:2px solid rgb(134,175,73);
 }
-
 .filter-box-border{
-  box-sizing: border-box;
- border: 1.5px solid rgb(174,215,113);
+  display:inline-block;
+  float:left;
+  height:4.5rem;
+  border-right:2px solid rgb(134,175,73);
 }
-
-.filter-12of2, .filter-12of4, .filter-12of4s{
-height:4.5rem;
-float: left;
-}
-
-
-.filter-12of4{
-width: 33%;
-min-width: 320px;
-}
-
-.filter-12of4s{
-width: auto;
-min-width: 180px;
-}
-
-.filter-12of2{
-width: 16%;
-min-width: 175px;
-}
-
 .filter-text{
-  color: rgb(134,175,73);
-   padding: 0.5rem;
+  display:block;
+  float:left;
+  width:100%;
+  color:rgb(134,175,73);
+  margin-left:1rem;
+  margin-top:0.3rem;
+}
+.filter-choice{
+  display:block;
+  float:left;
+  margin-left:0.5rem;
+  margin-top:0.6rem;
+  border:none;
+  height:30px;
+  width:auto;
+  font-size:0.9rem;
+  color:rgb(80,80,80);
+  white-space:pre-wrap;
+  background-color:white;
+}
+.set-width{
+  width:80%;
+}
+.set-select-width{
+  width:60%;
+}
+.btn-filled{
+  margin-right:1rem;
+}
+/*----------------------------------SIGN IN -----------------------------------*/
+.signin-box{
+  display: block;
+  float: left;
+  padding-top:1rem;
+  padding-bottom:2rem;
+  margin-left:25%;
 }
 
-select.filter-choice{
- font-family: 'Quicksand', sans-serif;
- font-size: 1.1rem;
- color: rgb(111,111,111);
- border: none;
-  padding: 0 0.4rem;
+.signin-box form{
+  margin-top:2rem;
+  text-align: center;
 }
-
-.filter-box-border a.btn-filled{
- background-color: rgb(239, 120, 43);
- border-color: rgb(239, 120, 43);
- font-size: 0.9rem;
- max-width: 90px;
-padding: 0.1rem 1rem;
-   margin-right: 1.5rem;
+.signin-box h3{
+  text-align:center;
+  margin-bottom:1rem;
 }
-
-.filter-box-border a.btn-filled:hover, .filter-box-border a.btn-filled:focus{
-    background-color:rgba(234,86,68,0.7);
-  }
-
+.field-block{
+  display:block;
+  margin-left:25%;
+  width:50%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.text-input{
+  width:100%;
+  height:2rem;
+  font-size:0.8rem;
+  border:1px solid rgb(134,175,73);
+  padding-left:1rem;
+}
+#signin-btn{
+  width:110%;
+  font-size:0.9rem;
+  color:white;
+  border:none;
+  padding:0.4rem;
+  background-color: rgb(134,175,73);
+  transition:background-color ease-out 0.3s;
+}
+#signin-btn:hover, #signin-btn:active, #signin-btn:focus{
+  background-color: rgba(134,175,73, 0.7);
+}
+#signup-block{
+  display:block;
+  float:left;
+  margin-left:26%;
+  width:50%;
+  margin-bottom: 1rem;
+  margin-top:2rem;
+  text-align: center;
+}
+#signup-block a{
+  color:rgb(134,175,73);
+  text-decoration: underline;
+}
 /*----------------------------------CART PAGE---------------------------------------*/
 .quantity-form{
 	float:left;
@@ -617,54 +696,12 @@ padding: 0.1rem 1rem;
 	text-align:center;
 	margin-bottom:1rem;
 	padding:0.4rem 1rem;
-	border:solid 2.3px;
-	border-color:rgb(234,86,68);
 	background-color:rgb(234,86,68);
 	color:white;
 	text-decoration: none;
 	transition:background-color ease-out 0.3s;
-}
-
-/*ACCOUNT*/
-section.account{
-	margin: 15px;	
-	background-color: rgb(245,245,245);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	text-align: center;
-	padding: 40px 20px;
-}
-
-.account label, .account label.up{
-	display: block;
-	color: black;
-}
-.account input{
-	display: block;
-	width: 60%;
-	margin: 15px 20%;
-	margin-bottom: 25px;
-}
-
-.account img{
-	width: 20%;
-	margin-bottom: 1rem;
-}
-
-.account h3{
-	margin-bottom: 2rem;
-}
-
-.account a.search-btn {
-	width: 30%;
-	margin: 0 33%;
-	cursor: pointer;
-}
-
-.account form{
-	margin-bottom: 3rem;
-}
-/* 
-  PAYMENT PAGE --------------------------------------------------------
+} 
+ /* PAYMENT PAGE --------------------------------------------------------
   */
   .back-image{
   	position: relative;
@@ -769,8 +806,6 @@ a#pay-btn{
   	border: 1px solid black;
   	margin: 3em 0;
   }
-
-
 
   .filter-bar {
   	text-align: center;

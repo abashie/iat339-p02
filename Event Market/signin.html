@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign in</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/grids.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div id="main-nav">
+      <a href="home.html" class="main-nav-section main-nav-left">
+          <h1 id="logo">Event Market</h1>
+      </a>
+
+      <div class="main-nav-section" href="home.html">
+        <nav id="main-nav-links">
+          <a href="event-gallery.html" id="highlight-item">event gallery</a>
+          <a href="about.html">about</a>
+          <a href="signin.html">sign in</a>
+          <a href="cart.html">cart</a>
+        </nav>
+      </div>
+
+      <div class="main-nav-section main-nav-right">
+        <form id="search-form">
+          <input type="text" name="search-bar">
+        </form>
+        <div id="search-icon">
+          <a href="#">
+            <img src="img/search-icon.png">
+          </a>
+        </div>
+        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
+      </div>
+    </div>
+</header>
+
+<div class="container-box">
+<div class="top-container">
+  <p class="page-indicator"><a href="home.html">home</a> > sign in</p>
+</div>
+
+
+  <section class="container">
+    <div class="grid-col-12of6 signin-box">
+      <h3>Sign In</h3>
+      <form  name="form-content">
+        <div class="field-block">
+          <input class="text-input" name="text-input" type="text" placeholder="username">
+        </div>
+        <div class="field-block">
+          <input class="text-input" name="text-input" type="Password" placeholder="password">
+        </div>
+        <div class="field-block">
+          <input id="check-box" type="checkbox" name="checkbox" value="value">
+          <label for="check-box">remember me</label>
+        </div>
+        <div class="field-block">
+        <a href="home.html">
+          <input id="signin-btn" type="button" name="signin" value="Sign in">
+        </a>
+        </div>
+      </form>
+
+      <div id="signup-block">
+      <p>Don't have an account?</p>
+      <a href="#">sign up an account to join us</a>
+      </div>
+    </div>
+
+    <!-- <div class="grid-col-12of6">
+      <div class="signin-box grey-box">
+      <h3>Create an accout</h3>
+      <form name="form-content">
+      <div class="input-block">
+        <input class="text-input" name="text-input" type="text" placeholder="username">
+      </div>
+      <div class="input-block">
+        <input class="text-input" name="text-input" type="Password" placeholder="passowrd">
+      </div>
+      <div class="input-block">
+        <input class="text-input" name="text-input" type="email" placeholder="email">
+      </div>
+      <div class="input-block">
+        <input class="text-input" name="text-input" type="email" placeholder="confirm email">
+      </div>
+      </form>
+      <a href="home.html">Create</a>
+      </div>
+    </div> -->
+  </section><!-- container -->
+</div>
+
+	<footer>
+		<div class="footer-contact-info">
+			<p href="#">contact information here (not complete)</p>
+		</div>
+		<div class="footer-other-info">
+			<a class="footer-links" href="#">help</a>
+			<a class="footer-links" href="#">terms and policy</a>
+			<a class="footer-links" href="#">FAQs</a>
+		</div>	  	
+	 </footer>
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/javascript.js"></script>
+</html>
