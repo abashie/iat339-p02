@@ -238,22 +238,32 @@
 		        <h4>Rendered element:</h4>
 
 
-  <nav id="main-nav">
-    <div class="main-nav-section main-nav-left">
-        <a class="main-nav-left-item" href="events.html">event gallery</a>
-    </div>
-    <a id="logo" href="home.html">
-      <h1>Event Market</h1>
-    </a>
-    <div class="main-nav-section main-nav-right">
-      <a href="#" class="hamburger-icon" id="hamburger-icon"></a>
-      <div class="main-nav-right-content">
-        <a href="about.html" class="main-nav-right-item">about</a>
-        <a href="account.html" class="main-nav-right-item">account</a>
-        <a href="cart.html" class="main-nav-right-item">cart</a>
+    <div id="main-nav">
+      <a href="home.html" class="main-nav-section main-nav-left">
+        <h1 id="logo">Event Market</h1>
+      </a>
+
+      <div class="main-nav-section" href="home.html">
+        <nav id="main-nav-links">
+          <a href="event-gallery.html" id="highlight-item">event gallery</a>
+          <a href="about.html">about</a>
+          <a href="signin.html">sign in</a>
+          <a href="cart.html">cart</a>
+        </nav>
+      </div>
+
+      <div class="main-nav-section main-nav-right">
+        <form id="search-form">
+          <input type="text" name="search-bar">
+        </form>
+        <div id="search-icon">
+          <a href="#">
+            <img src="img/search-icon.png">
+          </a>
+        </div>
+        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
       </div>
     </div>
-  </nav>
 
 
 			</div>
@@ -279,17 +289,35 @@
 		        </code>
 
 		        <h4>Rendered element:</h4>
-		          <footer>
-	          		<div class="footer-contact-info">
-	          			<h3>Contact Us</h3>
-	          		</div>
-	          		<div class="footer-other-info">
-		          		<a class="footer-links" href="#">Help</a>
-		          		<a class="footer-links" href="#">Terms and Conditions</a>
-		          		<a class="footer-links" href="#">FAQs</a>
-	          		</div>
-		          	
-		          </footer>
+		 <footer>
+  <div class="container">
+    <div class="footer-padding grid-col-12of3">
+      <h3>Event Market</h3>
+
+      <p>A sentence about the website's mission.</p>
+    </div>
+    <div class="footer-padding grid-col-12of2">
+      <h4>contact us</h4>
+      <ul>
+        <li><span>phone:</span>604-573-2346</li>
+        <li><span>email:</span>service@eventmarket.com</li>
+        <li><span>facebook:</span>event market</li>
+        <li><span>twitter:</span>@event_market</li>
+      </ul>
+    </div>
+
+    <div class="footer-padding grid-col-12of2">
+      <h4>website</h4>
+      <ul>
+        <li><a href="#">site map</a></li>
+        <li><a href="#">styleguide</a></li>
+        <li><a href="#">github repository</a></li>
+      </ul>
+    </div>
+
+  </div>  <!-- container end -->
+</footer>
+
 			</div>
 
 
@@ -317,33 +345,46 @@
 
 		        <h4>Rendered elements:</h4>
 		       
-	
-        <div class="product-list-item box-shadow grid-col-12of4">
-          <div class="pdt-img">
-             <img src="img/1.jpg" alt="touchpoint">
-          </div>
-
-          <div class="pdt-info">
-            <h3 class="title"><a href="product-info.html">SIAT Touchpoint 2017</a></h3>
-            <p class="date">MON, 17 JAN 10PM</p>  
-            <h4>$30</h4>  
-            <P class="product-tag">#conference  #SIAT</P>
-          </div>
+	 <div class="event-container grid-col-12of4">
+      <a href="#">
+        <div class="img-container" id="sfu-hack">
         </div>
-
-
-    <div class="product-list-item box-shadow grid-col-12of4">
-          <div class="pdt-img">
-             <img src="img/8.jpg" alt="touchpoint">
-          </div>
-
-          <div class="pdt-info">
-            <h3 class="title"><a href="product-info.html">Entrepreneur Send Off 2017</a></h3>
-            <p class="date">SUN, 17 FEB 10AM</p>  
-            <h4>$30</h4>  
-            <P class="product-tag">#business</P>
-          </div>
+      </a>
+      
+      <div class="content-container">
+        <div class="top-content">
+          <h3>$40</h3><p class="gray">22 booked</p>
         </div>
+        <div class="center-content">
+          <a>
+            <h4>Enactus SFU Presents - Take HACKtion</h4>
+          </a>
+        </div>
+        <div class="bottom-content">
+          <p>Sat 25 March, 2017</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="event-container grid-col-12of4">
+      <a href="#">
+        <div class="img-container" id="ubc-bustur">
+        </div>
+      </a>
+      <div class="content-container">
+        <div class="top-content">
+          <h3>$7</h3><p class="gray">83 booked</p>
+        </div>
+        <div class="center-content">
+          <a>
+            <h4>UBC Bus Transport</h4>
+          </a>
+        </div>
+        <div class="bottom-content">
+          <p>Fri 10 July, 2017</p>
+        </div>
+      </div>
+    </div> 
 
 
       </div><!-- box end -->

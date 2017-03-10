@@ -23,12 +23,25 @@ div{
 	width:80%;
 }
 
+.grid-col-12of2{
+	float:left;
+	width:16%;
+}
+
+.grid-col-12of3{
+	float:left;
+	width:23%;
+}
 
 	.grid-col-12of4{
 			width:35%;
 
 		}
 
+.grid-col-12of6{
+	float:left;
+	width:50%;
+}
 
 .section{
 	float:left;
