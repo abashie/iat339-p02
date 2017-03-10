@@ -14,7 +14,7 @@
 <body>
 	<header>
 	    <div id="main-nav">
-	      <a href="#" class="main-nav-section main-nav-left">
+	      <a href="home.html" class="main-nav-section main-nav-left">
 	          <h1 id="logo">Event Market</h1>
 	      </a>
 
@@ -22,7 +22,7 @@
 	        <nav id="main-nav-links">
 	          <a href="event-gallery.html" id="highlight-item">event gallery</a>
 	          <a href="about.html">about</a>
-	          <a href="account.html">sign in</a>
+	          <a href="signin.html">sign in</a>
 	          <a href="cart.html">cart</a>
 	        </nav>
 	      </div>
@@ -41,18 +41,23 @@
 	    </div>
 	</header>
 
+	<div class="container-box">
+	<div class="top-container">
+	  <p class="page-indicator"><a href="home.html">home</a> > sign in</p>
+	</div>
+
 	<div class="container box-shadow">
 		<div class="pdt-shortInfo">
 			<div class="grid-col-12of8">
-				<div class="pdt-image">			
-					<img src="img/touchpoint-event.jpg" alt="img for touchpoint 2017">
+				<div class="pdt-image" id="touchpoint">			
+					<!-- <img src="img/touchpoint-event.jpg" alt="img for touchpoint 2017"> -->
 				</div>
 			</div>
 			<div class="grid-full-col-12of4">
 				<div class="pdt-top-info">
-					<h3>Touchpoint 2017</h3>
-					<P class="product-grayed">by School of Interactive Arts & Technology</P>
-					<h4>$30</h4>
+					<h2>Touchpoint 2017</h2>
+					<P>by School of Interactive Arts & Technology</P>
+					<h3>Price: $30</h3>
 				</div>
 				<div class="pdt-bottom-btn">
 					<a class="ticket-btn-filled" href="payment.html">buy ticket</a>
@@ -97,6 +102,7 @@
 	    </script>
 
 	</div>
+	</div>
 
 
 	<footer>
@@ -110,4 +116,8 @@
 		</div>	  	
 	 </footer>
 </body>
+
+<script src="js/zepto.js"></script>
+<script src="js/javascript.js"></script>
+
 </html>

@@ -226,19 +226,20 @@ footer span{
   width:87%;
   margin-top:2rem;
 }
-.inner-container{
-  	display:blcok;
-  	float:left;
-  	margin-left:15%;
-  	width:70%;
-  	margin-top:3rem;
-  	margin-bottom:3rem;
-}
 .container-box{
   display:block;
   float:left;
   margin-top:60px; 
   width:100%;
+}
+.container{
+  display:block;
+  float:left;
+  margin-left:5%;
+  margin-right:5%;
+  margin-top:1rem;
+  margin-bottom:3rem;
+  width:90%;
 }
 /*Page Guide*/
 .guide{
@@ -254,15 +255,6 @@ footer span{
 }
 /*----------------Content-----------------*/
 /*featured event*/
-.container{
-  display:block;
-  float:left;
-  margin-left:5%;
-  margin-right:5%;
-  margin-top:1rem;
-  margin-bottom:3rem;
-  width:90%;
-}
 .event-container{
   display:block;
   float:left;
@@ -455,7 +447,12 @@ footer span{
   .pdt-image{
   	float:left;
   	width:100%;
-  	height:auto;
+  	height:20rem;
+    background-position: center;
+    background-size:cover;
+  }
+  #touchpoint{
+    background-image:url(../img/touchpoint-event.jpg);
   }
   .pdt-content{
   	display:block;
@@ -528,15 +525,21 @@ footer span{
   .location:hover, .location:focus{
   	color:rgb(234,86,68);
   }
-  .product-grayed{
-  	font-size:0.9rem;
-  	color:rgb(178,178,178);
-  }
   #map{
   	display:block;
   	width:100%;
   	margin-top:1rem;
   	height:200px;
+  }
+  .pdt-top-info h3{
+    margin-top:2rem;
+  }
+  .pdt-info h4{
+    margin-top:2rem;
+    margin-bottom:1rem;
+  }
+  .pdt-info p{
+    margin-bottom:0.5rem;
   }
 /*-----------------------------------EVENT GALLERY----------------------------------*/
 #sec-nav{
@@ -819,10 +822,13 @@ a#pay-btn{
 /*
   COMMENTS PAGE --------------------------------------------------------
   */
-  .comment-container{
-  	width:100%;
-  	margin-top:67px;
-
+  #touchpoint2016{
+    background-image:url(../img/touchpoint2016.png);
+  }
+  #comment-summary{
+    float:left;
+    margin-top:1rem;
+    width:100%;
   }
   .pdt-comments-summary{
   	float:left;
@@ -849,17 +855,20 @@ a#pay-btn{
   	margin-top:0.3rem;
   }
   .comment-block{
-  	border:solid 1px rgb(200,200,200);
-  	margin-right:3%;
-  	margin-bottom:1%;
+    margin-top:2rem;
+    margin-bottom:1rem;
   }
   .comment-top{
   	width:100%;
+    margin-left:5%;
+    margin-right: 5%;
+    width:90%;
   }
   .comment-bottom{
   	margin-top:0.5rem;
   	margin-left:5%;
-  	width:90%;
+    margin-right: 5%;
+    width:90%;
   }
   .comment-bottom a{
   	text-decoration:none;
@@ -870,8 +879,6 @@ a#pay-btn{
   	height:auto;
   }
   .comment-area{
-  	border-top:solid 1px rgb(200,200,200);
-  	margin-top:1rem;
   	margin-bottom:1rem;
   }
   .comment-form{
