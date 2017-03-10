@@ -16,7 +16,7 @@
 <body>
 	<header>
 	    <div id="main-nav">
-	      <a href="#" class="main-nav-section main-nav-left">
+	      <a href="home.html" class="main-nav-section main-nav-left">
 	          <h1 id="logo">Event Market</h1>
 	      </a>
 
@@ -24,7 +24,7 @@
 	        <nav id="main-nav-links">
 	          <a href="event-gallery.html" id="highlight-item">event gallery</a>
 	          <a href="about.html">about</a>
-	          <a href="account.html">sign in</a>
+	          <a href="signin.html">sign in</a>
 	          <a href="cart.html">cart</a>
 	        </nav>
 	      </div>
@@ -42,160 +42,120 @@
 	      </div>
 	    </div>
 	</header>
+
+	<div class="container-box">
+	<div class="top-container">
+	  <p class="page-indicator"><a href="home.html">home</a> > payment</p>
+	</div>
 	
 	<div class="container">
-		<p class="guide"> <a href="home.html">Home</a> > Payment</p>
-		<div class="pay-container box-shadow">
-			<h3>Payment Information</h3>
-			<div class="grid-row">
-
-					<!-- first and last name -->
-					<div class="grid-col-1of4">
-						<label class="label">First Name</label>
-					</div>
-
-					<div class="grid-col-1of4">
-						<input type="text" name="first name">
-					</div>
-					<div class="grid-col-1of4">
-						<label class="label">Last Name</label>
-					</div>
-
-					<div class="grid-col-1of4">
-						<input type="text" name="last name">
-					</div>
-
-					<!-- address and city -->
-					<div class="grid-col-1of4">
-						<label class="label">Address</label>
-					</div>
-
-					<div class="grid-col-1of4">
-						<input type="text" name="address">
-					</div>
-
-					<div class="grid-col-1of4">
-						<label class="label">City</label>
-					</div>
-
-					<div class="grid-col-1of4">
-						<input type="text" name="City">
-					</div>
-
-			
-					<!-- province, country -->
-					<div class="grid-col-1of4">
-						<label class="label">Province</label>
-					</div>
-
-					<div class="grid-col-1of4">
-						<input type="text" name="first name">
-					</div>
-
-					<div class="grid-col-1of4">
-						<label class="label">Country</label>
-					</div>
-
-					<div class="grid-col-1of4">
-						<input type="text" name="last name">
-					</div>
-
-					<!-- postal code and contact # -->
-					<div class="grid-col-1of4">
-						<label class="label">Postal Code</label>
-					</div>
-					<div class="grid-col-1of4">
-						<input type="text" name="postal code">
-					</div>
-					<div class="grid-col-1of4">
-						<label class="label">Contact #</label>
-					</div>
-
-					<div class="grid-col-1of4">
-						<input type="text" name="contact number">
-					</div>
-
-					<!-- email -->
-					<div class="grid-col-1of4">
-						<label class="label">Email</label>
-					</div>
-
-						<div class="grid-col-1of4">
-							<input type="text" name="email">
-						</div>
-					</div><!-- row end -->
-				</div><!-- pay container end -->
-
-				<div class="pay-container box-shadow">
-					<h3>Payment Method</h3>
-						<div class="grid-row">
-							<div class="grid-col-1of4">
-							<label class="label">Card Type</label>
-						</div>
-
-						<div class="grid-col-3of4">
-							<form class="card-type">
-
-							  <input class="radio" type="radio" name="gender" value="1" checked> <img src="img/visa.png" alt="visa">
-
-							  <input class="radio" type="radio" name="gender" value="2"> <img src="img/mc.png" alt="mc" >
-
-
-							  <input class="radio" type="radio" name="gender" value="3"> <img src="img/amex.png" alt="amex">
-
-
-							    <input class="radio" type="radio" name="gender" value="3"> <img src="img/interac.png" alt="debit">
-
-
-							</form>
-						</div>
-					</div><!-- card type -->
-
-					<div class="grid-row">
-						<div class="grid-col-1of4">
-						<label class="label">Cardholder Name</label>
-					</div>
-
-					<div class="grid-col-3of4">
-						<input type="text" name="card holder">
-					</div>
-				</div><!-- cardholder row end -->
-
-				<div class="grid-row">
-					<div class="grid-col-1of4">
-						<label class="label">Card Number</label>
-					</div>
-
-					<div class="grid-col-3of4">
-						<input type="number" name="card number">
-					</div>
-				</div><!-- cardnumber row end -->
-
-				<div class="grid-row">
-					<div class="grid-col-1of4">
-					<label class="label">Expires</label>
+		<section class="grid-col-12of8">
+		<div id="personal-info">
+			<h3>Customer information</h3>
+			<form id="form-content">
+				<div class="input-block">
+					<label class="label">First Name</label>
+					<input type="text" name="first name">
 				</div>
-				<div class="grid-col-1of4">			
-					<input id="expire1" type="number" name="expiry date" placeholder="Month">
-				<h4> / </h4>				
-					<input id="expire2" type="number" name="expiry date" placeholder="Year">
+				<div class="input-block">
+					<label class="label">Last Name</label>
+					<input type="text" name="last name">
 				</div>
-
-				<div class="grid-col-1of4">
-					<label class="label">CVV</label>
+				<div class="input-block">
+					<label class="label">Address</label>
+					<input type="text" name="address">
 				</div>
-
-				<div class="grid-col-1of4">			
-					<input id="cvv" type="number" name="cvv" >
+				<div class="input-block">
+					<label class="label">City</label>
+					<input type="text" name="City">
 				</div>
-			</div><!-- expires row end -->
-		</div><!-- pay container end -->
-		<div class="buttons">
-			<a id="pay-btn" class="btn-filled" href="confirmation-page.html">complete payment</a>
+				<div class="input-block">
+					<label class="label">Province</label>
+					<input type="text" name="Province">
+				</div>
+				<div class="input-block">
+					<label class="label">Country</label>
+					<input type="text" name="Country">
+				</div>
+				<div class="input-block">
+					<label class="label">Postal Code</label>
+					<input type="text" name="postal code">
+				</div>
+				<div class="input-block">
+					<label class="label">Email</label>
+					<input type="text" name="email">
+				</div>
+			</form>
 		</div>
-	</div><!-- margin top container -->
+
+		<div id="card-info">
+			<h3>Payment information</h3>
+			<div class="input-block">
+				<label class="label">Card Type</label>
+				<form class="card-type">
+					<div class="grid-col-12of3">
+				    	<input class="radio" type="radio" name="cardtype" value="1" checked><img src="img/visa.png" alt="visa">
+				    </div>
+				    <div class="grid-col-12of3">
+				    	<input class="radio" type="radio" name="cardtype" value="2"> <img src="img/mc.png" alt="mc" >
+				    </div>
+				    <div class="grid-col-12of3">
+				    <input class="radio" type="radio" name="cardtype" value="3"> 	<img src="img/amex.png" alt="amex">
+			    	</div>
+			    	<div class="grid-col-12of3">
+			    		<input class="radio" type="radio" name="cardtype" value="4"> <img src="img/interac.png" alt="debit">
+			    	</div>
+				</form>
+			</div>
+			<div class="input-block">
+				<label class="label">Cardholder Name</label>
+				<input type="text" name="card holder">
+			</div>
+			<div class="input-block">
+				<label class="label">Card Number</label>
+				<input type="number" name="card number">
+			</div>
+			<div class="input-block">
+				<label class="label">Expires</label>
+				<input id="expire" type="number" name="expiry date" placeholder="month / year">
+			</div>
+			<div class="input-block">
+				<label class="label">CVV</label>
+				<input id="cvv" type="number" name="cvv" >
+			</div>
+		</div>
+		</section>
 
 
+		<section class="grid-full-col-12of4">
+			<div id="summary-block">
+				<h3 id="summary-title">Product summary</h3>
+				<div class="pdt-image" id="touchpoint">
+				</div>
+
+				<div class="pdt-detail">
+					<div class="info-block">
+						<h2>SFU Touchpoint 2017</h2>
+					</div>
+					<div class="info-block">
+						<h3>Date:</h3>
+						<P>March 13, 2017</P> 
+					</div>
+					<div class="info-block">
+						<h3>Price: </h3>
+						<P>$30</P> 
+					</div>
+					<div class="info-block">
+						<h3>Quality: </h3>
+						<P>1</P> 
+					</div>
+				</div>
+				<div class="info-block">
+				<a id="pay-btn" class="btn-filled" href="confirmation-page.html">complete payment</a>
+			</div>
+			</div>
+		</section>
+	</div>
 
 	<footer>
 		<div class="footer-contact-info">
@@ -208,5 +168,7 @@
 		</div>	  	
 	 </footer>
 
-</body>
+	</body>
+<script src="js/zepto.js"></script>
+<script src="js/javascript.js"></script>
 </html>

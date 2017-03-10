@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Event Market | Payment</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="css/grids.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Permanent+Marker|Quicksand" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+	    <div id="main-nav">
+	      <a href="home.html" class="main-nav-section main-nav-left">
+	          <h1 id="logo">Event Market</h1>
+	      </a>
+
+	      <div class="main-nav-section" href="home.html">
+	        <nav id="main-nav-links">
+	          <a href="event-gallery.html" id="highlight-item">event gallery</a>
+	          <a href="about.html">about</a>
+	          <a href="signin.html">sign in</a>
+	          <a href="cart.html">cart</a>
+	        </nav>
+	      </div>
+
+	      <div class="main-nav-section main-nav-right">
+	        <form id="search-form">
+	          <input type="text" name="search-bar">
+	        </form>
+	        <div id="search-icon">
+	          <a href="#">
+	            <img src="img/search-icon.png">
+	          </a>
+	        </div>
+	        <a href="#" id="hamburger-icon" class="hidden" aria-hidden="true" aria-controls="main-nav-links"></a>
+	      </div>
+	    </div>
+	</header>
+
+	<div class="container-box">
+	<div class="top-container">
+	  <p class="page-indicator"><a href="home.html">home</a> > sign in</p>
+	</div>
+	
+	<div class="container">
+		<div class="box-shadow grid-col-12of6">
+			<h3>Payment Information</h3>
+			<div >
+
+					<!-- first and last name -->
+					<div class="grid-col-1of4">
+						<label class="label">First Name</label>
+					</div>
+
+					<div class="grid-col-1of4">
+						<input type="text" name="first name">
+					</div>
+					<div class="grid-col-1of4">
+						<label class="label">Last Name</label>
+					</div>
+
+					<div class="grid-col-1of4">
+						<input type="text" name="last name">
+					</div>
+
+					<!-- address and city -->
+					<div class="grid-col-1of4">
+						<label class="label">Address</label>
+					</div>
+
+					<div class="grid-col-1of4">
+						<input type="text" name="address">
+					</div>
+
+					<div class="grid-col-1of4">
+						<label class="label">City</label>
+					</div>
+
+					<div class="grid-col-1of4">
+						<input type="text" name="City">
+					</div>
+
+			
+					<!-- province, country -->
+					<div class="grid-col-1of4">
+						<label class="label">Province</label>
+					</div>
+
+					<div class="grid-col-1of4">
+						<input type="text" name="first name">
+					</div>
+
+					<div class="grid-col-1of4">
+						<label class="label">Country</label>
+					</div>
+
+					<div class="grid-col-1of4">
+						<input type="text" name="last name">
+					</div>
+
+					<!-- postal code # -->
+					<div class="grid-col-1of4">
+						<label class="label">Postal Code</label>
+					</div>
+					<div class="grid-col-1of4">
+						<input type="text" name="postal code">
+					</div>
+
+					<!-- email -->
+					<div class="grid-col-1of4">
+						<label class="label">Email</label>
+					</div>
+
+						<div class="grid-col-1of4">
+							<input type="text" name="email">
+						</div>
+					</div><!-- row end -->
+				</div><!-- pay container end -->
+
+				<div class="box-shadow grid-col-12of6">
+					<h3>Payment Method</h3>
+						<div class="grid-row">
+							<div class="grid-col-1of4">
+							<label class="label">Card Type</label>
+						</div>
+
+						<div class="grid-col-3of4">
+							<form class="card-type">
+
+							  <input class="radio" type="radio" name="gender" value="1" checked> <img src="img/visa.png" alt="visa">
+
+							  <input class="radio" type="radio" name="gender" value="2"> <img src="img/mc.png" alt="mc" >
+
+
+							  <input class="radio" type="radio" name="gender" value="3"> <img src="img/amex.png" alt="amex">
+
+
+							    <input class="radio" type="radio" name="gender" value="3"> <img src="img/interac.png" alt="debit">
+
+
+							</form>
+						</div>
+					</div><!-- card type -->
+
+					<div class="grid-row">
+						<div class="grid-col-1of4">
+						<label class="label">Cardholder Name</label>
+					</div>
+
+					<div class="grid-col-3of4">
+						<input type="text" name="card holder">
+					</div>
+				</div><!-- cardholder row end -->
+
+				<div class="grid-row">
+					<div class="grid-col-1of4">
+						<label class="label">Card Number</label>
+					</div>
+
+					<div class="grid-col-3of4">
+						<input type="number" name="card number">
+					</div>
+				</div><!-- cardnumber row end -->
+
+				<div class="grid-row">
+					<div class="grid-col-1of4">
+					<label class="label">Expires</label>
+				</div>
+				<div class="grid-col-1of4">			
+					<input id="expire1" type="number" name="expiry date" placeholder="Month">
+				<h4> / </h4>				
+					<input id="expire2" type="number" name="expiry date" placeholder="Year">
+				</div>
+
+				<div class="grid-col-1of4">
+					<label class="label">CVV</label>
+				</div>
+
+				<div class="grid-col-1of4">			
+					<input id="cvv" type="number" name="cvv" >
+				</div>
+			</div><!-- expires row end -->
+		</div><!-- pay container end -->
+		<div class="buttons">
+			<a id="pay-btn" class="btn-filled" href="confirmation-page.html">complete payment</a>
+		</div>
+	</div>
+	</div><!-- margin top container -->
+
+
+
+	<footer>
+		<div class="footer-contact-info">
+			<p href="#">contact information here (not complete)</p>
+		</div>
+		<div class="footer-other-info">
+			<a class="footer-links" href="#">help</a>
+			<a class="footer-links" href="#">terms and policy</a>
+			<a class="footer-links" href="#">FAQs</a>
+		</div>	  	
+	 </footer>
+
+</body>
+<script src="js/zepto.js"></script>
+<script src="js/javascript.js"></script>
+</html>
