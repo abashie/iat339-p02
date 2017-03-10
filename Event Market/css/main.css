@@ -712,6 +712,17 @@ footer .grid-col-12of3{
   text-decoration: underline;
 }
 /*----------------------------------CART PAGE---------------------------------------*/
+.cart-detail{
+  display:block;
+  float:left;
+  margin-left:10%;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  width:80%;
+}
+.cart-detail h2{
+  margin-bottom:2rem;
+}
 .quantity-form{
 	float:left;
 	width:50%;
@@ -734,17 +745,32 @@ footer .grid-col-12of3{
 	font-size: 0.8rem;
 	padding:0.2rem 0 0.2rem 0.2rem;
 }
-.btn{
+.buttons{
+  display:block;
+  float:left;
+  width:100%;
+  margin-top:2rem;
+}
+
+#continue-btn{
 	float:left;
 	text-align:center;
 	margin-bottom:1rem;
-	padding:0.4rem 1rem;
-	border:solid 2.3px;
-	border-color:rgb(234,86,68);
+	padding:0.4rem 2rem;
+	border:2px solid rgb(234,86,68);
 	background-color:white;
 	color:rgb(234,86,68);
 	text-decoration: none;
 	transition:background-color ease-out 0.3s;
+}
+#complete-btn{
+  text-align:center;
+  float:right;
+  color:white;
+  margin-bottom:1rem;
+  padding:0.4rem 3rem;
+  border:2px solid rgb(234,86,68);
+  background-color:rgb(234,86,68);
 }
 
  /* PAYMENT PAGE --------------------------------------------------------
@@ -765,7 +791,6 @@ footer .grid-col-12of3{
   margin-right:10%;
   width:80%;
   padding:2rem;
-  background-color:rgb(240,240,240);
  }
 .input-block{
   display:block;
@@ -822,9 +847,10 @@ footer .grid-col-12of3{
 #pay-btn{
   display: block;
   float:left;
+  width:100%;
   margin-top:2rem;
   text-align:center;
-  padding:0.6rem 1rem;
+  padding:0.7rem 0;
   color:white;
   background-color:rgb(234,86,68);
   text-decoration: none;
@@ -982,8 +1008,11 @@ footer .grid-col-12of3{
   	width:100%;
   }
   .pdt-info{
-  	margin-top:1rem;
-  	margin-bottom:2rem;
+  	margin-top:2rem;
+  	margin-bottom:1rem;
+  }
+  .pdt-info h2{
+    margin-top:2rem;
   }
   .ticket-method{
   	margin-left:10%;
@@ -1465,10 +1494,15 @@ margin: 0 auto;
 			margin-left:15%;
 			width:70%;
 		}
-		.btn{
-			float:left;
-			width:80%;
-		}
+    #continue-btn{
+      width:100%;
+      padding:0.6rem 0;
+    }
+		#complete-btn{
+      float:left;
+      width:100%;
+      padding:0.6rem 0;
+    }
     .pdt-top-info h3{
       margin-top:1rem;
     }
@@ -1478,158 +1512,4 @@ margin: 0 auto;
     .input-block input{
       width:100%;
   	}
-
-
-
-  /*@media (max-width: 1069px){
-    .grid-col-1of3{
-      width: 45%;
-    }
-
   }
-
-
-  @media (max-width: 897px){
-
-    .grid-col-1of3{
-      width: 45%;
-    }
-
-    .category .grid-col-2of3 img{
-      height: 100%;
-      width: auto;
-      transition: all 0.5s ease;
-    }
-
-    .category .grid-col-1of3 img{
-      width: 100%;
-      height: 100%;
-      transition: all 0.5s ease;
-    }
-
-    .category .grid-col-1of3, .category .grid-col-2of3 {
-      display: inline-block;
-      float: left;
-      width: 45%;
-    }
-
-    .events-container .grid-col-1of3{
-      width: 45%;
-    }
-
-    .category .grid-col-2of3 img:hover{
-      width: auto;
-      height: 110%;
-    }
-
-    .category .grid-col-1of3 img:hover{
-      width: 120%;
-      height: 120%;
-    }
-
-
- .pay-container input{
-        width: 60%;
-       }
-
-
-
-  input#expire1,   input#expire2{
-width: 25%;
-  }
-
-  }
-
-
-
-
-    @media (max-width: 52em){
-
-
-
-      /*THIS IS NOT WORKING. WONT FLOAT LEFT.*/
-     /* .pay-container label{
-        float: left;
-      }
-
-
-
-      .grid-col-1of3{
-        width: 45%;
-      }
-
-
-      .events-container .grid-col-1of3{
-        width: 45%;
-      }
-
-      .grid-col-1of4{
-        width: 100%;
-      }
-
-      .home-image .search-bar h1{
-        font-size: 1.5rem;
-        bottom:80%;
-      }
-
-
-    }
-
-
-    @media (max-width: 35em){ 
-
-      .category .grid-col-1of3, .category .grid-col-2of3{
-        width: 100%;
-        min-width: 200px;
-      }
-
-      .category .grid-col-1of3 img{
-        width: 100%;
-        height: auto;
-
-      }
-
-      .category .grid-col-2of3 img{
-        width: auto;
-        height: 100%;
-
-      }
-
-
-      .category .grid-col-1of3 img:hover{
-        width: 110%;
-        height: auto;
-      }
-
-
-
-      .category .grid-col-2of3 img:hover{
-        width: auto;
-        height: 110%;
-      }
-
-      /*payment*/
-/*a#pay-btn{
-  padding: 0.5rem 2rem;
-  width: 50%;
-  margin: 0 15%;
-}
-      
-
-      div.events-container{
-        margin: 100px 5%;
-      }
-
-      .grid-col-1of3{
-        width: 100%;
-      }
-
-
-      .grid-col-1of4{
-        width: 100%;
-      }
-      .events-container .grid-col-1of3{
-        width: 90%;
-      }
-
-      }*/
